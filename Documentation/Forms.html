@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- Required meta tags always come first -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <meta name="description" content="Tornado | UI Framework ">
+        <meta name="keywords" content="css,html,js,jquery,angular,framework,css3,html5,tornado">
+        <title>Tornado | UI Framework</title>
+        <!-- Required CSS Files -->
+        <link href="../dist/css-js/tornado.css" rel="stylesheet">
+        <link href="tomorrow.css" rel="stylesheet">
+        <link href="main.css" rel="stylesheet">
+    </head>
+    <body class="main">
+        <!-- Navside -->
+        <div class="nav-side">
+            <a href="#" class="logo"><img src="images/logo.png" alt=""></a>
+            <ul class="menu-list" id="documentation-list">
+                <li><a href="index.html">Getting Start</a></li>
+                <li class="active"><a href="javascript:void(0)">Components</a>
+                    <ul>
+                        <li><a href="Grid%20System.html">Grid System</a></li>
+                        <li><a href="Typography.html">Typography</a></li>
+                        <li><a href="Navbar.html">Navbar</a></li>
+                        <li class="active"><a href="Forms.html">Forms</a></li>
+                        <li><a href="Buttons.html">Buttons</a></li>
+                        <li><a href="Shadows.html">Shadows</a></li>
+                        <li><a href="icons.html">icons</a></li>
+                        <li><a href="Color%20Palette.html">Color Palette</a></li>
+                    </ul>
+                </li>
+                <li><a href="javascript:void(0)">javascript</a>
+                    <ul>
+                        <li><a href="#"></a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <!-- // Navside -->
+        
+        <!-- Header -->
+        <header>
+            <div class="container">
+                <h1>Forms</h1>
+                <p>Forms are the standard way to receive user inputted data.</p>
+            </div>
+        </header>
+        <!-- Header -->
+        
+        <!-- Page Content -->
+        <div class="container Page-Contnet">
+            
+            <h4 class="titx">Standard Form Elements</h4>
+            
+            <form class="form-ui row">
+                <div class="col-s-12 col-m-6">
+                    <label for="firstname">First Name</label>
+                    <input type="text" name="firstname" placeholder="First Name">
+                </div>
+                
+                <div class="col-s-12 col-m-6">
+                    <label for="lastname">Last Name</label>
+                    <input type="text" name="lastname" placeholder="Last Name" class="success">
+                </div>
+                
+                <div class="col-s-12 col-m-6">
+                    <label for="email">Email Address</label>
+                    <input type="email" name="email" placeholder="Email Address" class="error">
+                </div>
+                
+                <div class="col-s-12 col-m-6">
+                    <label for="password">Password</label>
+                    <input type="password" name="password" placeholder="Password" class="warning">
+                </div>
+                
+                <div class="col-s-12 col-m-6">
+                    <label>HTML5 Select</label>
+                    <select>
+                        <optgroup label="Group Label">
+                            <option value="Select Test">Select Test</option>
+                            <option value="Select item 2" selected>Select item 2</option>
+                            <option value="Select item 3">Select item 3</option>
+                            <option value="Select item 4">Select item 4</option>
+                        </optgroup>
+                        
+                        <optgroup label="Group Label 2">
+                            <option value="Select Test">Select Test</option>
+                            <option value="Select item 2">Select item 2</option>
+                            <option value="Select item 3">Select item 3</option>
+                            <option value="Select item 4">Select item 4</option>
+                        </optgroup>
+                    </select>
+                </div>
+                
+                <div class="col-s-12 col-m-6">
+                    <label>Multi Search Tags</label>
+                    <input type="text" name="multiselect" value="Tage#1,Tag#2" class="tags-input">
+                </div>
+                
+                <div class="col-s-12 col-m-6">
+                    <label for="datepicker">Date Picker</label>
+                    <input type="date" name="datepicker" placeholder="Date Picker">
+                </div>
+                
+                <div class="col-s-12 col-m-6">
+                    <label>File Input</label>
+                    <div class="file-input">
+                        <input type="file">
+                        <span class="btn secondary">Browse</span>
+                        <input class="file-path" placeholder="File Upload">
+                    </div>
+                </div>
+                
+                <div class="col-s-12 col-m-6">
+                    <label for="range">jRange Slider</label>
+					
+                    <div class="range-wraper">
+						<input type="hidden" class="range-slider" data-min='5' data-max='20' value='10'>
+					</div>
+                </div>
+                
+                <div class="col-s-12 col-m-6">
+                    <label>jRange Slider Multi Value</label>
+					
+                    <div class="range-wraper">
+						<input type="hidden" class="range-slider" data-min='0' data-max='200' value='10,100'>
+					</div>
+                </div>
+                
+				<div class="col-s-12 col-m-6">
+                    <label for="datepicker">Form Elements with icon</label>
+                    <div class="icon-field ti-calendar-io">
+						<input type="date" name="datepicker" placeholder="Date Picker">
+					</div>
+                </div>
+				
+				<div class="col-s-12 col-m-6">
+                    <label>Form Elements with Labeled icon</label>
+                    <div class="icon-field-label ti-flag">
+						<select>
+							<optgroup label="Group Label">
+								<option value="Select Test">Select Test</option>
+								<option value="Select item 2" selected>Select item 2</option>
+								<option value="Select item 3">Select item 3</option>
+								<option value="Select item 4">Select item 4</option>
+							</optgroup>
+							
+							<optgroup label="Group Label 2">
+								<option value="Select Test">Select Test</option>
+								<option value="Select item 2">Select item 2</option>
+								<option value="Select item 3">Select item 3</option>
+								<option value="Select item 4">Select item 4</option>
+							</optgroup>
+						</select>
+					</div>
+                </div>
+				
+                <div class="col-s-12">
+                    <label for="message">Message</label>
+                    <textarea placeholder="Textarea Message"></textarea>
+                </div>
+                
+                <div class="col-s-12 col-m-6">
+                    <label>Buttons</label>
+                    <input type="submit" class="btn primary" value="Submit Button">
+                    <input type="reset" class="btn secondary" value="Reset input">
+                    <input type="button" class="btn success" value="input Button">
+					
+					<label>Radio Buttons</label>
+                    
+					<label class="radio-button"> 
+						<input type="radio" name="radio1">
+						<span>Radio Button</span>
+					</label>
+					
+					<label class="radio-button"> 
+						<input type="radio" name="radio1" checked>
+						<span>Radio Button Checked</span>
+					</label>
+                </div>
+                
+                <div class="col-s-12 col-m-6">
+                    <label>Checkbox</label>
+					
+					<label class="checkbox"> 
+						<input type="checkbox" name="checkbox">
+						<span>Check Box Normal</span>
+					</label>
+					
+					<label class="checkbox"> 
+						<input type="checkbox" name="checkbox" checked>
+						<span>Check Box Checked</span>
+					</label>
+					
+					<label>Switch</label>
+					
+					<label class="checkbox-switch"> 
+						off
+						<input type="checkbox" name="switch">
+						<span class="switch"></span>
+						on
+					</label>
+					
+					<label class="checkbox-switch"> 
+						off
+						<input type="checkbox" name="switch" checked>
+						<span class="switch"></span>
+						on
+					</label>
+					
+                </div>
+            </form>
+            
+<!-- Code Highlight -->
+<div class="code-highlight">
+<button class="copy">copy</button>
+<pre><code class="html" id="code1">&lt;!-- Form Wraper -->
+&lt;form class="form-ui">
+   &lt;!-- Label Title -->
+   &lt;label for="firstname">First Name&lt;/label>
+   
+   &lt;!-- input Element -->
+   &lt;input type="text" name="firstname" placeholder="First Name">
+   
+   &lt;!-- Feilds Validate -->
+   &lt;input type="text" name="lastname" placeholder="Last Name" class="success">
+   &lt;input type="email" name="email" placeholder="Email Address" class="error">
+   &lt;input type="password" name="password" placeholder="Password" class="warning">
+   
+   &lt;!-- Select Element -->
+   &lt;select>
+      &lt;optgroup label="Group Label">
+         &lt;option value="Select Test">Select Test&lt;/option>
+         &lt;option value="Select item 2" selected>Select item 2&lt;/option>
+         &lt;option value="Select item 3">Select item 3&lt;/option>
+         &lt;option value="Select item 4">Select item 4&lt;/option>
+      &lt;/optgroup>
+   &lt;/select>
+   
+   &lt;!-- Multi Select Tags -->
+   &lt;input type="text" name="multiselect" value="Tage#1,Tag#2" class="tags-input">
+   
+   &lt;!-- Date Picker input -->
+   &lt;input type="date" name="date" placeholder="Date Picker">   
+   
+   &lt;!-- File input -->
+   &lt;div class="file-input">
+      &lt;input type="file">
+      &lt;span class="btn secondary">Browse&lt;/span>
+      &lt;input class="file-path" placeholder="File Upload">
+   &lt;/div>
+   
+   &lt;!-- Range Slider -->
+   &lt;div class="range-wraper">
+      &lt;input type="hidden" class="range-slider" data-min='5' data-max='20' value='10'>
+   &lt;/div>
+   
+   &lt;!-- Range Slider Multi Value -->
+   &lt;div class="range-wraper">
+      &lt;input type="hidden" class="range-slider" data-min='0' data-max='200' value='10,100'>
+   &lt;/div>
+   
+   &lt;!-- Elements with icon -->
+   &lt;div class="icon-field ti-calendar-io">
+      &lt;input type="date" name="datepicker" placeholder="Date Picker">
+   &lt;/div>
+   
+   &lt;!-- Elements with Labeled icon -->
+   &lt;div class="icon-field-label ti-calendar-io">
+      &lt;input type="date" name="datepicker" placeholder="Date Picker">
+   &lt;/div>
+   
+   &lt;!-- Textarea Element -->
+   &lt;textarea placeholder="Textarea Message">&lt;/textarea>
+   
+   &lt;!-- Buttons Elements -->
+   &lt;input type="submit" class="btn primary" value="Submit Button">
+   &lt;input type="reset" class="btn secondary" value="Reset input">
+   &lt;input type="button" class="btn success" value="input Button">
+   
+   &lt;!-- Checkbox Element -->
+   &lt;label class="checkbox"> 
+      &lt;input type="checkbox" name="checkbox">
+      &lt;span>Check Box Normal&lt;/span>
+   &lt;/label>
+      
+   &lt;!-- Switch Element -->
+   &lt;label class="checkbox-switch"> 
+      off
+      &lt;input type="checkbox" name="switch">
+      &lt;span class="switch">&lt;/span>
+      on
+   &lt;/label>
+   
+   &lt;!-- Radio Element -->
+   &lt;label class="radio-button"> 
+      &lt;input type="radio" name="radio1">
+      &lt;span>Radio Button&lt;/span>
+   &lt;/label>
+&lt;/form>
+&lt;!-- Form Wraper End -->
+
+</code></pre>
+</div>
+<!-- // Code Hightlight -->
+        </div>
+        <!-- // Page Content -->
+        
+        <!-- Required JS Files -->
+        <script src="../dist/css-js/jquery.min.js"></script>
+        <script src="../dist/css-js/tornado.js"></script>
+        <script src="clipboard.min.js"></script>
+        <script src="highlight.pack.js"></script>
+        <script>
+            $(function(){
+                
+                $("#documentation-list li > a").click(function(){
+                    $(this).parent("li").addClass("active").siblings().removeClass("active").children("ul").slideUp(600);
+                    $(this).parent("li").children("ul").slideToggle(600);
+                })
+                
+                $("#documentation-list li.active").parent("ul").css("display","block");
+                
+                new Clipboard('.copy', {target:function(Copy){return Copy.nextElementSibling;}}); 
+                
+                $(".colors-palette li").each(function(){
+                    var colorBase = $(this).children("span").text();
+                    $(this).css("background-color",colorBase);
+                });
+                
+            })
+            hljs.initHighlightingOnLoad();
+        </script>
+    </body>
+</html>

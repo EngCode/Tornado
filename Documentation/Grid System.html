@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- Required meta tags always come first -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <meta name="description" content="Tornado | UI Framework ">
+        <meta name="keywords" content="css,html,js,jquery,angular,framework,css3,html5,tornado">
+        <title>Tornado | UI Framework</title>
+        <!-- Required CSS Files -->
+        <link href="../dist/css-js/tornado.css" rel="stylesheet">
+        <link href="tomorrow.css" rel="stylesheet">
+        <link href="main.css" rel="stylesheet">
+    </head>
+    <body class="main">
+        <!-- Navside -->
+        <div class="nav-side">
+            <a href="#" class="logo"><img src="images/logo.png" alt=""></a>
+            <ul class="menu-list" id="documentation-list">
+                <li><a href="index.html">Getting Start</a></li>
+                <li class="active"><a href="javascript:void(0)">Components</a>
+                    <ul>
+                        <li class="active"><a href="Grid%20System.html">Grid System</a></li>
+                        <li><a href="Typography.html">Typography</a></li>
+                        <li><a href="Navbar.html">Navbar</a></li>
+                        <li><a href="Forms.html">Forms</a></li>
+                        <li><a href="Buttons.html">Buttons</a></li>
+                        <li><a href="Shadows.html">Shadows</a></li>
+                        <li><a href="icons.html">icons</a></li>
+                        <li><a href="Color%20Palette.html">Color Palette</a></li>
+                    </ul>
+                </li>
+                <li><a href="javascript:void(0)">javascript</a>
+                    <ul>
+                        <li><a href="#"></a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <!-- // Navside -->
+        
+        <!-- Header -->
+        <header>
+            <div class="container">
+                <h1>Grid System</h1>
+                <p>
+                    Tornado grid system is A grid based on the flex display property,
+                    The grid helps you layout your page in an ordered, easy fashion.
+                </p>
+            </div>
+        </header>
+        <!-- Header -->
+
+        <!-- Page Content -->
+        <div class="container Page-Contnet">
+            <div class="text-box">
+                <h3>Containers</h3>
+                <p>
+                    Containers ar a containing element to wrap and centering site contents and is required for the grid system.
+                    You may choose one of two containers to use in your projects. Use <span class="label">.container</span> for a responsive fixed width 
+                    container. or <span class="label">.container-fluid</span> for a full width container, spanning the entire width of your viewport.
+                </p>
+            </div>
+            
+            <!-- Code Highlight -->
+            <div class="code-highlight">
+            <button class="copy">copy</button>
+    <pre><code class="html" id="code1">&lt;div class="container"> &lt;!-- Fixed Container --> &lt;/div>
+&lt;div class="container-fluid"> &lt;!-- Fluid Container --> &lt;/div>
+</code></pre>
+</div>
+            <!-- // Code Hightlight -->
+            
+            <div class="text-box">
+                <h3>Responsive 12 Columns Grid</h3>
+                <p>
+                    Tornado using a standard 12 column Flexible mobile first responsive grid system scales up to the device or viewport size increases.
+                    It includes predefined classes for easy layout options , the columns elements must be placed into a <span class="label">.row</span> container and                     
+                    Rows must be placed within a <span class="label">.container</span> or <span class="label">.container-fluid</span> 
+                    for proper alignment and padding. except in one case that you use class <span class="label">.no-gutter</span> with the <span class="label">.row</span> 
+                    container scroll down to see example of columns class of each device screen
+                </p>
+            </div>
+            
+            <!-- Row -->
+            <div class="row">
+                <!-- column -->
+                <div class="col-s-12">
+                    <div class="box-content">
+                       This div is 12-columns wide on all screen sizes
+                    </div>
+                </div>
+                <!-- // column -->
+                
+                <!-- column -->
+                <div class="col-s-12 col-m-6">
+                    <div class="box-content">
+                        6-Columns wide in Desktop and Tablet
+                    </div>
+                </div>
+                <!-- // column -->
+                
+                <!-- column -->
+                <div class="col-s-12 col-m-6">
+                    <div class="box-content">
+                        6-Columns wide in Desktop and Tablet
+                    </div>
+                </div>
+                <!-- // column -->
+                
+                <!-- column -->
+                <div class="col-s-12 col-l-4">
+                    <div class="box-content">
+                        4-Columns wide in Desktop only
+                    </div>
+                </div>
+                <!-- // column -->
+                
+                <!-- column -->
+                <div class="col-s-12 col-l-4">
+                    <div class="box-content">
+                        4-Columns wide in Desktop only
+                    </div>
+                </div>
+                <!-- // column -->
+                
+                <!-- column -->
+                <div class="col-s-12 col-l-4">
+                    <div class="box-content">
+                        4-Columns wide in Desktop only
+                    </div>
+                </div>
+                <!-- // column -->
+                
+                <!-- column -->
+                <div class="col-s-12 col-m-6 col-l-7">
+                    <div class="box-content">
+                        7-Cols in Desktop | 6-Cols in Tablet | 12-cols in mobile
+                    </div>
+                </div>
+                <!-- // column -->
+                
+                <!-- column -->
+                <div class="col-s-12 col-m-6 col-l-5">
+                    <div class="box-content">
+                        5-Cols in Desktop | 6-Cols in Tablet | 12-cols in mobile
+                    </div>
+                </div>
+                <!-- // column -->
+            </div>
+            <!-- // Row -->
+            
+            <!-- Code Highlight -->
+            <div class="code-highlight">
+            <button class="copy">copy</button>
+    <pre><code class="html" id="code1">&lt;!-- Row -->
+&lt;div class="row">
+    &lt;div class="col-s-12"> &lt;/div>
+    &lt;div class="col-s-12 col-m-6"> &lt;/div>
+    &lt;div class="col-s-12 col-m-6"> &lt;/div>
+    &lt;div class="col-s-12 col-l-4"> &lt;/div>
+    &lt;div class="col-s-12 col-l-4"> &lt;/div>
+    &lt;div class="col-s-12 col-l-4"> &lt;/div>
+    &lt;div class="col-s-12 col-m-6 col-l-7"> &lt;/div>
+    &lt;div class="col-s-12 col-m-6 col-l-5"> &lt;/div>
+&lt;/div>
+&lt;!-- // Row --></code></pre>
+</div>
+            <!-- // Code Hightlight -->
+            
+            <div class="responsive-table">
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <td class="col-s-4">&lt;== 640px Mobile Devices</td>
+                            <td class="col-s-4">&lt;== 980px Tablet Devices</td>
+                            <td class="col-s-4">Desktop Devices 1024px ==&gt;</td>
+                        </tr>
+                    </thead>
+                    <tr>
+                        <td class="col-s-4">col-s-number</td>
+                        <td class="col-s-4">col-m-number</td>
+                        <td class="col-s-4">col-l-number</td>
+                    </tr>
+                </table>
+            </div>
+            
+            <div class="text-box">
+                <h3>Auto Responsive Columns</h3>
+                <p>
+                    automatic responsive columns is equal width columns that scales down from desktop to mobile to fit the device viewport its has a 
+                    limit of 12 columns This feature allows you to create columns may not created with the standard grid for example if you wanna create a 5 
+                    equal columns you will not be able to do it with the normal grid. see the example below and try to resize your browser to see how it
+                    responds and changing its width to fit the device viewport.
+                </p>
+            </div>
+            
+            <div class="row">
+                <div class="box-3x1"> <div class="box-content">this a row of 3 equal box's</div> </div>
+                <div class="box-3x1"> <div class="box-content">this a row of 3 equal box's</div> </div>
+                <div class="box-3x1"> <div class="box-content">this a row of 3 equal box's</div> </div>
+                
+                <div class="box-5x1"> <div class="box-content">5 equal box's</div> </div>
+                <div class="box-5x1"> <div class="box-content">5 equal box's</div> </div>
+                <div class="box-5x1"> <div class="box-content">5 equal box's</div> </div>
+                <div class="box-5x1"> <div class="box-content">5 equal box's</div> </div>
+                <div class="box-5x1"> <div class="box-content">5 equal box's</div> </div>
+                
+                <div class="box-7x1"> <div class="box-content">7 equal box's</div> </div>
+                <div class="box-7x1"> <div class="box-content">7 equal box's</div> </div>
+                <div class="box-7x1"> <div class="box-content">7 equal box's</div> </div>
+                <div class="box-7x1"> <div class="box-content">7 equal box's</div> </div>
+                <div class="box-7x1"> <div class="box-content">7 equal box's</div> </div>
+                <div class="box-7x1"> <div class="box-content">7 equal box's</div> </div>
+                <div class="box-7x1"> <div class="box-content">7 equal box's</div> </div>
+            </div>
+            
+            <!-- Code Highlight -->
+            <div class="code-highlight">
+            <button class="copy">copy</button>
+    <pre><code class="html" id="code1">&lt;!-- Row -->
+&lt;div class="row">
+    &lt;div class="box-3x1"> &lt;/div> &lt;!-- 3 equal columns in 1 row -->
+    &lt;div class="box-3x1"> &lt;/div> &lt;!-- 3 equal columns in 1 row -->
+    &lt;div class="box-3x1"> &lt;/div> &lt;!-- 3 equal columns in 1 row -->
+    
+    &lt;div class="box-5x1"> &lt;/div> &lt;!-- 5 equal columns in 1 row -->
+    &lt;div class="box-5x1"> &lt;/div> &lt;!-- 5 equal columns in 1 row -->
+    &lt;div class="box-5x1"> &lt;/div> &lt;!-- 5 equal columns in 1 row -->
+    &lt;div class="box-5x1"> &lt;/div> &lt;!-- 5 equal columns in 1 row -->
+    &lt;div class="box-5x1"> &lt;/div> &lt;!-- 5 equal columns in 1 row -->
+&lt;/div>
+&lt;!-- // Row --></code></pre>
+</div>
+            <!-- // Code Hightlight -->
+            
+            <div class="responsive-table">
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <td class="col-s-3">Box Class</td>
+                            <td class="col-s-3">Class Definition</td>
+                            <td class="col-s-6">Responding Width</td>
+                        </tr>
+                    </thead>
+                    <tr>
+                        <td class="col-s-3">box-1x1</td>
+                        <td class="col-s-3">one full width box</td>
+                        <td class="col-s-6">one box in all devices</td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="col-s-3">box-2x1</td>
+                        <td class="col-s-3">Tow equal columns in one row</td>
+                        <td class="col-s-6">Desktop : 2 Box's &nbsp; | &nbsp; Tablet : 2 Box's &nbsp; | &nbsp; mobile : 1 Box</td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="col-s-3">box-3x1</td>
+                        <td class="col-s-3">3 equal columns in one row</td>
+                        <td class="col-s-6">Desktop : 3 Box's &nbsp; | &nbsp; Tablet : 2 Box's &nbsp; | &nbsp; mobile : 1 Box</td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="col-s-3">box-4x1</td>
+                        <td class="col-s-3">4 equal columns in one row</td>
+                        <td class="col-s-6">Desktop : 4 Box's &nbsp; | &nbsp; Tablet : 2 Box's &nbsp; | &nbsp; mobile : 1 Box</td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="col-s-3">box-5x1</td>
+                        <td class="col-s-3">5 equal columns in one row</td>
+                        <td class="col-s-6">Desktop : 5 Box's &nbsp; | &nbsp; Tablet : 4 Box's &nbsp; | &nbsp; mobile : 3 Box</td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="col-s-3">box-6x1</td>
+                        <td class="col-s-3">6 equal columns in one row</td>
+                        <td class="col-s-6">Desktop : 6 Box's &nbsp; | &nbsp; Tablet : 5 Box's &nbsp; | &nbsp; mobile : 3 Box</td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="col-s-3">box-7x1</td>
+                        <td class="col-s-3">7 equal columns in one row</td>
+                        <td class="col-s-6">Desktop : 7 Box's &nbsp; | &nbsp; Tablet : 5 Box's &nbsp; | &nbsp; mobile : 3 Box</td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="col-s-3">box-8x1</td>
+                        <td class="col-s-3">8 equal columns in one row</td>
+                        <td class="col-s-6">Desktop : 8 Box's &nbsp; | &nbsp; Tablet : 5 Box's &nbsp; | &nbsp; mobile : 4 Box</td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="col-s-3">box-9x1</td>
+                        <td class="col-s-3">9 equal columns in one row</td>
+                        <td class="col-s-6">Desktop : 3 Box's &nbsp; | &nbsp; Tablet : 8 Box's &nbsp; | &nbsp; mobile : 4 Box</td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="col-s-3">box-10x1</td>
+                        <td class="col-s-3">10 equal columns in one row</td>
+                        <td class="col-s-6">Desktop : 3 Box's &nbsp; | &nbsp; Tablet : 8 Box's &nbsp; | &nbsp; mobile : 4 Box</td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="col-s-3">box-11x1</td>
+                        <td class="col-s-3">11 equal columns in one row</td>
+                        <td class="col-s-6">Desktop : 11 Box's &nbsp; | &nbsp; Tablet : 8 Box's &nbsp; | &nbsp; mobile : 5 Box</td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="col-s-3">box-12x1</td>
+                        <td class="col-s-3">12 equal columns in one row</td>
+                        <td class="col-s-6">Desktop : 12 Box's &nbsp; | &nbsp; Tablet : 8 Box's &nbsp; | &nbsp; mobile : 5 Box</td>
+                    </tr>
+                </table>
+            </div>
+            
+            <div class="text-box">
+                <h3>RTL and Gutters,Order</h3>
+                <p>
+                    the grid system direction depends on your page direction for exapmle : if the body has <span class="label">direction : rtl</span>
+                    the columns flow dynamicly from Right to Left and if has a <span class="label">direction : ltr </span>it will go from Left to Right. and for
+                    the columns Gutter is the space between columns and box's it has <span class="label">30px</span> gutter by default
+                    you can increase or decrease the space by class given to the row element <span class="label">cols-gutter-#</span> see the table below to 
+                    know all class available. and also you can reorder your columns by data attribute <span class="label">data-order="order number"</span>
+                </p>
+            </div>
+            
+            <div class="row cols-gutter-20">
+                <div class="box-4x1" data-order="2"> <div class="box-content">i was column number 1 reorderd to be number 2</div> </div>
+                <div class="box-4x1" data-order="4"> <div class="box-content">i was column number 2 reorderd to be number 4</div> </div>
+                <div class="box-4x1" data-order="1"> <div class="box-content">i was column number 3 reorderd to be number 1</div> </div>
+                <div class="box-4x1" data-order="3"> <div class="box-content">i was column number 4 reorderd to be number 3</div> </div>
+            </div>
+            
+            <!-- Code Highlight -->
+            <div class="code-highlight">
+            <button class="copy">copy</button>
+    <pre><code class="html" id="code1">&lt;!-- Row With Gutter 20px -->
+&lt;div class="row cols-gutter-20">
+    &lt;div class="box-4x1" data-order="2">  &lt;/div>
+    &lt;div class="box-4x1" data-order="4">  &lt;/div>
+    &lt;div class="box-4x1" data-order="1"> &lt;/div>
+    &lt;div class="box-4x1" data-order="3"> &lt;/div>
+&lt;/div>
+&lt;!-- // Row With Gutter 20px  --></code></pre>
+</div>
+            <!-- // Code Hightlight -->
+            
+            <div class="responsive-table">
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <td class="col-s-2">Class</td>
+                            <td class="col-s-6">Class Definition</td>
+                            <td class="col-s-4">Element</td>
+                        </tr>
+                    </thead>
+                    <tr>
+                        <td class="col-s-2">.row-reverse</td>
+                        <td class="col-s-6 text-align-left">its reverse the direction of the columns inside the row.</td>
+                        <td class="col-s-4 text-align-left">replaced with class <span>.row</span></td>
+                    </tr>
+                    <tr>
+                        <td class="col-s-2">.row-masonry</td>
+                        <td class="col-s-6 text-align-left">masonry layouts required a fixed <span>Height</span></td>
+                        <td class="col-s-4 text-align-left">added to the element with class <span>.row</span></td>
+                    </tr>                    
+                    <tr>
+                        <td class="col-s-2">.row-stretch</td>
+                        <td class="col-s-6 text-align-left">Filling the Space in the Last Row</td>
+                        <td class="col-s-4 text-align-left">added to the element with class <span>.row</span></td>
+                    </tr>
+                    <tr>
+                        <td class="col-s-2">.row-vCenter</td>
+                        <td class="col-s-6 text-align-left">Vertical centering all columns inside the row.</td>
+                        <td class="col-s-4 text-align-left">added to the element with class <span>.row</span></td>
+                    </tr>
+                    <tr>
+                        <td class="col-s-2">.row-hCenter</td>
+                        <td class="col-s-6 text-align-left">horizontal centering all columns inside the row.</td>
+                        <td class="col-s-4 text-align-left">added to the element with class <span>.row</span></td>
+                    </tr>
+                    <tr>
+                        <td class="col-s-2">.row-zCenter</td>
+                        <td class="col-s-6 text-align-left">horizontal & Vertical centering all columns inside the row.</td>
+                        <td class="col-s-4 text-align-left">added to the element with class <span>.row</span></td>
+                    </tr>
+                    <tr>
+                        <td class="col-s-2">.vAlign-top</td>
+                        <td class="col-s-6 text-align-left">Vertical Aligned Top column inside the row.</td>
+                        <td class="col-s-4 text-align-left">added to the column element</td>
+                    </tr>
+                    <tr>
+                        <td class="col-s-2">.vAlign-center</td>
+                        <td class="col-s-6 text-align-left">Vertical Aligned Center column inside the row.</td>
+                        <td class="col-s-4 text-align-left">added to the column element</td>
+                    </tr>
+                    <tr>
+                        <td class="col-s-2">.vAlign-bottom</td>
+                        <td class="col-s-6 text-align-left">Vertical Aligned Bottom column inside the row.</td>
+                        <td class="col-s-4 text-align-left">added to the column element</td>
+                    </tr>
+                    <tr>
+                        <td class="col-s-2">.cols-gutter-10</td>
+                        <td class="col-s-6 text-align-left">decrease the space between columns to 10px</td>
+                        <td class="col-s-4 text-align-left">added to the element with class <span>.row</span></td>
+                    </tr>
+                    <tr>
+                        <td class="col-s-2">.cols-gutter-20</td>
+                        <td class="col-s-6 text-align-left">decrease the space between columns to 20px</td>
+                        <td class="col-s-4 text-align-left">added to the element with class <span>.row</span></td>
+                    </tr>
+                    <tr>
+                        <td class="col-s-2">.cols-gutter-40</td>
+                        <td class="col-s-6 text-align-left">increase the space between columns to 40px</td>
+                        <td class="col-s-4 text-align-left">added to the element with class <span>.row</span></td>
+                    </tr>
+                    <tr>
+                        <td class="col-s-2">.cols-gutter-50</td>
+                        <td class="col-s-6 text-align-left">increase the space between columns to 50px</td>
+                        <td class="col-s-4 text-align-left">added to the element with class <span>.row</span></td>
+                    </tr>
+                </table>
+            </div>
+            
+        </div>
+        <!-- // Page Content -->
+        
+        <!-- Required JS Files -->
+        <script src="../dist/css-js/jquery.min.js"></script>
+        <script src="../dist/css-js/tornado.js"></script>
+        <script src="clipboard.min.js"></script>
+        <script src="highlight.pack.js"></script>
+        <script>
+            $(function(){
+                
+                $("#documentation-list li > a").click(function(){
+                    $(this).parent("li").addClass("active").siblings().removeClass("active").children("ul").slideUp(600);
+                    $(this).parent("li").children("ul").slideToggle(600);
+                })
+                
+                $("#documentation-list li.active").parent("ul").css("display","block");
+                
+                new Clipboard('.copy', {target:function(Copy){return Copy.nextElementSibling;}}); 
+                
+            })
+            hljs.initHighlightingOnLoad();
+        </script>
+    </body>
+</html>
