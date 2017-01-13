@@ -511,6 +511,8 @@ nav{
 	margin-right:15px;
 }
 
-
+.tooltip-demo a{
+	display:inline-block;
+}
 
 
