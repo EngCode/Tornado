@@ -2023,6 +2023,16 @@ ul.ui-tornado[data-type="checked"] li ul li:before{
 	background:rgba(0,0,0,.80);
 }
 
+.tooltip.large .tooltip-box{
+	white-space:normal;
+	width:280px;
+}
+
+.tooltip.fill .tooltip-box{
+	white-space:normal;
+	width:100%;
+}
+
 .tooltip:hover .tooltip-box{
 	visibility:visible;
 	opacity:1;
