@@ -2070,6 +2070,11 @@ form *{
 	visibility:hidden;
 }
 
+.icon-line-fix{
+	position:relative;
+	top:3px;
+}
+
 @media only screen and (max-width:980px){
     .responsive-table{
         overflow-x:scroll;
