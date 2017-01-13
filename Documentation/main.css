@@ -355,7 +355,7 @@ code {
     margin-top: 30px;
 }
 
-.icons-row .box-8x1 {
+.icons-row .box-7x1 {
     font-size: 36px;
     text-align: center;
     color: #616161;
@@ -363,34 +363,15 @@ code {
     position: relative;
 }
 
-.icons-row .box-8x1:after {
-    display: block;
-    content: attr(data-class);
-    white-space: nowrap;
-    font-size: 14px;
-    line-height: 1.2;
-    padding: 10px;
-    background: rgba(0, 0, 0, .80);
-    color: #FFF;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    position: absolute;
-    visibility: hidden;
-    opacity: 0;
-    left: 50%;
-    top: 80%;
-    -webkit-transition: all 0.4s;
-    transition: all 0.4s;
-    -webkit-transform: translateX(-50%);
-    -ms-transform: translateX(-50%);
-    transform: translateX(-50%);
-    max-width: 100%;
+.icons-row .class-name{
+	overflow:hidden;
+	font-size:13px;
+	line-height:25px;
+	-webkit-transition: all 0.3s;
+	transition:all 0.3s;
+	display:block;
 }
 
-.icons-row .box-8x1:hover:after {
-    visibility: visible;
-    opacity: 1;
-}
 
 .area-title {
     margin: 0;

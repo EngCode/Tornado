@@ -415,19 +415,25 @@ a,a:active,a:hover{outline:0;text-decoration:none}
     
     .box-12x1,
     .box-11x1,
-    .box-10x1,
-    .box-9x1 {
+    .box-10x1, {
         width: 12.5%;
     }
+	
+	.box-9x1 {
+        width: 14.285714285714%;
+    }
+	
     .box-8x1,
-    .box-7x1,
-    .box-6x1 {
+    .box-7x1,{
         width: 20%;
     }
+	
     .box-5x1,
-    .col-m-3 {
+    .col-m-3,
+	.box-6x1 {
         width: 25%;
     }
+	
     .col-m-4 {
         width: 33.333%;
     }
