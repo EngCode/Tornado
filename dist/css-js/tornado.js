@@ -173,6 +173,13 @@ $(document).ready(function () {
 	
 	var elm = document.querySelector('*[data-fixed],.MenuSpy-Wraper');
 	var ms = new MenuSpy(elm);
+	
+	/*=== Tooltip ===*/
+	$(".tooltip").each(function (){
+		var tooltipTitle = $(this).attr("title");
+		$(this).append("<a class='tooltip-box'>" + tooltipTitle +"</a>");
+		$(this).removeAttr("title");
+	})
     
     /* === Fire Scroll ===*/
     $("[data-vp]").each(function () {

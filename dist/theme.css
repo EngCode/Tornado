@@ -13,7 +13,7 @@ h6,.h6 {font-size:1.180rem;}
 .primary-bg,.primary-bg-hoverable,.quote-th3,.btn.primary,.theme-tornado .back-bar .selected-bar,.theme-tornado .back-bar .pointer,
 .form-ui label.checkbox input:checked + span:before,.form-ui label.checkbox-switch input:checked + .switch,
 .form-ui label.radio-button input:checked + span:before{background:#3498db;color:#FFF;}
-.primary-text,.primary-text-hoverable,.btn.primary.outline{color:#3498db;}
+.primary-text,.primary-text-hoverable,.btn.primary.outline,a:not(.btn){color:#3498db;}
 .btn.primary.outline{border-color:#3498db}
 /*=== Primary Color Hover ===*/
 .primary-bg-hoverable:hover,.btn.primary:hover,.btn.primary.outline:hover,.btn.primary.active,

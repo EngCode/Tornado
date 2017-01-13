@@ -45,21 +45,57 @@
         <!-- Header -->
         <header>
             <div class="container">
-                <h1>Tooltips</h1>
+                <h1>CSS Tooltips</h1>
             </div>
         </header>
         <!-- Header -->
         
         <!-- Page Content -->
         <div class="container Page-Contnetx">
-            
-            <h4 class="titx">Standard Responsive Table</h4>
+			<h4 class="titx">Examples</h4>
 			<p>
-				Usage : Ceate your table inside a <span class="label">div</span> with class <span class="label">responsive-table</span> and add class : 
-				<span class="label">table</span> to the table tag. 
+				<b>Usage</b> : to use the tooltip add class <span class="label">tooltip</span> to the element thats have a title.
+				and for the tooltip position use a attribute <span class="label">data-placement</span> with the position value : top,right,bottom,left
 			</p>
 			
+			<div class="tooltip-demo">
+				<a href="#" class="tooltip btn" data-placement="bottom" title="Tooltip Bottom">Tooltip Bottom</a>
+				<a href="#" class="tooltip btn" data-placement="top" title="Tooltip Top">Tooltip Top</a>
+				<a href="#" class="tooltip btn" data-placement="left" title="Tooltip Left">Tooltip Left</a>
+				<a href="#" class="tooltip btn" data-placement="right" title="Tooltip Right">Tooltip Right</a>
+				<a href="#" class="tooltip btn" data-placement="bottom" title="<em>Tooltip</em> <u>with</u> <b>HTML</b>">Tooltip with HTML</a>
+				<a href="#" class="tooltip image" data-placement="top" title="image tooltip"><img src="images/tornado.png" alt="" width="130"></a>
+			</div>
 			
+			<p>
+				<b>Note :</b> for the single elements like <span class="label">image,input</span> you have to wrap it inside inline or block element like 
+				<span class="label">a</span> or <span class="label">span</span> or <span class="label">div</span>
+			</p>
+			
+			<!-- Code Highlight -->
+<div class="code-highlight">
+<button class="copy">copy</button>
+<pre><code class="html" id="code1">&lt;!-- Bottom Tooltip -->
+&lt;a href="#" class="tooltip btn" data-placement="bottom" title="Tooltip Bottom">Tooltip Bottom&lt;/a>
+
+&lt;!-- Top Tooltip -->
+&lt;a href="#" class="tooltip btn" data-placement="top" title="Tooltip Top">Tooltip Top&lt;/a>
+
+&lt;!-- Left Tooltip -->
+&lt;a href="#" class="tooltip btn" data-placement="left" title="Tooltip Left">Tooltip Left&lt;/a>
+
+&lt;!-- Right Tooltip -->
+&lt;a href="#" class="tooltip btn" data-placement="right" title="Tooltip Right">Tooltip Right&lt;/a>
+
+&lt;!-- HTML Content Tooltip -->
+&lt;a href="#" class="tooltip btn" data-placement="bottom" title="&lt;em>Tooltip&lt;/em> &lt;u>with&lt;/u> &lt;b>HTML&lt;/b>">Tooltip with HTML&lt;/a>
+
+&lt;!-- Images Tooltip -->
+&lt;a href="#" class="tooltip" data-placement="top" title="image tooltip">&lt;img src="images/tornado.png" alt="" width="130">&lt;/a>
+
+</code></pre>
+</div>
+<!-- // Code Hightlight -->
         </div>
         <!-- // Page Content -->
         
