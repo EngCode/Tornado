@@ -1,5 +1,5 @@
 /*======== Page ========*/
-body{background:#fafafa;color:rgba(0, 0, 0, 0.80);font-family:'Noto Sans', 'Helvetica Neue', Arial, Helvetica, sans-serif;}
+body{background:#fafafa;color:rgba(0, 0, 0, 0.80);font-family:'Noto Sans','Noto Kufi Arabic','Helvetica Neue', Arial, Helvetica, sans-serif;}
 form *{font-family:'Noto Sans','Noto Kufi Arabic';}
 h1,.h1,h2,.h2,h3,.h3,h4,.h4,h5,.h5,h6,.h6{font-weight:700;margin:0;padding:0;}
 h1,.h1 {font-size:2rem;}
@@ -30,10 +30,8 @@ h6,.h6 {font-size:1.180rem;}
 .btn.secondary.outline:hover{border-color:#2c3e50;}
 
 /*=== Menu Theme ===*/
-.navbar .logo{display:block;float:left;}
-.navbar .navigation-menu{float:right;}
 .navigation-menu .menu-button{border:0;background:transparent;font-size:30px;cursor:pointer;}
-.navigation-menu > ul:not(.mobile-menu) > li{float:left;line-height:2.4;padding:0 15px;}
+.navigation-menu > ul:not(.mobile-menu) > li{line-height:2.4;padding:0 15px;}
 .navigation-menu > ul:not(.mobile-menu) > li > a{color:#8f8f8f;font-size:16px;display:block;}
 .navigation-menu > ul:not(.mobile-menu) > li:hover > a,.navigation-menu > ul:not(.mobile-menu) > li.active > a{color:#2b2b2b;}
 /**** Submenu ****/

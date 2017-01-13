@@ -1133,7 +1133,7 @@ ul.ui-tornado[data-type="checked"] li ul li:before{
 }
 
 .navigation-menu > ul:not(.mobile-menu) > li{
-    float:left;
+    float:right;
     position:relative;
     padding:0 15px;
     -webkit-transition: all 0.3s;
@@ -1781,6 +1781,23 @@ ul.ui-tornado[data-type="checked"] li ul li:before{
 	background:#3498db;
 }
 
+/* Form Inline */
+.form-ui.inline input:not([type="radio"]):not([type="checkbox"]):not([type="submit"]):not([type="button"]):not([type="range"]):not([type="color"]):not([type="reset"]):not(.file-path)
+,.form-ui.inline textarea,.form-ui.inline select,.form-ui.inline keygen,.form-ui.inline .tagsinput,.form-ui.inline label,.form-ui.inline .file-input .file-path,.form-ui.inline .file-input .btn{
+	display:inline-block;
+	width:auto;
+	vertical-align:middle;
+	padding:10px 15px;
+}
+
+.form-ui.inline label{
+	display:inline-block;
+	width:auto;
+	vertical-align:middle;
+	margin:0;
+}
+
+/* Form icons */
 .form-ui .icon-field-label{
 	position:relative;
 	margin-bottom:15px;
