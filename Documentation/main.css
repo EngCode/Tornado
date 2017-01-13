@@ -179,7 +179,7 @@ header p {
     background: #FFF;
     -webkit-box-shadow: 1px 1px 0 1px rgba(0, 0, 0, .05), 0 0 2px rgba(0, 0, 0, .30);
     box-shadow: 1px 1px 0 1px rgba(0, 0, 0, .05), 0 0 2px rgba(0, 0, 0, .30);
-    border-left: 5px solid #009688;
+    border-left: 5px solid #3498db;
     font-size: 15px;
 }
 
@@ -199,10 +199,8 @@ header p {
     font-size: 17px;
 }
 
-.text-box p .label,
-.table td span,
-header p .label {
-    background: #b4e8e3;
+.label,.table td span{
+    background: #e1f5fe;
     display: inline-block;
     margin: 0 5px;
     line-height: 1;
@@ -211,13 +209,13 @@ header p .label {
     font-size: 15px;
     -webkit-border-radius: 4px;
     border-radius: 4px;
-    color: #009688;
+    color:rgba(0,0,0,.50);
 }
 
 .box-content {
     padding: 20px;
     margin-top: 20px;
-    background: #26a69a;
+    background: #3498db;
     color: #FFF;
     -webkit-box-shadow: 1px 1px 0 1px rgba(0, 0, 0, .05), 0 0 2px rgba(0, 0, 0, .30);
     box-shadow: 1px 1px 0 1px rgba(0, 0, 0, .05), 0 0 2px rgba(0, 0, 0, .30);
@@ -255,8 +253,7 @@ header p .label {
 }
 
 .table td {
-    text-align: center;
-    padding: 15px;
+    padding:15px 20px;
     background: #FFF;
     border: 1px solid rgba(0, 0, 0, .10);
 }
@@ -306,10 +303,6 @@ code {
     text-align: right;
 }
 
-.table td.text-align-left {
-    text-align: left!important;
-    padding: 15px 30px;
-}
 
 .text-align-center {
     text-align: center;

@@ -100,25 +100,31 @@ canvas{display:inline-block}
 template,[hidden]{display:none}
 a,a:active,a:hover{outline:0;text-decoration:none}
 
-/*======= Colors Customize =======*/
+/*======= Colors =======*/
 .primary-bg,.primary-bg-hoverable,.quote-th3{
     background:#3498db;
+	-webkit-transition: all 0.3s;
+	transition:all 0.3s;
 }
 
 .primary-bg-hoverable:hover{
     background:#2980b9;
 }
 
-.primary-text,.primary-text-hoverable{
+.primary-text,.primary-text-hoverable,a{
     color:#3498db;
+	-webkit-transition: all 0.3s;
+	transition:all 0.3s;
 }
 
-.primary-text-hoverable:hover{
+.primary-text-hoverable:hover,a:hover{
     color:#2980b9;
 }
 
 .secondary-bg,.secondary-bg-hoverable{
-    background:#546e7a;
+    background:#34495e;
+	-webkit-transition: all 0.3s;
+	transition:all 0.3s;
 }
 
 .secondary-bg-hoverable:hover{
@@ -126,7 +132,9 @@ a,a:active,a:hover{outline:0;text-decoration:none}
 }
 
 .secondart-text,.secondart-text-hoverable{
-    color:#546e7a;
+    color:#34495e;
+	-webkit-transition: all 0.3s;
+	transition:all 0.3s;
 }
 
 .secondart-text-hoverable:hover{
