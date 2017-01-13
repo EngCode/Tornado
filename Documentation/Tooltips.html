@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- Required meta tags always come first -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <meta name="description" content="Tornado | UI Framework ">
+        <meta name="keywords" content="css,html,js,jquery,angular,framework,css3,html5,tornado">
+        <title>Tornado | UI Framework</title>
+        <!-- Required CSS Files -->
+        <link href="../dist/css-js/tornado.css" rel="stylesheet">
+        <link href="tomorrow.css" rel="stylesheet">
+        <link href="main.css" rel="stylesheet">
+    </head>
+    <body class="main">
+        <!-- Navside -->
+        <div class="nav-side">
+            <a href="#" class="logo"><img src="images/logo.png" alt=""></a>
+            <ul class="menu-list" id="documentation-list">
+                <li><a href="index.html">Getting Start</a></li>
+                <li class="active"><a href="javascript:void(0)">Components</a>
+                    <ul>
+                        <li><a href="Grid%20System.html">Grid System</a></li>
+                        <li><a href="Typography.html">Typography</a></li>
+                        <li><a href="Navbar.html">Navbar</a></li>
+                        <li><a href="Forms.html">Forms</a></li>
+						<li><a href="Buttons.html">Buttons</a></li>
+                        <li><a href="Tables.html">Tables</a></li>
+                        <li><a href="Shadows.html">Shadows</a></li>
+                        <li class="active"><a href="Tooltips.html">Tooltips</a></li>
+                        <li><a href="icons.html">icons</a></li>
+                        <li><a href="Color%20Palette.html">Color Palette</a></li>
+                    </ul>
+                </li>
+                <li><a href="javascript:void(0)">javascript</a>
+                    <ul>
+                        <li><a href="#"></a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <!-- // Navside -->
+        
+        <!-- Header -->
+        <header>
+            <div class="container">
+                <h1>Tooltips</h1>
+            </div>
+        </header>
+        <!-- Header -->
+        
+        <!-- Page Content -->
+        <div class="container Page-Contnetx">
+            
+            <h4 class="titx">Standard Responsive Table</h4>
+			<p>
+				Usage : Ceate your table inside a <span class="label">div</span> with class <span class="label">responsive-table</span> and add class : 
+				<span class="label">table</span> to the table tag. 
+			</p>
+			
+			
+        </div>
+        <!-- // Page Content -->
+        
+        <!-- Required JS Files -->
+        <script src="../dist/css-js/jquery.min.js"></script>
+        <script src="../dist/css-js/tornado.js"></script>
+        <script src="clipboard.min.js"></script>
+        <script src="highlight.pack.js"></script>
+        <script>
+            $(function(){
+                
+                $("#documentation-list li > a").click(function(){
+                    $(this).parent("li").addClass("active").siblings().removeClass("active").children("ul").slideUp(600);
+                    $(this).parent("li").children("ul").slideToggle(600);
+                })
+                
+                $("#documentation-list li.active").parent("ul").css("display","block");
+                
+                new Clipboard('.copy', {target:function(Copy){return Copy.nextElementSibling;}}); 
+                
+                $(".colors-palette li").each(function(){
+                    var colorBase = $(this).children("span").text();
+                    $(this).css("background-color",colorBase);
+                });
+                
+            })
+            hljs.initHighlightingOnLoad();
+        </script>
+    </body>
+</html>

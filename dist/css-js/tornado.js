@@ -53,13 +53,14 @@ $(document).ready(function () {
     $(".navigation-menu").each(function () {
         $(this).prepend(" <button class='menu-button ti-menu'></button> ");
         $(this).children("ul").not(".mobile-menu").parent().append("<div class='mobile-menu'></div>");
+        $(this).append("<span class='overlay-close'></span>");
         var mobileClone = $(this).children("div.mobile-menu");
         $(this).children("ul").not(".mobile-menu").clone().appendTo(mobileClone);
         $(".navigation-menu ul").parent("li").children("a").addClass("submenu ti-arrow-down");
         $(".navigation-menu .megamenu").siblings("a").addClass("submenu ti-arrow-down").parent("li").css("position", "static");
     });
 
-    $(".menu-button").on("click", function () {
+    $(".navigation-menu .menu-button,.navigation-menu .overlay-close").on("click", function () {
         $(this).siblings(".mobile-menu").toggleClass("active").siblings(".menu-button").toggleClass("active");
     })
 

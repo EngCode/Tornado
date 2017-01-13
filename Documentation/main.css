@@ -156,7 +156,7 @@ header p {
     margin: 0
 }
 
-.Page-Contnet {
+.Page-Contnet,.Page-Contnetx {
     margin: 0;
     margin-top: 50px;
     margin-left: 35px;
@@ -165,7 +165,7 @@ header p {
 }
 
 @media only screen and (max-width:1500px) {
-    .Page-Contnet {
+    .Page-Contnet,.Page-Contnetx {
         margin: 0 auto;
         margin-top: 50px;
         margin-left: auto;
@@ -202,7 +202,6 @@ header p {
 .label,.table td span{
     background: #e1f5fe;
     display: inline-block;
-    margin: 0 5px;
     line-height: 1;
     vertical-align: middle;
     padding: 5px 10px;
@@ -233,12 +232,12 @@ header p {
         bottom: 0;
         width: 280px;
     }
-    .Page-Contnet {
+    .Page-Contnet,.Page-Contnetx {
         margin: 50px auto;
     }
 }
 
-.table {
+.Page-Contnet .table {
     width: 100%;
     font-size: 16px;
     border: 1px solid rgba(0, 0, 0, .10);
@@ -248,17 +247,17 @@ header p {
     border-collapse: collapse;
 }
 
-.table thead {
+.Page-Contnet .table thead {
     font-weight: 600;
 }
 
-.table td {
+.Page-Contnet .table td {
     padding:15px 20px;
     background: #FFF;
     border: 1px solid rgba(0, 0, 0, .10);
 }
 
-.table thead td {
+.Page-Contnet .table thead td {
     background: rgba(0, 0, 0, .03);
 }
 

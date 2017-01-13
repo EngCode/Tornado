@@ -415,7 +415,7 @@ a,a:active,a:hover{outline:0;text-decoration:none}
     
     .box-12x1,
     .box-11x1,
-    .box-10x1, {
+    .box-10x1{
         width: 12.5%;
     }
 	
@@ -424,7 +424,7 @@ a,a:active,a:hover{outline:0;text-decoration:none}
     }
 	
     .box-8x1,
-    .box-7x1,{
+    .box-7x1{
         width: 20%;
     }
 	
@@ -1061,7 +1061,7 @@ ul.ui-tornado[data-type="checked"] li ul li:before{
 
 .navbar{
     display:block;
-    padding:15px;
+    padding:0 15px;
     position:relative;
 }
 
@@ -1091,6 +1091,9 @@ ul.ui-tornado[data-type="checked"] li ul li:before{
     background:transparent;
     font-size:30px;
     cursor:pointer;
+	color:rgba(0,0,0,.60);
+	-webkit-transition: all 0.5s;
+	transition:all 0.5s;
 }
 
 @media only screen and (max-width:980px){
@@ -1163,6 +1166,13 @@ ul.ui-tornado[data-type="checked"] li ul li:before{
     float:left;
     margin-right:5px;
     margin-top:-2px;
+	position:relative;
+	top:3px;
+}
+
+.navbar .navigation-menu > ul:not(.mobile-menu) > li,.navbar .logo,.navbar .navigation-menu .menu-button{
+	padding-top:15px;
+	padding-bottom:15px;
 }
 
 /*=== Menu Theme ===*/
@@ -1212,14 +1222,21 @@ ul.ui-tornado[data-type="checked"] li ul li:before{
     background:#FFF;
     display:block!important;
     overflow-x:hidden;
-    overflow-y:scroll;
-    -webkit-transition: all 0.3s;
-    transition:all 0.3s;
+    overflow-y:visible;
+    -webkit-transition: all 0.5s;
+    transition:all 0.5s;
     z-index:102;
 }
 
-.navigation-menu .menu-button.active{
+.navigation-menu .overlay-close{
+	position:fixed;
+	visibility:hidden;
+}
+
+.navigation-menu .mobile-menu.active ~ .overlay-close{
+	display:block;
     position:fixed;
+	visibility:visible;
     top:0;
     bottom:0;
     left:0;
@@ -1230,6 +1247,8 @@ ul.ui-tornado[data-type="checked"] li ul li:before{
     font-size:0;
     width:100%;
     height:100%;
+	-webkit-transition: all 0.5s;
+	transition:all 0.5s;
 }
 
 .navigation-menu .mobile-menu.active{
@@ -1940,7 +1959,62 @@ ul.ui-tornado[data-type="checked"] li ul li:before{
 	color:#FFF;
 }
 
+/**===== Tables =====**/
+.table {
+    width: 100%;
+    font-size: 16px;
+    margin-top: 30px;
+    border-collapse: collapse;
+}
+
+.table thead {
+    font-weight: 600;
+}
+
+.table tr td {
+    padding:15px 20px;
+    background: #FFF;
+	border-top: 1px solid rgba(0, 0, 0, .10);
+}
+
+.table thead tr td{
+	border-top:0 none;
+} 
+
+/**===== Table Borderd =====**/
+.table-borderd {
+    width: 100%;
+    font-size: 16px;
+    border: 1px solid rgba(0, 0, 0, .10);
+    margin-top: 30px;
+    border-collapse: collapse;
+}
+
+.table-borderd thead {
+    font-weight: 600;
+}
+
+.table-borderd tr td {
+    padding:15px 20px;
+    background: #FFF;
+    border: 1px solid rgba(0, 0, 0, .10);
+}
+
+/**===== Table Striped =====**/
+.table.striped tr:nth-child(even) td {
+    background: rgba(0, 0, 0, .03);
+}
+
+.dark-theme tr td{
+	background:transparent;
+}
+
+
 /**===== General Helpers =====**/
+.dark-theme{
+	color:#FFF;
+}
+
 form *{
     font-family:'Noto Sans','Noto Kufi Arabic';
 }
@@ -1965,6 +2039,10 @@ form *{
     text-align:center;
 }
 
+.align-justify{
+    text-align:justify;
+}
+
 .round-corner{
     -webkit-border-radius:5px;
     border-radius:5px;
@@ -1973,6 +2051,14 @@ form *{
 .rounded-corner{
     -webkit-border-radius:80px;
     border-radius:80px;
+}
+
+.visible{
+	visibility: visible;
+}
+
+.invisible{
+	visibility:hidden;
 }
 
 @media only screen and (max-width:980px){
