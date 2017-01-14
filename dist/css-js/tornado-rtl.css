@@ -2207,6 +2207,10 @@ ul.ui-tornado[data-type="checked"] li ul li:before{
 }
 
 /* Tabs */
+.tabs.row{
+	margin:auto;
+}
+
 .tabs .tab-content{
 	-webkit-transition: opacity 0.6s;
 	transition:opacity 0.6s;

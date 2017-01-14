@@ -2216,6 +2216,10 @@ ul.ui-tornado[data-type="checked"] li ul li:before{
 }
 
 /* Tabs */
+.tabs.row{
+	margin:auto;
+}
+
 .tabs .tab-content:not(.active){
 	display:none;
 }
