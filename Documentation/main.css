@@ -51,9 +51,11 @@ body.main {
     position: fixed;
     left: 0;
     top: 0;
-    bottom: 0;
+	height:100vh;
     width: 280px;
     background: #3498db;
+	overflow-y: visible;
+	overflow-x:hidden;
 }
 
 .nav-side .logo {

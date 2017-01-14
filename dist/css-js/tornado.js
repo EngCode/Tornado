@@ -167,23 +167,37 @@ $(document).ready(function () {
 		var tooltipTitle = $(this).attr("title");
 		$(this).append("<a href='javascript:void(0)' class='tooltip-box'>" + tooltipTitle + "</a>");
 		$(this).removeAttr("title");
-	})
+	});
 	
 	/*=== accordion ===*/
-	$(".accordion").each(function (){
-		$(this).children(".accordion-content.active").slideDown(350);
-		$(this).children(".accordion-title").on("click", function(){
-			$(this).toggleClass("active").siblings(".accordion-title").removeClass("active");
-			$(this).next(".accordion-content").slideToggle(350).toggleClass("active").siblings(".accordion-content").slideUp(350).removeClass("active");
-		})
-	})
+	$(".accordion-title").on("click", function(){
+		$(this).toggleClass("active").siblings(".accordion-title").removeClass("active");
+		$(this).next(".accordion-content").slideToggle(350).toggleClass("active").siblings(".accordion-content").slideUp(350).removeClass("active");
+	});
 	
 	/*=== Tabs System ===*/
 	$(".tabs-menu li").on("click", function (){
 		var tabID = $(this).attr("data-tab");
 		$(this).addClass("active").siblings().removeClass("active");
 		$("#" + tabID).fadeIn(500).addClass("active").siblings(".tab-content").fadeOut(0).removeClass("active");
-	})
+	});
+	
+	/*=== Modals ===*/
+	$(".modal-box").each(function (){
+		$(this).prepend("<span class='modal-overlay'></span>");
+	});
+	
+	$("[data-modal]").on("click", function(){
+		$('a[data-modal]').attr('href','javascript:void(0)');
+		var modalName = $(this).attr("data-modal");
+		$("#" + modalName).toggleClass("active");
+	});
+	
+	$(".modal-box .modal-overlay,.modal-box .close-modal").on("click", function(){
+		$('a.close-modal').attr('href','javascript:void(0)');
+		$(".modal-box").removeClass("active");
+	});
+	
 	
     /*=== Smoth Scroll ===*/
     $('[data-scroll]').on('click', function (smothScroll) {

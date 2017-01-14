@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- Required meta tags always come first -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <meta name="description" content="Tornado | UI Framework ">
+        <meta name="keywords" content="css,html,js,jquery,angular,framework,css3,html5,tornado">
+        <title>Tornado | UI Framework</title>
+        <!-- Required CSS Files -->
+        <link href="../dist/css-js/tornado.css" rel="stylesheet">
+        <link href="tomorrow.css" rel="stylesheet">
+        <link href="main.css" rel="stylesheet">
+    </head>
+    <body class="main">
+        <!-- Navside -->
+        <div class="nav-side">
+            <a href="#" class="logo"><img src="images/logo.png" alt=""></a>
+            <ul class="menu-list" id="documentation-list">
+                <li><a href="index.html">Getting Start</a></li>
+                <li class="active"><a href="javascript:void(0)">Components</a>
+                    <ul>
+                        <li><a href="Grid%20System.html">Grid System</a></li>
+                        <li><a href="Typography.html">Typography</a></li>
+                        <li><a href="Navbar.html">Navbar</a></li>
+                        <li><a href="Forms.html">Forms</a></li>
+                        <li><a href="Buttons.html">Buttons</a></li>
+                        <li><a href="Tables.html">Tables</a></li>
+                        <li><a href="Shadows.html">Shadows</a></li>
+                        <li><a href="Tooltips.html">Tooltips</a></li>
+                        <li><a href="Tabs&Accordion.html">Tabs & Accordion</a></li>
+                        <li class="active"><a href="Modals.html">Modals</a></li>
+                        <li><a href="icons.html">icons</a></li>
+                        <li><a href="Color%20Palette.html">Color Palette</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <!-- // Navside -->
+        
+        <!-- Header -->
+        <header>
+            <div class="container">
+                <h1>Modals - Lighbox</h1>
+            </div>
+        </header>
+        <!-- Header -->
+        
+        <!-- Page Content -->
+        <div class="container Page-Contnet">
+            <h4 class="titx">Modal Main Function Example</h4>
+			<p> 
+				Modals ar dynamic lightbox that fit any content even the sliders you can use the modal simply by adding a <span class="label">data-modal</span> attribute to the button or any other element.<br>
+				and build the modal HTML Structure with an id name same value that you give it to the <span class="label">data-modal</span> attribute.
+			</p><br>
+			
+			<a href="#" class="btn primary" data-modal="modal-demo">Modal Demo</a>
+			
+			<div class="modal-box" id="modal-demo">
+				<div class="modal-content">
+					Modal Content<br>
+					<button class="close-modal ti-clear"></button>
+				</div>
+			</div>
+			
+			<!-- Code Highlight -->
+<div class="code-highlight">
+<button class="copy">copy</button>
+<pre><code class="html" id="code1">&lt;!-- Modal Button -->
+&lt;a href="#" class="btn primary" data-modal="modal-demo">Modal Demo&lt;/a>
+
+&lt;!-- Modal Box -->
+&lt;div class="modal-box" id="modal-demo">
+	&lt;div class="modal-content">
+		Modal Content
+		&lt;button class="close-modal ti-clear">&lt;/button>
+	&lt;/div>
+&lt;/div>
+
+</code></pre>
+</div>
+<!-- // Code Hightlight -->
+			
+			<h4 class="titx">Styled Modal Example</h4><br>
+			
+			<a href="#" class="btn primary" data-modal="styled-modal">Styled Modal Demo</a>
+			
+			<div class="modal-box tornado-ui" id="styled-modal">
+				<div class="modal-content">
+					<div class="modal-head">
+						Modal Head Title
+						<span class="close-modal ti-clear"></span>
+					</div>
+					
+					<div class="modal-body">
+						Styled Modal Content
+					</div>
+					
+					<div class="modal-footer">
+						<a href="#" class="btn small round-corner close-modal">Close</a>
+						<a href="#" class="btn small round-corner primary">Save Changes</a>
+					</div>
+				</div>
+			</div>
+			
+			<a href="#" class="btn primary" data-modal="styled-modal-long">Modal With Long Content</a>
+			
+			<div class="modal-box tornado-ui" id="styled-modal-long">
+				<div class="modal-content">
+					<div class="modal-head">
+						Modal Head Title
+						<span class="close-modal ti-clear"></span>
+					</div>
+					
+					<div class="modal-body">
+						<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+						<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+						<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+						<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+					</div>
+					
+					<div class="modal-footer">
+						<a href="#" class="btn small round-corner close-modal">Close</a>
+						<a href="#" class="btn small round-corner primary">Save Changes</a>
+					</div>
+				</div>
+			</div>
+			
+			<!-- Code Highlight -->
+<div class="code-highlight">
+<button class="copy">copy</button>
+<pre><code class="html" id="code1">&lt;div class="modal-box tornado-ui" id="styled-modal">
+	&lt;div class="modal-content">
+		&lt;div class="modal-head">
+			Modal Head Title
+			&lt;span class="close-modal ti-clear">&lt;/span>
+		&lt;/div>
+		
+		&lt;div class="modal-body">
+			Styled Modal Content
+		&lt;/div>
+		
+		&lt;div class="modal-footer">
+			&lt;a href="#" class="btn small round-corner close-modal">Close&lt;/a>
+			&lt;a href="#" class="btn small round-corner primary">Save Changes&lt;/a>
+		&lt;/div>
+	&lt;/div>
+&lt;/div>
+
+</code></pre>
+</div>
+<!-- // Code Hightlight -->
+        </div>
+        <!-- // Page Content -->
+        
+        <!-- Required JS Files -->
+        <script src="../dist/css-js/jquery.min.js"></script>
+        <script src="../dist/css-js/tornado.js"></script>
+        <script src="clipboard.min.js"></script>
+        <script src="highlight.pack.js"></script>
+        <script>
+            $(function(){
+                
+                $("#documentation-list li > a").click(function(){
+                    $(this).parent("li").addClass("active").siblings().removeClass("active").children("ul").slideUp(600);
+                    $(this).parent("li").children("ul").slideToggle(600);
+                })
+                
+                $("#documentation-list li.active").parent("ul").css("display","block");
+                
+                new Clipboard('.copy', {target:function(Copy){return Copy.nextElementSibling;}}); 
+                
+                $(".colors-palette li").each(function(){
+                    var colorBase = $(this).children("span").text();
+                    $(this).css("background-color",colorBase);
+                });
+                
+            })
+            hljs.initHighlightingOnLoad();
+        </script>
+    </body>
+</html>

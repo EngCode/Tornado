@@ -1305,6 +1305,7 @@ ul.ui-tornado[data-type="checked"] li ul li:before{
     -webkit-transition: all 0.3s;
     transition:all 0.3s;
     line-height:normal;
+	display:inline-block;
 }
 
 .btn:hover,.btn.active{
@@ -2297,6 +2298,102 @@ ul.ui-tornado[data-type="checked"] li ul li:before{
 	border-right:0 none;
 	font-size:15px;
 	top:0;
+}
+
+/*===== Modals =====*/
+.modal-box{
+	display:-webkit-box;
+	display:-webkit-flex;
+	display:-ms-flexbox;
+	display:flex;
+	-webkit-box-align:center;
+	-webkit-align-items:center;
+	-ms-flex-align:center;
+	align-items:center;
+	-webkit-box-pack:center;
+	-webkit-justify-content:center;
+	-ms-flex-pack:center;
+	justify-content:center;
+	visibility:hidden;
+	position:fixed;
+	left:0;
+	right:0;
+	height:100vh;
+	top:0;
+	-webkit-backface-visibility:hidden;
+	backface-visibility:hidden;
+	-webkit-transform:translateZ(0);
+	transform:translateZ(0);
+	z-index:150;
+	opacity:0;
+	-webkit-transition: all 0.5s;
+	transition:all 0.5s;
+}
+
+.modal-box.active{
+	visibility:visible;
+	opacity:1;
+}
+
+.modal-box .modal-overlay{
+	position:absolute;
+	left:0;
+	right:0;
+	bottom:0;
+	top:0;
+	background:rgba(0,0,0,.75);
+	z-index:-1;
+}
+
+.modal-box .modal-content{
+	position:relative;
+	z-index:100;
+	background:#FFF;
+	overflow:auto;
+	max-height:90vh;
+}
+
+.modal-box .close-modal{
+	cursor:pointer;
+}
+
+/*=== Styled Modal ===*/
+.modal-box.tornado-ui .modal-content{
+	width:640px;
+	-webkit-border-radius:8px;
+	border-radius:8px;
+	-webkit-box-shadow:0 0 10px 2px rgba(0,0,0,.50);
+	box-shadow:0 0 10px 2px rgba(0,0,0,.50);
+}
+
+@media only screen and (max-width:640px){
+	.modal-box.tornado-ui .modal-content{
+		width:85%;
+	}
+}
+
+.modal-box.tornado-ui .modal-content .modal-head{
+	padding:15px 20px;
+	border-bottom:1px solid rgba(0,0,0,.10);
+	font-weight:700;
+}
+
+.modal-box.tornado-ui .modal-content .modal-head .close-modal{
+	float:right;
+	font-size:18px;
+}
+
+.modal-box.tornado-ui .modal-content .modal-body{
+	padding:20px;
+}
+
+.modal-box.tornado-ui .modal-content .modal-footer{
+	padding:15px 20px;
+	border-top:1px solid rgba(0,0,0,.10);
+}
+
+.modal-box.tornado-ui .modal-content .modal-footer .btn{
+	margin-bottom:-5px;
 }
 
 /**===== General Helpers =====**/
