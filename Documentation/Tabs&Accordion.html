@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- Required meta tags always come first -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <meta name="description" content="Tornado | UI Framework ">
+        <meta name="keywords" content="css,html,js,jquery,angular,framework,css3,html5,tornado">
+        <title>Tornado | UI Framework</title>
+        <!-- Required CSS Files -->
+        <link href="../dist/css-js/tornado.css" rel="stylesheet">
+        <link href="tomorrow.css" rel="stylesheet">
+        <link href="main.css" rel="stylesheet">
+    </head>
+    <body class="main">
+        <!-- Navside -->
+        <div class="nav-side">
+            <a href="#" class="logo"><img src="images/logo.png" alt=""></a>
+            <ul class="menu-list" id="documentation-list">
+                <li><a href="index.html">Getting Start</a></li>
+                <li class="active"><a href="javascript:void(0)">Components</a>
+                    <ul>
+                        <li><a href="Grid%20System.html">Grid System</a></li>
+                        <li><a href="Typography.html">Typography</a></li>
+                        <li><a href="Navbar.html">Navbar</a></li>
+                        <li><a href="Forms.html">Forms</a></li>
+                        <li><a href="Buttons.html">Buttons</a></li>
+                        <li><a href="Tables.html">Tables</a></li>
+                        <li><a href="Shadows.html">Shadows</a></li>
+                        <li><a href="Tooltips.html">Tooltips</a></li>
+                        <li class="active"><a href="Tabs&Accordion.html">Tabs & Accordion</a></li>
+                        <li><a href="icons.html">icons</a></li>
+                        <li><a href="Color%20Palette.html">Color Palette</a></li>
+                    </ul>
+                </li>
+                <li><a href="javascript:void(0)">javascript</a>
+                    <ul>
+                        <li><a href="#"></a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <!-- // Navside -->
+        
+        <!-- Header -->
+        <header>
+            <div class="container">
+                <h1>Tabs & Accordion</h1>
+            </div>
+        </header>
+        <!-- Header -->
+        
+        <!-- Page Content -->
+        <div class="container Page-Contnet">
+            <h4 class="titx"> Accordion System</h4>
+			<p> 
+				An accordion allows users to toggle the display of sections of content.
+				the accordion system works dynamicly dosnt have to do any javascript options just build up your HTML Structure and get working.
+				you can use the tornado theme of accordion or you can make your on theme.
+			</p>
+			
+			<div class="row boxmar">
+				<div class="col-s-12">
+					<div class="accordion tornado-ui">
+						<div class="accordion-title ti-chevron-down active">Accordion Title #1</div>
+						<div class="accordion-content active">
+							<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley</p>
+						</div>
+						
+						<div class="accordion-title ti-chevron-down">Accordion Title #2</div>
+						<div class="accordion-content">
+							<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley</p>
+						</div>
+						
+						<div class="accordion-title ti-chevron-down">Accordion Title #3</div>
+						<div class="accordion-content">
+							<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley</p>
+						</div>
+					</div>
+					
+<!-- Code Highlight -->
+<div class="code-highlight">
+<button class="copy">copy</button>
+<pre><code class="html" id="code1">&lt;!-- Accordion Wraper -->
+&lt;div class="accordion tornado-ui">
+   &lt;!-- Accordion item -->
+   &lt;div class="accordion-title ti-chevron-down active">Accordion Title #1&lt;/div>
+   &lt;div class="accordion-content active">
+      &lt;p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley&lt;/p>
+   &lt;/div>
+   &lt;!-- // Accordion item -->
+   
+   &lt;!-- Accordion item -->
+   &lt;div class="accordion-title ti-chevron-down">Accordion Title #2&lt;/div>
+   &lt;div class="accordion-content">
+      &lt;p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley&lt;/p>
+   &lt;/div>
+   &lt;!-- // Accordion item -->
+   
+   &lt;!-- Accordion item -->
+   &lt;div class="accordion-title ti-chevron-down">Accordion Title #3&lt;/div>
+   &lt;div class="accordion-content">
+      &lt;p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley&lt;/p>
+   &lt;/div>
+   &lt;!-- // Accordion item -->
+&lt;/div>
+&lt;!-- // End Accordion Wraper -->
+
+</code></pre>
+</div>
+<!-- // Code Hightlight -->
+				</div>
+				
+				<div class="col-s-12 boxmar">
+					<h4 class="titx">Accordion Main Synatx without theme</h4>
+					<!-- Code Highlight -->
+<div class="code-highlight">
+<button class="copy">copy</button>
+<pre><code class="html" id="code1">&lt;!-- Accordion Wraper -->
+&lt;div class="accordion">
+   &lt;!-- Collapsed Accordion -->
+   &lt;div class="accordion-title"> Accordion Title &lt;/div>
+   &lt;div class="accordion-content"> Accordion Content &lt;/div>
+   &lt;!-- // Collapsed Accordion -->
+   
+   &lt;!-- Active Accordion -->
+   &lt;div class="accordion-title active"> Accordion Title &lt;/div>
+   &lt;div class="accordion-content active"> Accordion Content &lt;/div>
+   &lt;!-- // Active Accordion -->
+&lt;/div>
+&lt;!-- // End Accordion Wraper -->
+
+</code></pre>
+</div>
+<!-- // Code Hightlight -->
+				</div>
+			</div>
+			
+			<h4 class="titx">Tabs System </h4>
+			<p> A tab is a hidden section of content activated by a menu . in the code below you will see the main syntax for the tabs.</p>
+			
+<!-- Code Highlight -->
+<div class="code-highlight">
+<button class="copy">copy</button>
+<pre><code class="html" id="code1">&lt;!-- Tabs Wraper -->
+&lt;div class="tabs">
+	&lt;!-- Tabs Menu -->
+	&lt;ul class="tabs-menu">
+		&lt;li class="active" data-tab="tab1">Tab #1&lt;/li> &lt;!-- activated tab -->
+		&lt;li data-tab="tab2">Tab #2&lt;/li>
+		&lt;li data-tab="tab3">Tab #3&lt;/li>
+		&lt;li data-tab="tab4">Tab #4&lt;/li>
+	&lt;/ul>
+	&lt;!-- // Tabs Menu -->
+	
+	&lt;!-- activated Tab Content -->
+	&lt;div class="tab-content active" id="tab1"> Yor Content &lt;/div>
+	
+	&lt;!-- Hidden Tab Content -->
+	&lt;div class="tab-content" id="tab2"> Yor Content &lt;/div>
+	
+	&lt;!-- Hidden Tab Content -->
+	&lt;div class="tab-content" id="tab3"> Yor Content &lt;/div>
+	
+	&lt;!-- Hidden Tab Content -->
+	&lt;div class="tab-content" id="tab4"> Yor Content &lt;/div>
+&lt;/div>
+&lt;!-- Tabs Wraper -->
+
+</code></pre>
+</div>
+<!-- // Code Hightlight -->
+			
+			<h4 class="titx">Horizontal Tabs</h4>
+			<p> Tornado horizontal theme of the tabs menu </p>
+			
+			<!-- Tabs Wraper -->
+			<div class="tabs tornado-ui">
+				<!-- Tabs Menu -->
+				<ul class="tabs-menu">
+					<li class="active" data-tab="tab1">Tab #1</li>
+					<li data-tab="tab2">Tab #2</li>
+					<li data-tab="tab3">Tab #3</li>
+					<li data-tab="tab4">Tab #4</li>
+				</ul>
+				<!-- // Tabs Menu -->
+				
+				<!-- Tab Content #1 -->
+				<div class="tab-content active" id="tab1">
+					<h5>This Tab Content #1</h5>
+					<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+				</div>
+				
+				<!-- Tab Content #2 -->
+				<div class="tab-content" id="tab2">
+					<h5>This Tab Content #2</h5>
+					<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+				</div>
+				
+				<!-- Tab Content #3 -->
+				<div class="tab-content" id="tab3">
+					<h5>This Tab Content #3</h5>
+					<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+				</div>
+				
+				<!-- Tab Content #4 -->
+				<div class="tab-content" id="tab4">
+					<h5>This Tab Content #4</h5>
+					<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+				</div>
+			</div>
+			<!-- Tabs Wraper -->
+			
+			<!-- Code Highlight -->
+<div class="code-highlight">
+<button class="copy">copy</button>
+<pre><code class="html" id="code1">&lt;!-- Tabs Wraper -->
+&lt;div class="tabs tornado-ui">
+	&lt;!-- Tabs Menu -->
+	&lt;ul class="tabs-menu">
+		&lt;li class="active" data-tab="tab1">Tab #1&lt;/li>
+		&lt;li data-tab="tab2">Tab #2&lt;/li>
+		&lt;li data-tab="tab3">Tab #3&lt;/li>
+		&lt;li data-tab="tab4">Tab #4&lt;/li>
+	&lt;/ul>
+	&lt;!-- // Tabs Menu -->
+	
+	&lt;!-- Tab Content -->
+	&lt;div class="tab-content active" id="tab1"> This Tab Content #1 &lt;/div>
+	
+	&lt;!-- Tab Content -->
+	&lt;div class="tab-content" id="tab2"> This Tab Content #2 &lt;/div>
+	
+	&lt;!-- Tab Content -->
+	&lt;div class="tab-content" id="tab3"> This Tab Content #3 &lt;/div>
+	
+	&lt;!-- Tab Content -->
+	&lt;div class="tab-content" id="tab4"> This Tab Content #4 &lt;/div>
+&lt;/div>
+&lt;!-- Tabs Wraper -->
+
+</code></pre>
+</div>
+<!-- // Code Hightlight -->
+			
+			
+			<h4 class="titx">Vertical Tabs</h4>
+			<p> Tornado vertical theme of the tabs menu </p>
+			
+			<!-- Tabs Wraper -->
+			<div class="tabs tornado-ui row">
+				<!-- Tabs Menu -->
+				<ul class="tabs-menu vertical col-s-2">
+					<li class="active" data-tab="v-tab1">Tab #1</li>
+					<li data-tab="v-tab2">Tab #2</li>
+					<li data-tab="v-tab3">Tab #3</li>
+					<li data-tab="v-tab4">Tab #4</li>
+				</ul>
+				<!-- // Tabs Menu -->
+				
+				<!-- Tab Content #1 -->
+				<div class="tab-content active col-s-10" id="v-tab1">
+					<h5>This Tab Content #1</h5>
+					<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+				</div>
+				
+				<!-- Tab Content #2 -->
+				<div class="tab-content col-s-10" id="v-tab2">
+					<h5>This Tab Content #2</h5>
+					<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+				</div>
+				
+				<!-- Tab Content #3 -->
+				<div class="tab-content col-s-10" id="v-tab3">
+					<h5>This Tab Content #3</h5>
+					<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+				</div>
+				
+				<!-- Tab Content #4 -->
+				<div class="tab-content col-s-10" id="v-tab4">
+					<h5>This Tab Content #4</h5>
+					<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+				</div>
+			</div>
+			<!-- Tabs Wraper -->
+			
+			<!-- Code Highlight -->
+<div class="code-highlight">
+<button class="copy">copy</button>
+<pre><code class="html" id="code1">&lt;!-- Tabs Wraper -->
+&lt;div class="tabs tornado-ui row">
+	&lt;!-- Tabs Menu -->
+	&lt;ul class="tabs-menu vertical col-s-2">
+		&lt;li class="active" data-tab="tab1">Tab #1&lt;/li>
+		&lt;li data-tab="tab2">Tab #2&lt;/li>
+		&lt;li data-tab="tab3">Tab #3&lt;/li>
+		&lt;li data-tab="tab4">Tab #4&lt;/li>
+	&lt;/ul>
+	&lt;!-- // Tabs Menu -->
+	
+	&lt;!-- Tab Content -->
+	&lt;div class="tab-content active col-s-10" id="tab1"> This Tab Content #1 &lt;/div>
+	
+	&lt;!-- Tab Content -->
+	&lt;div class="tab-content col-s-10" id="tab2"> This Tab Content #2 &lt;/div>
+	
+	&lt;!-- Tab Content -->
+	&lt;div class="tab-content col-s-10" id="tab3"> This Tab Content #3 &lt;/div>
+	
+	&lt;!-- Tab Content -->
+	&lt;div class="tab-content col-s-10" id="tab4"> This Tab Content #4 &lt;/div>
+&lt;/div>
+&lt;!-- Tabs Wraper -->
+
+</code></pre>
+</div>
+<!-- // Code Hightlight -->
+
+        </div>
+        <!-- // Page Content -->
+        
+        <!-- Required JS Files -->
+        <script src="../dist/css-js/jquery.min.js"></script>
+        <script src="../dist/css-js/tornado.js"></script>
+        <script src="clipboard.min.js"></script>
+        <script src="highlight.pack.js"></script>
+        <script>
+            $(function(){
+                
+                $("#documentation-list li > a").click(function(){
+                    $(this).parent("li").addClass("active").siblings().removeClass("active").children("ul").slideUp(600);
+                    $(this).parent("li").children("ul").slideToggle(600);
+                })
+                
+                $("#documentation-list li.active").parent("ul").css("display","block");
+                
+                new Clipboard('.copy', {target:function(Copy){return Copy.nextElementSibling;}}); 
+                
+                $(".colors-palette li").each(function(){
+                    var colorBase = $(this).children("span").text();
+                    $(this).css("background-color",colorBase);
+                });
+                
+            })
+            hljs.initHighlightingOnLoad();
+        </script>
+    </body>
+</html>
