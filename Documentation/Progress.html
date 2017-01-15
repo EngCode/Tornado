@@ -43,112 +43,69 @@
         <!-- Header -->
         <header>
             <div class="container">
-                <h1>Modals - Lighbox</h1>
+                <h1>Progress</h1>
+				<p>
+					A progress bar shows the progression of a task.
+				</p>
             </div>
         </header>
         <!-- Header -->
         
         <!-- Page Content -->
         <div class="container Page-Contnet">
-            <h4 class="titx">Modal Main Function Example</h4>
+            <h4 class="titx">Standard Progress</h4>
 			<p> 
-				Modals ar dynamic lightbox that fit any content even the sliders you can use the modal simply by adding a <span class="label">data-modal</span> attribute to the button or any other element.<br>
-				and build the modal HTML Structure with an id name same value that you give it to the <span class="label">data-modal</span> attribute.
+				you can use the progress bar theme by simply create an element with class <span class="label">progress-bar</span>
+				and a data attribute for percent value <span class="label">data-value</span> and then put inside of it A span element with class <span class="label">bar</span>.
 			</p><br>
 			
-			<a href="#" class="btn primary" data-modal="modal-demo">Modal Demo</a>
-			
-			<div class="modal-box" id="modal-demo">
-				<div class="modal-content">
-					Modal Content<br>
-					<button class="close-modal ti-clear"></button>
-				</div>
-			</div>
+			<div class="progress-bar" data-value="20"><span class="bar"></span> </div>
+			<div class="progress-bar success" data-value="35"><span class="bar"></span></div>
+			<div class="progress-bar warning" data-value="55"><span class="bar"></span></div>
+			<div class="progress-bar error" data-value="70"><span class="bar"></span></div>
+			<div class="progress-bar disabled" data-value="85"><span class="bar"></span></div>
 			
 			<!-- Code Highlight -->
 <div class="code-highlight">
 <button class="copy">copy</button>
-<pre><code class="html" id="code1">&lt;!-- Modal Button -->
-&lt;a href="#" class="btn primary" data-modal="modal-demo">Modal Demo&lt;/a>
-
-&lt;!-- Modal Box -->
-&lt;div class="modal-box" id="modal-demo">
-	&lt;div class="modal-content">
-		Modal Content
-		&lt;button class="close-modal ti-clear">&lt;/button>
-	&lt;/div>
-&lt;/div>
-
+<pre><code class="html" id="code1">&lt;div class="progress-bar" data-value="20">&lt;span class="bar">&lt;/span>&lt;/div>
+&lt;div class="progress-bar success" data-value="35"> &lt;span class="bar">&lt;/span> &lt;/div>
+&lt;div class="progress-bar warning" data-value="55"> &lt;span class="bar">&lt;/span> &lt;/div>
+&lt;div class="progress-bar error" data-value="70"> &lt;span class="bar">&lt;/span> &lt;/div>
+&lt;div class="progress-bar disabled" data-value="85"> &lt;span class="bar">&lt;/span> &lt;/div>
 </code></pre>
 </div>
 <!-- // Code Hightlight -->
 			
-			<h4 class="titx">Styled Modal Example</h4><br>
+			<h4 class="titx">Coloring Progress bar</h4>
+			<p>
+				to color the progress bar simply add A data attribute <span class="label">data-color</span> with a value of the color hex code see the code below.
+				and to show the percent text value on the bar add class <span class="label">textual</span>
+			</p><br>
 			
-			<a href="#" class="btn primary" data-modal="styled-modal">Styled Modal Demo</a>
+			<div class="progress-bar textual" data-value="40" data-color="#3498db"> <span class="bar"></span> </div>
 			
-			<div class="modal-box tornado-ui" id="styled-modal">
-				<div class="modal-content">
-					<div class="modal-head">
-						Modal Head Title
-						<span class="close-modal ti-clear"></span>
-					</div>
-					
-					<div class="modal-body">
-						Styled Modal Content
-					</div>
-					
-					<div class="modal-footer">
-						<a href="#" class="btn small round-corner close-modal">Close</a>
-						<a href="#" class="btn small round-corner primary">Save Changes</a>
-					</div>
-				</div>
-			</div>
-			
-			<a href="#" class="btn primary" data-modal="styled-modal-long">Modal With Long Content</a>
-			
-			<div class="modal-box tornado-ui" id="styled-modal-long">
-				<div class="modal-content">
-					<div class="modal-head">
-						Modal Head Title
-						<span class="close-modal ti-clear"></span>
-					</div>
-					
-					<div class="modal-body">
-						<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-						<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-						<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-						<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-					</div>
-					
-					<div class="modal-footer">
-						<a href="#" class="btn small round-corner close-modal">Close</a>
-						<a href="#" class="btn small round-corner primary">Save Changes</a>
-					</div>
-				</div>
-			</div>
 			
 			<!-- Code Highlight -->
 <div class="code-highlight">
 <button class="copy">copy</button>
-<pre><code class="html" id="code1">&lt;div class="modal-box tornado-ui" id="styled-modal">
-	&lt;div class="modal-content">
-		&lt;div class="modal-head">
-			Modal Head Title
-			&lt;span class="close-modal ti-clear">&lt;/span>
-		&lt;/div>
-		
-		&lt;div class="modal-body">
-			Styled Modal Content
-		&lt;/div>
-		
-		&lt;div class="modal-footer">
-			&lt;a href="#" class="btn small round-corner close-modal">Close&lt;/a>
-			&lt;a href="#" class="btn small round-corner primary">Save Changes&lt;/a>
-		&lt;/div>
-	&lt;/div>
-&lt;/div>
-
+<pre><code class="html" id="code1">&lt;div class="progress-bar textual" data-value="40" data-color="#3498db"> &lt;span class="bar">&lt;/span> &lt;/div>
+</code></pre>
+</div>
+<!-- // Code Hightlight -->
+			
+			<h4 class="titx">Progress Sizes</h4>
+			
+			<div class="progress-bar textual small" data-value="30" data-color="#3498db"> <span class="bar"></span></div>
+			<div class="progress-bar textual" data-value="50" data-color="#3498db"> <span class="bar"></span></div>
+			<div class="progress-bar textual large" data-value="70" data-color="#3498db"> <span class="bar"></span></div>
+			
+			<!-- Code Highlight -->
+<div class="code-highlight">
+<button class="copy">copy</button>
+<pre><code class="html" id="code1">&lt;div class="progress-bar textual small" data-value="30" data-color="#3498db"> &lt;span class="bar">&lt;/span> &lt;/div>
+&lt;div class="progress-bar textual" data-value="50" data-color="#3498db"> &lt;span class="bar">&lt;/span> &lt;/div>
+&lt;div class="progress-bar textual large" data-value="70" data-color="#3498db"> &lt;span class="bar">&lt;/span> &lt;/div>
 </code></pre>
 </div>
 <!-- // Code Hightlight -->

@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- Required meta tags always come first -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <meta name="description" content="Tornado | UI Framework ">
+        <meta name="keywords" content="css,html,js,jquery,angular,framework,css3,html5,tornado">
+        <title>Tornado | UI Framework</title>
+        <!-- Required CSS Files -->
+        <link href="../dist/css-js/tornado.css" rel="stylesheet">
+        <link href="tomorrow.css" rel="stylesheet">
+        <link href="main.css" rel="stylesheet">
+    </head>
+    <body class="main">
+        <!-- Navside -->
+        <div class="nav-side">
+            <a href="#" class="logo"><img src="images/logo.png" alt=""></a>
+            <ul class="menu-list" id="documentation-list">
+                <li><a href="index.html">Getting Start</a></li>
+                <li class="active"><a href="javascript:void(0)">Components</a>
+                    <ul>
+                        <li><a href="Grid%20System.html">Grid System</a></li>
+                        <li><a href="Typography.html">Typography</a></li>
+                        <li><a href="Navbar.html">Navbar</a></li>
+                        <li><a href="Forms.html">Forms</a></li>
+                        <li><a href="Buttons.html">Buttons</a></li>
+                        <li><a href="Tables.html">Tables</a></li>
+                        <li><a href="Shadows.html">Shadows</a></li>
+                        <li><a href="Tooltips.html">Tooltips</a></li>
+                        <li><a href="Tabs&Accordion.html">Tabs & Accordion</a></li>
+                        <li><a href="Modals.html">Modals</a></li>
+                        <li><a href="Progress.html">Progress</a></li>
+                        <li class="active"><a href="Responsive%20Elements.html">Responsive Elements</a></li>
+                        <li><a href="icons.html">icons</a></li>
+                        <li><a href="Color%20Palette.html">Color Palette</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <!-- // Navside -->
+        
+        <!-- Header -->
+        <header>
+            <div class="container">
+                <h1>Responsive Elements</h1>
+				<p>
+					Dynamic Responsive elements like images,videos,maps,circle content.
+				</p>
+            </div>
+        </header>
+        <!-- Header -->
+        
+        <!-- Page Content -->
+        <div class="container Page-Contnet">
+            <h4 class="titx">Responsive Videos</h4>
+			<p> 
+				you can make a respnsive video by simply create an element with class <span class="label">responsive-video</span>
+				and then put inside of it the embeded video element with class <span class="label">video</span>. <br> and for the html5 video just add the class 
+				<span class="label">html5-video</span> to the video element see the exapmle below.
+			</p><br>
+			
+			<div class="row">
+				<div class="col-s-12 boxmar">
+					<div class="responsive-video">
+						<iframe class="video" width="560" height="315" src="https://www.youtube.com/embed/RrutzRWXkKs" frameborder="0" allowfullscreen></iframe>
+					</div>
+				</div>
+			</div>
+			
+			<!-- Code Highlight -->
+<div class="code-highlight">
+<button class="copy">copy</button>
+<pre><code class="html" id="code1">&lt;div class="responsive-video">
+	&lt;iframe class="video" width="560" height="315" src="https://www.youtube.com/embed/RrutzRWXkKs" frameborder="0" allowfullscreen>&lt;/iframe>
+&lt;/div>
+
+&lt;video class="html5-video" controls>
+	&lt;source src="images/video.mp4" type="video/mp4">
+&lt;/video>
+</code></pre>
+</div>
+<!-- // Code Hightlight -->
+			
+			<h4 class="titx">Responsive Aspect Ratio Google Map</h4>
+			<p> 
+				you can make a respnsive map by simply create an element with class <span class="label">responsive-map</span>
+				and then put inside of it the embeded map element with class <span class="label">map</span>.
+			</p><br>
+			
+			<div class="responsive-map">
+				<iframe class="map" src="https://www.google.com/maps/embed?pb=!1m23!1m12!1m3!1d6525.71196880284!2d31.215453871350558!3d29.328538549291185!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m8!3e2!4m5!1s0x14599252ff97e54b%3A0x7e73117e3c1fdd08!2z2YXYr9mK2YbYqSDYp9mE2YjYp9iz2LfZidiMINin2YTZiNin2LPYt9mJ2Iwg2YXYrdin2YHYuNipINio2YbZiiDYs9mI2YrZgQ!3m2!1d29.3290033!2d31.208258999999998!4m0!5e0!3m2!1sar!2seg!4v1484479311437" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+			</div>
+			<!-- Code Highlight -->
+			
+<div class="code-highlight">
+<button class="copy">copy</button>
+<pre><code class="html" id="code1">&lt;div class="responsive-map">
+	&lt;iframe class="map" width="600" height="450" src="https://www.google.com/maps/embed/v1/place?key=YOUR_API_KEY&q=Space+Needle,Seattle+WA" allowfullscreen>&lt;/iframe>
+&lt;/div>
+</code></pre>
+</div>
+<!-- // Code Hightlight -->
+			
+			<h4 class="titx">Responsive Circle Content</h4>
+			<p> 
+				you can make a respnsive circle by simply create an element with class <span class="label">responsive-circle</span>
+				and then put inside of it a content element with class <span class="label">circle-content</span> the content can be any thing.
+			</p>
+			
+			<div class="row">
+				<div class="col-s-12 col-m-6 col-l-3 boxmar">
+					<h5 class="align-center">Circle Content</h5><br>
+					<div class="responsive-circle">
+						<div class="circle-content primary-bg">
+							<div class="wrap">
+								<h5>Circle Content Demo</h5>
+								<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				
+				<div class="col-s-12 col-m-6 col-l-3 boxmar">
+					<h5 class="align-center">Circle Map</h5><br>
+					<div class="responsive-circle">
+						<div class="circle-content">
+							<iframe class="map" src="https://www.google.com/maps/embed?pb=!1m23!1m12!1m3!1d6525.71196880284!2d31.215453871350558!3d29.328538549291185!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m8!3e2!4m5!1s0x14599252ff97e54b%3A0x7e73117e3c1fdd08!2z2YXYr9mK2YbYqSDYp9mE2YjYp9iz2LfZidiMINin2YTZiNin2LPYt9mJ2Iwg2YXYrdin2YHYuNipINio2YbZiiDYs9mI2YrZgQ!3m2!1d29.3290033!2d31.208258999999998!4m0!5e0!3m2!1sar!2seg!4v1484479311437" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+						</div>
+					</div>
+					
+				</div>
+				
+				<div class="col-s-12 col-m-6 col-l-3 boxmar">
+					<h5 class="align-center">Circle Video</h5><br>
+					<div class="responsive-circle">
+						<div class="circle-content">
+							<iframe class="video" width="560" height="315" src="https://www.youtube.com/embed/RrutzRWXkKs" frameborder="0" allowfullscreen></iframe>
+						</div>
+					</div>
+				</div>
+				
+				<div class="col-s-12 col-m-6 col-l-3 boxmar">
+					<h5 class="align-center">Circle Image</h5><br>
+					<div class="responsive-circle">
+						<div class="circle-content">
+							<img src="images/image.jpg" class="fill-img" alt="">
+						</div>
+					</div>
+				</div>
+			</div>
+			
+<!-- Code Highlight -->
+<div class="code-highlight">
+<button class="copy">copy</button>
+<pre><code class="html" id="code1">&lt;!-- Main Syntax -->
+&lt;div class="responsive-circle">
+   &lt;div class="circle-content">
+      ... your content ...
+   &lt;/div>
+&lt;/div>
+
+&lt;!-- Text Content -->
+&lt;div class="responsive-circle">
+   &lt;div class="circle-content primary-bg">
+      &lt;div class="wrap"> &lt;!-- wrap to center the content -->
+         &lt;h5>Circle Content Demo&lt;/h5>
+         &lt;p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy&lt;/p>
+      &lt;/div>
+   &lt;/div>
+&lt;/div>
+
+</code></pre>
+</div>
+<!-- // Code Hightlight -->
+			
+			<h4 class="titx">Responsive Images</h4>
+			<p> 
+				the images ar responsive by default but if wanna make a fluid image add a class <span class="label">fluid</span> to the image element.
+				and if wanna make a filled image (100% width and height) add the class <span class="label">fill-img</span>.
+			</p>
+        </div>
+        <!-- // Page Content -->
+        
+        <!-- Required JS Files -->
+        <script src="../dist/css-js/jquery.min.js"></script>
+        <script src="../dist/css-js/tornado.js"></script>
+        <script src="clipboard.min.js"></script>
+        <script src="highlight.pack.js"></script>
+        <script>
+            $(function(){
+                
+                $("#documentation-list li > a").click(function(){
+                    $(this).parent("li").addClass("active").siblings().removeClass("active").children("ul").slideUp(600);
+                    $(this).parent("li").children("ul").slideToggle(600);
+                })
+                
+                $("#documentation-list li.active").parent("ul").css("display","block");
+                
+                new Clipboard('.copy', {target:function(Copy){return Copy.nextElementSibling;}}); 
+                
+                $(".colors-palette li").each(function(){
+                    var colorBase = $(this).children("span").text();
+                    $(this).css("background-color",colorBase);
+                });
+                
+            })
+            hljs.initHighlightingOnLoad();
+        </script>
+    </body>
+</html>

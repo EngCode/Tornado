@@ -159,11 +159,10 @@ header p {
 }
 
 .Page-Contnet,.Page-Contnetx {
-    margin: 0;
+    margin: 0 auto;
     margin-top: 50px;
-    margin-left: 35px;
     margin-bottom: 100px;
-    max-width: 95%;
+    max-width:85%;
 }
 
 @media only screen and (max-width:1500px) {
@@ -517,4 +516,6 @@ nav{
 	display:inline-block;
 }
 
-
+.circle-content .wrap{
+	padding:0 30px;
+}

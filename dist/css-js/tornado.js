@@ -209,6 +209,21 @@ $(document).ready(function () {
 		imageFadeDuration:600,
     });
 	
+	/*===== Progress ====*/
+	$(".progress-bar").each(function (){
+		var dataValue = $(this).attr("data-value");
+		var dataColor = $(this).attr("data-color");
+		$(this).children(".bar").css({
+			"width":dataValue + "%",
+			"background-color":dataColor,
+		})
+	});
+	
+	$(".progress-bar.textual").each(function (){
+		var dataValue = $(this).attr("data-value");
+		$(this).children(".bar").text(dataValue + "%")
+	});
+	
     /*=== Smoth Scroll ===*/
     $('[data-scroll]').on('click', function (smothScroll) {
         var smothScrollTarget = $(this.getAttribute('href'));
