@@ -34,13 +34,12 @@ if(e){var n={menuItemSelector:'[data-scroll]',activeClass:"active",threshold:15,
 $(document).ready(function () {
     "use strict";
 
-    /*=== reordering Boxs & columns ===*/
+    /*=== Grid Fixs ===*/
     $(".row > *[data-order],.row-reverse > *[data-order]").each(function () {
         var colOrder = $(this).attr("data-order");
         $(this).css("order", colOrder)
     });
-
-    /*=== Fix Gutter Container Overflow ===*/
+    
     $(".cols-gutter-40").parent().css({
         "padding-right": "20px",
         "padding-left": "20px",
@@ -50,7 +49,22 @@ $(document).ready(function () {
         "padding-right": "25px",
         "padding-left": "25px",
     });
-
+    
+    $(".row-masonry").each(function(){
+        var colmnsNumber = $(this).css({
+            "-webkit-column-count":colmnsNumber,
+            "-moz-column-count":colmnsNumber,
+            "column-count":colmnsNumber,
+        })
+    })
+    
+    $(".card .card-footer").each(function(){
+        var cardFooter = $(this).height();
+        $(this).parent().css({
+            "padding-bottom": cardFooter + "px",
+        });
+    });
+    
     /*=== Navigation menu ===*/
     $(".navigation-menu").each(function () {
         $(this).prepend(" <button class='menu-button ti-menu'></button> ");
@@ -163,6 +177,10 @@ $(document).ready(function () {
 			snap:true,
 		});
 	});
+    
+    $(".alert .close-alert").on("click", function (){
+        $(this).parent(".alert").fadeOut(500);
+    });
 	
 	/*=== Tooltip ===*/
 	$(".tooltip").each(function (){
@@ -223,6 +241,23 @@ $(document).ready(function () {
 		var dataValue = $(this).attr("data-value");
 		$(this).children(".bar").text(dataValue + "%")
 	});
+    
+    /*======= Parallax ======*/
+    $(".parallax-bg").each(function (){
+        var parallaxBackground = $(this).attr("data-src");
+        $(this).css( "background-image","url(" + parallaxBackground + ")" );
+    });
+    
+    $(".video-bg").each(function (){
+        $(this).parent().css({
+            "overflow":"hidden",
+            "position":"relative",
+            "-webkit-backface-visibility":"hidden",
+            "backface-visibility":"hidden",
+            "-webkit-transform":"translateZ(0)",
+            "transform":"translateZ(0)",
+        })
+    })
 	
     /*=== Smoth Scroll ===*/
     $('[data-scroll]').on('click', function (smothScroll) {

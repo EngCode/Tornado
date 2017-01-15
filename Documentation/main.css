@@ -235,6 +235,7 @@ header p {
     }
     .Page-Contnet,.Page-Contnetx {
         margin: 50px auto;
+        max-width:95%;
     }
 }
 
@@ -519,3 +520,10 @@ nav{
 .circle-content .wrap{
 	padding:0 30px;
 }
+
+.parallax-bg,.main-container{
+    height:460px;
+}
+
+
+
