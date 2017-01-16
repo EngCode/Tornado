@@ -526,4 +526,19 @@ nav{
 }
 
 
+.scrollspy-demo{
+    line-height:450px;
+    text-align:center;
+    font-size:30px;
+    font-weight:700;
+}
+
+.scrollspy{margin:0;padding:0;}
+.scrollspy .navigation-menu > ul:not(.mobile-menu) > li:hover > a,
+.scrollspy .navigation-menu > ul:not(.mobile-menu) > li.active > a {color: #fff;}
+.scrollspy .navigation-menu > ul:not(.mobile-menu) > li:hover,
+.scrollspy .navigation-menu > ul:not(.mobile-menu) > li.active{background:#3498db;}
+
+
+
 
