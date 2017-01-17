@@ -10,6 +10,7 @@
         <title>Tornado | UI Framework</title>
         <!-- Required CSS Files -->
         <link href="../dist/css-js/tornado.css" rel="stylesheet">
+        <link href="../dist/css-js/animations.css" rel="stylesheet">
         <link href="tomorrow.css" rel="stylesheet">
         <link href="main.css" rel="stylesheet">
     </head>
@@ -37,6 +38,7 @@
                         <li><a href="Parallax%20Backgrounds.html">Parallax Backgrounds</a></li>
                         <li><a href="Scrollspy.html">Scrollspy</a></li>
                         <li class="active"><a href="Viewport%20Animations.html">Viewport Animations</a></li>
+                        <li><a href="Slick%20Slider.html">Slick Slider</a></li>
                         <li><a href="icons.html">icons</a></li>
                         <li><a href="Color%20Palette.html">Color Palette</a></li>
                     </ul>
@@ -50,7 +52,7 @@
             <div class="container">
                 <h1>Viewport Animations</h1>
 				<p>
-					
+					the view port animations is fireing animation when the element is in the viewport.
 				</p>
             </div>
         </header>
@@ -60,17 +62,206 @@
         <div class="container Page-Contnet" id="Home">
             <h4 class="titx">Usage : </h4>
             <p>
-                
+                to apply viewport animation simply add attribute <span class="label">data-vp</span> then add the viewport class animation
+                scroll down to see the effects in action.<br>
+                <b>Tip : </b> to applay animation after another use a data attribute delay <span class="label">data-delay</span> with a value of 
+                seconds or millisecondes number for example <span class="label">data-delay="1s"</span>.
             </p>
             
             <!-- Code Highlight -->
 <div class="code-highlight">
 <button class="copy">copy</button>
-<pre><code class="html" id="code1">
+<pre><code class="html" id="code1">&lt;div class="section">
+    &lt;div class="row">
+        &lt;div class="col-s-12 col-m-6 col-l-3">
+            &lt;img src="images/image.jpg" alt="" class="fluid VPA-fadeInLeft" data-vp>
+        &lt;/div>
+        &lt;div class="col-s-12 col-m-6 col-l-3">
+            &lt;img src="images/image-2.jpg" alt="" class="fluid VPA-fadeInRight" data-vp data-delay="0.5s">
+        &lt;/div>
+        
+        &lt;div class="col-s-12 col-m-6 col-l-3">
+            &lt;img src="images/image-3.jpg" alt="" class="fluid VPA-vanishIn" data-vp data-vp data-delay="1s">
+        &lt;/div>
+        &lt;div class="col-s-12 col-m-6 col-l-3">
+            &lt;img src="images/image.jpg" alt="" class="fluid VPA-holeIn" data-vp data-vp data-delay="1.5s">
+        &lt;/div>
+    &lt;/div>
+&lt;/div>
 
 </code></pre>
 </div>
 <!-- // Code Hightlight -->
+            
+            <p>
+                <b>Note : </b> the animatons have A seperated file you will find it in the dist folder or you can use the CDN call back from Getting Start Page.
+            </p>
+            
+            
+            <div class="text-box">
+                <h3>3rd Party Plugins</h3>
+				<p>Note : all 3rd party plugins ar already included with the lateast version and customized to work perfectly with tornado.<br>You can see the original documentation in order to use them in particular way.</p>
+            </div>
+            
+            <div class="responsive-table">
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <td class="col-s-2">Plugin Name</td>
+                            <td class="col-s-6">Definition</td>
+                            <td class="col-s-4">Orignal Documentation</td>
+                        </tr>
+                    </thead>
+                    <tr>
+                        <td class="col-s-2">Viewport Checker</td>
+                        <td class="col-s-6 text-align-left">to check if the element in the viewport or not.</td>
+                        <td class="col-s-4 text-align-left"><a href="https://github.com/dirkgroenen/jQuery-viewport-checker" target="_blank">Documentation</a></td>
+                    </tr>
+                </table>
+            </div>
+            
+            <div class="section">
+                <div class="row">
+                    <div class="col-s-12 col-m-6 col-l-3">
+                        <img src="images/image.jpg" alt="" class="fluid VPA-fadeInLeft" data-vp>
+                    </div>
+                    <div class="col-s-12 col-m-6 col-l-3">
+                        <img src="images/image-2.jpg" alt="" class="fluid VPA-fadeInRight" data-vp data-delay="0.5s">
+                    </div>
+                    
+                    <div class="col-s-12 col-m-6 col-l-3">
+                        <img src="images/image-3.jpg" alt="" class="fluid VPA-vanishIn" data-vp data-delay="1s">
+                    </div>
+                    <div class="col-s-12 col-m-6 col-l-3">
+                        <img src="images/image.jpg" alt="" class="fluid VPA-holeIn" data-vp data-delay="1.5s">
+                    </div>
+                </div>
+            </div>
+            
+            <div class="ViewPort-Tester form-ui">
+                <h4 class="titx">Animations Tester</h4>
+                <a href="#" id="TesterElem"><img src="images/logo.jpg" alt=""></a>
+                <div class="info">  
+                    <select class="select">
+                        <optgroup label="Fading Entrances">
+                            <option value="fadeIn">fadeIn</option>
+                            <option value="fadeInRight">fadeInRight</option>
+                            <option value="fadeInRightFast">fadeInRightFast</option>
+                            <option value="fadeInLeft">fadeInLeft</option>
+                            <option value="fadeInLeftFast">fadeInLeftFast</option>
+                            <option value="fadeInDown">fadeInDown</option>
+                            <option value="fadeInDownFast">fadeInDownFast</option>
+                            <option value="fadeInUp">fadeInUp</option>
+                            <option value="fadeInUpFast">fadeInUpFast</option>
+                        </optgroup>
+                        <optgroup label="Bouncing Entrances">
+                            <option value="bounceIn">bounceIn</option>
+                            <option value="bounceInDown">bounceInDown</option>
+                            <option value="bounceInLeft">bounceInLeft</option>
+                            <option value="bounceInRight">bounceInRight</option>
+                            <option value="bounceInUp">bounceInUp</option>
+                        </optgroup>
+                        <optgroup label="Flippers">
+                            <option value="flipInX">flipInX</option>
+                            <option value="flipInX-up">flipInX-up</option>
+                            <option value="flipInX-flayUp">flipInX-flayUp</option>
+                            <option value="flipInX-down">flipInX-down</option>
+                            <option value="flipInY">flipInY</option>
+                            <option value="flipInY-right">flipInY-right</option>
+                            <option value="flipOutX">flipOutX</option>
+                            <option value="flipOutY">flipOutY</option>
+                        </optgroup>
+                        <optgroup label="Zoom Entrances">
+                            <option value="zoomIn">zoomIn</option>
+                            <option value="zoomInDown">zoomInDown</option>
+                            <option value="zoomInLeft">zoomInLeft</option>
+                            <option value="zoomInRight">zoomInRight</option>
+                            <option value="zoomInUp">zoomInUp</option>
+                            <option value="zoomBounce">zoomBounce</option>
+                            <option value="zoomShake">zoomShake</option>
+                        </optgroup>
+                        <optgroup label="Sliding Entrances">
+                            <option value="slideDown">slideDown</option>
+                            <option value="slideUp">slideUp</option>
+                            <option value="slideLeft">slideLeft</option>
+                            <option value="slideRight">slideRight</option>
+                            <option value="slideExpandUp">slideExpandUp</option>
+                        </optgroup>
+                        <optgroup label="Magic Entrances Effects">
+                            <option value="twisterInDown">twisterInDown</option>
+                            <option value="twisterInUp">twisterInUp</option>
+                            <option value="swap">swap</option>
+                            <option value="puffIn">puffIn</option>
+                            <option value="vanishIn">vanishIn</option>
+                            <option value="foolishIn">foolishIn</option>
+                            <option value="holeIn">holeIn</option>
+                            <option value="tinRightIn">tinRightIn</option>
+                            <option value="tinLeftIn">tinLeftIn</option>
+                            <option value="tinUpIn">tinUpIn</option>
+                            <option value="tinDownIn">tinDownIn</option>
+                            <option value="boingInUp">boingInUp</option>
+                            <option value="spaceInUp">spaceInUp</option>
+                            <option value="spaceInRight">spaceInRight</option>
+                            <option value="spaceInDown">spaceInDown</option>
+                            <option value="spaceInLeft">spaceInLeft</option>
+                        </optgroup>
+                        <optgroup label="Magic Hidden Effects">
+                            <option value="magicOut">magicOut</option>
+                            <option value="puffOut">puffOut</option>
+                            <option value="vanishOut">vanishOut</option>
+                            <option value="openDownLeftOut">openDownLeftOut</option>
+                            <option value="openDownRightOut">openDownRightOut</option>
+                            <option value="openUpLeftOut">openUpLeftOut</option>
+                            <option value="openUpRightOut">openUpRightOut</option>
+                            <option value="rotateDownOut">rotateDownOut</option>
+                            <option value="rotateUpOut">rotateUpOut</option>
+                            <option value="rotateLeftOut">rotateLeftOut</option>
+                            <option value="rotateRightOut">rotateRightOut</option>
+                            <option value="swashOut">swashOut</option>
+                            <option value="foolishOut">foolishOut</option>
+                            <option value="holeOut">holeOut</option>
+                            <option value="tinRightOut">tinRightOut</option>
+                            <option value="tinLeftOut">tinLeftOut</option>
+                            <option value="tinUpOut">tinUpOut</option>
+                            <option value="tinDownOut">tinDownOut</option>
+                            <option value="bombRightOut">bombRightOut</option>
+                            <option value="bombLeftOut">bombLeftOut</option>
+                            <option value="boingOutDown">boingOutDown</option>
+                            <option value="spaceOutUp">spaceOutUp</option>
+                            <option value="spaceOutRight">spaceOutRight</option>
+                            <option value="spaceOutDown">spaceOutDown</option>
+                            <option value="spaceOutLeft">spaceOutLeft</option>
+                        </optgroup>
+                        <optgroup label="Special Animations">
+                            <option value="bounce">bounce</option>
+                            <option value="pulse">pulse</option>
+                            <option value="rubberBand">rubberBand</option>
+                            <option value="shake">shake</option>
+                            <option value="tada">tada</option>
+                            <option value="jello">jello</option>
+                            <option value="lightSpeedIn">lightSpeedIn</option>
+                            <option value="expandUp">expandUp</option>
+                            <option value="hatch">hatch</option>
+                            <option value="floating">floating</option>
+                        </optgroup>
+                        <optgroup label="Shake It Effects">
+                            <option value="shakeIt">shakeIt</option>
+                            <option value="shakeItLittle">shakeItLittle</option>
+                            <option value="shakeItSlow">shakeItSlow</option>
+                            <option value="shakeItHard">shakeItHard</option>
+                            <option value="shakeItHorizontal">shakeItHorizontal</option>
+                            <option value="shakeItVertical">shakeItVertical</option>
+                            <option value="shakeItRotate">shakeItRotate</option>
+                            <option value="shakeItOpacity">shakeItOpacity</option>
+                            <option value="shakeItCrazy">shakeItCrazy</option>
+                            <option value="shakeItChunk">shakeItChunk</option>
+                        </optgroup>
+                    </select>
+                    <h3 class="VPA2-Class"><i>Viewport Class</i> :&nbsp;&nbsp; <span></span></h3>
+                    <h3 class="VPA-Class"><i>Normal Class</i>    :&nbsp;&nbsp;    <span></span></h3>
+                    <h3 class="VPA-Name"><i>Animation Name</i>   :&nbsp;&nbsp;   <span></span></h3>
+                </div>
+            </div>
         </div>
         <!-- // Page Content -->
 
@@ -98,6 +289,23 @@
                 
             })
             hljs.initHighlightingOnLoad();
+        </script>
+        <script>
+            $(document).ready(function(){
+                /* Animation Tester */
+                $("select").change(function() {
+                var AnimationClass = "";
+                var AnimationName = "";
+                $(".ViewPort-Tester select option:selected").each(function(){ 
+                    AnimationClass += $(this).val() + ""; 
+                    AnimationName += $(this).text() + ""; 
+                });
+                    $(".ViewPort-Tester #TesterElem img").removeClass().addClass(AnimationClass);
+                    $(".ViewPort-Tester .VPA-Class").children("span").text(AnimationClass);
+                    $(".ViewPort-Tester .VPA2-Class").children("span").text("VPA-" + AnimationClass);
+                    $(".ViewPort-Tester .VPA-Name").children("span").text(AnimationName); 
+                }).trigger("change");
+            /* End Functions */})
         </script>
     </body>
 </html>
