@@ -59,25 +59,547 @@
         
         <!-- Page Content -->
         <div class="container Page-Contnet" id="Home">
-            <div class="single-slider">
-                <div class="slide">
+            <div class="single-slider tornado-ui">
+                <div class="slide bg1">
                     <h3>First Panel</h3>
                 </div>
                 
-                <div class="slide">
+                <div class="slide bg2">
                     <h3>Second Panel</h3>
                 </div>
                 
-                <div class="slide">
+                <div class="slide bg3">
                     <h3>Third Panel</h3>
                 </div>
                 
-                <div class="slide">
+                <div class="slide bg4">
                     <h3>Fourth Panel</h3>
                 </div>
             </div>
             
             <h4 class="titx">Basic Usage : </h4>
+            <p>
+                to use the slick slider create your HTML Structure then initialize it with the js plugin. and for applying the tornado style for the controls add class <span class="label">tornado-ui</span><br>
+                <b>Note : </b> the slider fit any type of content.
+            </p>
+            
+            <div class="row">
+                <div class="col-s-12">
+                    <h5 class="titxx">HTML Code</h5>
+                    <!-- Code Highlight -->
+<div class="code-highlight">
+<button class="copy">copy</button>
+<pre><code class="html" id="code1">&lt;div class="single-slider tornado-ui">
+    &lt;div class="slide">
+        &lt;h3>First Panel&lt;/h3>
+    &lt;/div>
+
+    &lt;div class="slide">
+        &lt;h3>Second Panel&lt;/h3>
+    &lt;/div>
+
+    &lt;div class="slide">
+        &lt;h3>Third Panel&lt;/h3>
+    &lt;/div>
+
+    &lt;div class="slide">
+        &lt;h3>Fourth Panel&lt;/h3>
+    &lt;/div>
+&lt;/div>
+
+</code></pre>
+</div>
+<!-- // Code Hightlight -->
+                </div>
+                <div class="col-s-12">
+                    <h5 class="titxx">JS initialize</h5>
+                    <!-- Code Highlight -->
+<div class="code-highlight">
+<button class="copy">copy</button>
+<pre><code class="javascript" id="code1">$(".single-slider").slick({
+    autoplay:true, // Enables Autoplay
+    autoplaySpeed:5000, // Autoplay Speed in milliseconds
+    speed:500, // Transition Speed In Milliseconds
+    dots:true, // Enable or Disable Bullets
+    arrows:true, // Enable or Disable Arrows
+    fade:false, // Enable or Disable Fade Effect
+});
+</code></pre>
+</div>
+<!-- // Code Hightlight -->
+                </div>
+            </div>
+            
+            <h4 class="titx">Responsive Carousel : </h4>
+            <p>
+                Slick Slider Provide an Responsive Breack Points for making responsive carousel see the example below.<br>
+                <b>Note : </b> for using gaps/gutters between slide's like a grid system add class <span class="label">row</span> to the slider element.
+            </p>
+            
+            <div class="carousel-slider tornado-ui">
+                <div class="slide bg1">
+                    <h3>First Panel</h3>
+                </div>
+                
+                <div class="slide bg2">
+                    <h3>Second Panel</h3>
+                </div>
+                
+                <div class="slide bg3">
+                    <h3>Third Panel</h3>
+                </div>
+                
+                <div class="slide bg4">
+                    <h3>Fourth Panel</h3>
+                </div>
+                
+                <div class="slide bg3">
+                    <h3>Fives Panel</h3>
+                </div>
+            </div>
+            
+            <h5 class="titxx">JS initialize</h5>
+                    <!-- Code Highlight -->
+<div class="code-highlight">
+<button class="copy">copy</button>
+<pre><code class="javascript" id="code1">$(".carousel-slider").slick({
+    autoplay:true, // Enables Autoplay
+    autoplaySpeed:5000, // Autoplay Speed in milliseconds
+    speed:500, // Transition Speed In Milliseconds
+    fade:false, // Enable or Disable Fade Effect
+    slidesToShow:4, // Number of the visible slides in desktops
+    slidesToScroll:1, // Slide's Number To Scroll
+    responsive:[  // Responsive Breack Points
+        {breakpoint:981,settings:{
+            slidesToShow:2, // Number of the visible slides in Tablets
+        }},
+
+        {breakpoint:641,settings:{
+            slidesToShow:1, // Number of the visible slides in Mobile
+        }},
+    ],
+});
+
+</code></pre>
+</div>
+<!-- // Code Hightlight -->
+            
+            <h4 class="titx">Vertical Carousel and RTL : </h4>
+            <p>
+                to create a vertical slider set option <span class="label">vertical:true,</span> in the slider js initialize.
+                and for making Right to Left Slider simply add data attribute <span class="label">data-rtl</span> to the slider element.
+            </p>
+            
+            <div class="row-reverse vertical-demo">
+                <div class="col-s-12 col-m-4">
+                    <h5 class="titxx">Vertical Slider</h5>
+                    
+                    <div class="vertical-slider">
+                        <!-- Slide Item -->
+                        <div class="slide">
+                            <div class="card horizontal">
+                                <div class="card-content">
+                                    <h3 class="title">Sea Monster</h3>
+                                    <h5 class="sub-title">Coworker</h5>
+                                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's</p>
+                                    <div class="card-footer">
+                                        <span class="ti-send more">Read More</span>
+                                        <span class="right"> Create in Sep 2014 </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- // Slide Item -->
+                        
+                        <!-- Slide Item -->
+                        <div class="slide">
+                            <div class="card horizontal">
+                                <div class="card-content">
+                                    <h3 class="title">Sea Monster</h3>
+                                    <h5 class="sub-title">Coworker</h5>
+                                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's</p>
+                                    <div class="card-footer">
+                                        <span class="ti-send more">Read More</span>
+                                        <span class="right"> Create in Sep 2014 </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- // Slide Item -->
+                        
+                        <!-- Slide Item -->
+                        <div class="slide">
+                            <div class="card horizontal">
+                                <div class="card-content">
+                                    <h3 class="title">Sea Monster</h3>
+                                    <h5 class="sub-title">Coworker</h5>
+                                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's</p>
+                                    <div class="card-footer">
+                                        <span class="ti-send more">Read More</span>
+                                        <span class="right"> Create in Sep 2014 </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- // Slide Item -->
+                        
+                        <!-- Slide Item -->
+                        <div class="slide">
+                            <div class="card horizontal">
+                                <div class="card-content">
+                                    <h3 class="title">Sea Monster</h3>
+                                    <h5 class="sub-title">Coworker</h5>
+                                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's</p>
+                                    <div class="card-footer">
+                                        <span class="ti-send more">Read More</span>
+                                        <span class="right"> Create in Sep 2014 </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- // Slide Item -->
+                    </div>
+                </div>
+                <div class="col-s-12 col-m-8">
+                    <h5 class="titxx">JS initialize</h5>
+                    <!-- Code Highlight -->
+<div class="code-highlight">
+<button class="copy">copy</button>
+<pre><code class="javascript" id="code1">$(".vertical-slider").slick({
+    autoplay:true, // Enables Autoplay
+    autoplaySpeed:5000, // Autoplay Speed in milliseconds
+    speed:500, // Transition Speed In Milliseconds
+    fade:false, // Enable or Disable Fade Effect
+    slidesToShow:3, // Number of the visible slides
+    slidesToScroll:1, // Slide's Number To Scroll
+    vertical:true, // Enable or Disable Vertical Sliding
+});
+</code></pre>
+</div>
+<!-- // Code Hightlight -->
+                    
+                    <h5 class="titxx">Demo HTML</h5>
+                    <!-- Code Highlight -->
+<div class="code-highlight">
+<button class="copy">copy</button>
+<pre><code class="html" id="code1">&lt;div class="vertical-slider">
+    &lt;!-- Slide Item -->
+    &lt;div class="slide">
+        &lt;div class="card horizontal">
+            &lt;div class="card-content">
+                &lt;h3 class="title">Sea Monster&lt;/h3>
+                &lt;h5 class="sub-title">Coworker&lt;/h5>
+                &lt;p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's&lt;/p>
+                &lt;div class="card-footer">
+                    &lt;span class="ti-send more">Read More&lt;/span>
+                    &lt;span class="right"> Create in Sep 2014 &lt;/span>
+                &lt;/div>
+            &lt;/div>
+        &lt;/div>
+    &lt;/div>
+    &lt;!-- // Slide Item -->
+
+    &lt;!-- Slide Item -->
+    &lt;div class="slide">
+        &lt;div class="card horizontal">
+            &lt;div class="card-content">
+                &lt;h3 class="title">Sea Monster&lt;/h3>
+                &lt;h5 class="sub-title">Coworker&lt;/h5>
+                &lt;p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's&lt;/p>
+                &lt;div class="card-footer">
+                    &lt;span class="ti-send more">Read More&lt;/span>
+                    &lt;span class="right"> Create in Sep 2014 &lt;/span>
+                &lt;/div>
+            &lt;/div>
+        &lt;/div>
+    &lt;/div>
+    &lt;!-- // Slide Item -->
+
+    &lt;!-- Slide Item -->
+    &lt;div class="slide">
+        &lt;div class="card horizontal">
+            &lt;div class="card-content">
+                &lt;h3 class="title">Sea Monster&lt;/h3>
+                &lt;h5 class="sub-title">Coworker&lt;/h5>
+                &lt;p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's&lt;/p>
+                &lt;div class="card-footer">
+                    &lt;span class="ti-send more">Read More&lt;/span>
+                    &lt;span class="right"> Create in Sep 2014 &lt;/span>
+                &lt;/div>
+            &lt;/div>
+        &lt;/div>
+    &lt;/div>
+    &lt;!-- // Slide Item -->
+
+    &lt;!-- Slide Item -->
+    &lt;div class="slide">
+        &lt;div class="card horizontal">
+            &lt;div class="card-content">
+                &lt;h3 class="title">Sea Monster&lt;/h3>
+                &lt;h5 class="sub-title">Coworker&lt;/h5>
+                &lt;p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's&lt;/p>
+                &lt;div class="card-footer">
+                    &lt;span class="ti-send more">Read More&lt;/span>
+                    &lt;span class="right"> Create in Sep 2014 &lt;/span>
+                &lt;/div>
+            &lt;/div>
+        &lt;/div>
+    &lt;/div>
+    &lt;!-- // Slide Item -->
+&lt;/div>
+
+</code></pre>
+</div>
+<!-- // Code Hightlight -->
+                </div>
+            </div>
+            
+            <h4 class="titx">Slider Syncing : </h4>
+            <p>
+                Slick Slider Provide an amazing option to relate two sliders with each other you can make a several slider with this option like
+                "News Slider","Gallery Slider" see the examples below.
+            </p>
+            
+            <h5 class="titxx">Gallery Demo</h5>
+            <!-- Gallery Slider -->
+            <div class="gallery-slider">
+                <!-- Gallery Item -->
+                <div class="gallery-item">
+                    <a href="#"><img src="images/img.jpg" alt=""></a>
+                </div>
+                <!-- // Gallery Item -->
+                
+                <!-- Gallery Item -->
+                <div class="gallery-item">
+                    <a href="#"><img src="images/img2.jpg" alt=""></a>
+                </div>
+                <!-- // Gallery Item -->
+                
+                <!-- Gallery Item -->
+                <div class="gallery-item">
+                    <a href="#"><img src="images/img3.jpg" alt=""></a>
+                </div>
+                <!-- // Gallery Item -->
+                
+                <!-- Gallery Item -->
+                <div class="gallery-item">
+                    <a href="#"><img src="images/img.jpg" alt=""></a>
+                </div>
+                <!-- // Gallery Item -->
+                
+                <!-- Gallery Item -->
+                <div class="gallery-item">
+                    <a href="#"><img src="images/img2.jpg" alt=""></a>
+                </div>
+                <!-- // Gallery Item -->
+                
+                <!-- Gallery Item -->
+                <div class="gallery-item">
+                    <a href="#"><img src="images/img3.jpg" alt=""></a>
+                </div>
+                <!-- // Gallery Item -->
+            </div>
+            <!-- // Gallery Slider -->
+            
+            <!-- Gallery Thumbnails -->
+            <div class="gallery-thumbnails row">
+                <!-- Gallery Item -->
+                <div class="gallery-item">
+                    <img src="images/thumb.jpg" alt="">
+                </div>
+                <!-- // Gallery Item -->
+                
+                <!-- Gallery Item -->
+                <div class="gallery-item">
+                    <img src="images/thumb-2.jpg" alt="">
+                </div>
+                <!-- // Gallery Item -->
+                
+                <!-- Gallery Item -->
+                <div class="gallery-item">
+                    <img src="images/thumb-3.jpg" alt="">
+                </div>
+                <!-- // Gallery Item -->
+                
+                <!-- Gallery Item -->
+                <div class="gallery-item">
+                    <img src="images/thumb.jpg" alt="">
+                </div>
+                <!-- // Gallery Item -->
+                
+                <!-- Gallery Item -->
+                <div class="gallery-item">
+                    <img src="images/thumb-2.jpg" alt="">
+                </div>
+                <!-- // Gallery Item -->
+                
+                <!-- Gallery Item -->
+                <div class="gallery-item">
+                    <img src="images/thumb-3.jpg" alt="">
+                </div>
+                <!-- // Gallery Item -->
+            </div>
+            <!-- // Gallery Thumbnails -->
+            
+            
+            <div class="tabs tornado-ui">
+                <ul class="tabs-menu">
+                    <li data-tab="galler-js" class="active">JS Options</li>
+                    <li data-tab="galler-html">HTML</li>
+                    <li data-tab="galler-css">CSS</li>
+                </ul>
+                
+                <div class="tab-content active" id="galler-js">
+                    <!-- Code Highlight -->
+<div class="code-highlight">
+<button class="copy">copy</button>
+<pre><code class="javascript" id="code1">$(".gallery-slider").slick({
+    autoplay:true, // Enables Autoplay
+    autoplaySpeed:5000, // Autoplay Speed in milliseconds
+    speed:500, // Transition Speed In Milliseconds
+    asNavFor:".gallery-thumbnails", // Slider Sync.
+});
+
+$(".gallery-thumbnails").slick({
+    autoplay:true, // Enables Autoplay
+    autoplaySpeed:5000, // Autoplay Speed in milliseconds
+    speed:500, // Transition Speed In Milliseconds
+    fade:false, // Enable or Disable Fade Effect
+    asNavFor:".gallery-slider", // Slider Sync.
+    focusOnSelect:true, // on Click Sync.
+    slidesToShow:5, // Number of the visible slides in desktops
+    slidesToScroll:1, // Slide's Number To Scroll
+});
+
+</code></pre>
+</div>
+<!-- // Code Hightlight -->
+                </div>
+                
+                <div class="tab-content" id="galler-html">
+                    <!-- Code Highlight -->
+<div class="code-highlight">
+<button class="copy">copy</button>
+<pre><code class="html" id="code1">&lt;!-- Gallery Slider -->
+&lt;div class="gallery-slider">
+    &lt;!-- Gallery Item -->
+    &lt;div class="gallery-item">
+        &lt;a href="#">&lt;img src="images/img.jpg" alt="">&lt;/a>
+    &lt;/div>
+    &lt;!-- // Gallery Item -->
+
+    &lt;!-- Gallery Item -->
+    &lt;div class="gallery-item">
+        &lt;a href="#">&lt;img src="images/img2.jpg" alt="">&lt;/a>
+    &lt;/div>
+    &lt;!-- // Gallery Item -->
+
+    &lt;!-- Gallery Item -->
+    &lt;div class="gallery-item">
+        &lt;a href="#">&lt;img src="images/img3.jpg" alt="">&lt;/a>
+    &lt;/div>
+    &lt;!-- // Gallery Item -->
+
+    &lt;!-- Gallery Item -->
+    &lt;div class="gallery-item">
+        &lt;a href="#">&lt;img src="images/img.jpg" alt="">&lt;/a>
+    &lt;/div>
+    &lt;!-- // Gallery Item -->
+
+    &lt;!-- Gallery Item -->
+    &lt;div class="gallery-item">
+        &lt;a href="#">&lt;img src="images/img2.jpg" alt="">&lt;/a>
+    &lt;/div>
+    &lt;!-- // Gallery Item -->
+
+    &lt;!-- Gallery Item -->
+    &lt;div class="gallery-item">
+        &lt;a href="#">&lt;img src="images/img3.jpg" alt="">&lt;/a>
+    &lt;/div>
+    &lt;!-- // Gallery Item -->
+&lt;/div>
+&lt;!-- // Gallery Slider -->
+
+&lt;!-- Gallery Thumbnails -->
+&lt;div class="gallery-thumbnails row">
+    &lt;!-- Gallery Item -->
+    &lt;div class="gallery-item">
+        &lt;img src="images/thumb.jpg" alt="">
+    &lt;/div>
+    &lt;!-- // Gallery Item -->
+
+    &lt;!-- Gallery Item -->
+    &lt;div class="gallery-item">
+        &lt;img src="images/thumb-2.jpg" alt="">
+    &lt;/div>
+    &lt;!-- // Gallery Item -->
+
+    &lt;!-- Gallery Item -->
+    &lt;div class="gallery-item">
+        &lt;img src="images/thumb-3.jpg" alt="">
+    &lt;/div>
+    &lt;!-- // Gallery Item -->
+
+    &lt;!-- Gallery Item -->
+    &lt;div class="gallery-item">
+        &lt;img src="images/thumb.jpg" alt="">
+    &lt;/div>
+    &lt;!-- // Gallery Item -->
+
+    &lt;!-- Gallery Item -->
+    &lt;div class="gallery-item">
+        &lt;img src="images/thumb-2.jpg" alt="">
+    &lt;/div>
+    &lt;!-- // Gallery Item -->
+
+    &lt;!-- Gallery Item -->
+    &lt;div class="gallery-item">
+        &lt;img src="images/thumb-3.jpg" alt="">
+    &lt;/div>
+    &lt;!-- // Gallery Item -->
+&lt;/div>
+&lt;!-- // Gallery Thumbnails -->
+
+</code></pre>
+</div>
+<!-- // Code Hightlight -->
+                </div>
+                
+                <div class="tab-content" id="galler-css">
+                    <!-- Code Highlight -->
+<div class="code-highlight">
+<button class="copy">copy</button>
+<pre><code class="css" id="code1">.gallery-slider {
+    margin-top: 30px;
+}
+
+.gallery-slider .gallery-item {
+    height: 500px;
+    overflow: hidden;
+}
+
+.gallery-slider img {
+    width: 100%;
+    min-height: 500px;
+}
+
+.gallery-thumbnails {
+    margin-top: 15px;
+}
+
+.gallery-thumbnails img {
+    width: 100%;
+}
+
+.gallery-thumbnails .slick-current img {
+    border: 10px solid #3498db;
+}
+
+</code></pre>
+</div>
+<!-- // Code Hightlight -->
+                </div>
+            </div>
             
             
             <h4 class="titx">Transition Effects : </h4>
@@ -156,6 +678,62 @@
                     var colorBase = $(this).children("span").text();
                     $(this).css("background-color",colorBase);
                 });
+                
+                $(".single-slider").slick({
+                    autoplay:true, // Enables Autoplay
+                    autoplaySpeed:5000, // Autoplay Speed in milliseconds
+                    speed:500, // Transition Speed In Milliseconds
+                    dots:true, // Enable Bullets
+                    arrows:true, // Enable or Disable Arrows
+                    fade:false, // Enable or Disable Fade Effect
+                })
+                
+                $(".carousel-slider").slick({
+                    autoplay:true, // Enables Autoplay
+                    autoplaySpeed:5000, // Autoplay Speed in milliseconds
+                    speed:500, // Transition Speed In Milliseconds
+                    fade:false, // Enable or Disable Fade Effect
+                    slidesToShow:4, // Number of the visible slides in desktops
+                    slidesToScroll:1, // Slide's Number To Scroll
+                    responsive:[  // Responsive Breack Points
+                        {breakpoint:981,settings:{
+                            slidesToShow:2, // Number of the visible slides in Tablets
+                        }},
+                        
+                        {breakpoint:641,settings:{
+                            slidesToShow:1, // Number of the visible slides in Mobile
+                        }},
+                    ],
+                })
+                
+                $(".vertical-slider").slick({
+                    autoplay:true, // Enables Autoplay
+                    autoplaySpeed:5000, // Autoplay Speed in milliseconds
+                    speed:500, // Transition Speed In Milliseconds
+                    fade:false, // Enable or Disable Fade Effect
+                    slidesToShow:3, // Number of the visible slides in desktops
+                    slidesToScroll:1, // Slide's Number To Scroll
+                    vertical:true, // Enable or Disable Vertical Sliding
+                });
+                
+                $(".gallery-slider").slick({
+                    autoplay:true, // Enables Autoplay
+                    autoplaySpeed:5000, // Autoplay Speed in milliseconds
+                    speed:500, // Transition Speed In Milliseconds
+                    asNavFor:".gallery-thumbnails", // Slider Sync.
+                });
+                
+                $(".gallery-thumbnails").slick({
+                    autoplay:true, // Enables Autoplay
+                    autoplaySpeed:5000, // Autoplay Speed in milliseconds
+                    speed:500, // Transition Speed In Milliseconds
+                    fade:false, // Enable or Disable Fade Effect
+                    asNavFor:".gallery-slider", // Slider Sync.
+                    focusOnSelect:true,
+                    slidesToShow:5, // Number of the visible slides in desktops
+                    slidesToScroll:1, // Slide's Number To Scroll
+                });
+                
                 
             })
             hljs.initHighlightingOnLoad();
