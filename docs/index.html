@@ -62,11 +62,252 @@
             <div class="alert info">
                 <strong>Note !</strong> This Beta Version the framework is Under Development but is ready to use.
             </div>
+            
+            <h4 class="titx">Download and Getting Start : </h4>
+            <p>
+                to get start offline download the project from <a href="https://github.com/EngCode/Tornado" target="_blank">github</a> and copy all files 
+                inside the <span class="label">dist</span> folder and put it inside your project folder.
+            </p>
+            
+            <h4 class="titx">Quick start : </h4>
+            <p>
+                Looking to quickly add Tornado to your project? Use the CDN Call URls Provided by jsdelivr 
+                copy and past the css files inside your html head tag and add the javascript files before the <span class="label">&lt;/body></span> closing tag.
+            </p>
+            
+            <!-- Code Highlight -->
+<div class="code-highlight">
+<button class="copy">copy</button>
+<pre><code class="html" id="code1">&lt;!-- Required CSS Files -->
+&lt;link href="css-js/tornado.css" rel="stylesheet">
+&lt;!-- RTL Version -->
+&lt;link href="css-js/tornado-rtl.css" rel="stylesheet">
+&lt;!-- Animations File -->
+&lt;link href="css-js/animations.css" rel="stylesheet">
+
+&lt;!-- Required JS Files -->
+&lt;script src="//cdn.jsdelivr.net/jquery/3.1.1/jquery.min.js">&lt;/script>
+&lt;script src="css-js/tornado.js">&lt;/script>
+
+</code></pre>
+</div>
+<!-- // Code Hightlight -->
+            
+            <h4 class="titx">Starter template : </h4>
+            
+            <!-- Code Highlight -->
+<div class="code-highlight">
+<button class="copy">copy</button>
+<pre><code class="html" id="code1">&lt;!DOCTYPE html>
+&lt;html lang="en">
+    &lt;head>
+        &lt;!-- Required meta tags always come first -->
+        &lt;meta charset="utf-8">
+        &lt;meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        &lt;meta http-equiv="x-ua-compatible" content="ie=edge">
+        &lt;meta name="description" content="A Description Of The Project">
+        &lt;meta name="keywords" content="The keywords">
+        &lt;title>Website Name&lt;/title>
+        &lt;!-- Required CSS Files -->
+        &lt;link href="css-js/tornado.css" rel="stylesheet">
+        &lt;!-- RTL Version  &lt;link href="css-js/tornado-rtl.css" rel="stylesheet"> -->
+        &lt;link href="css-js/animations.css" rel="stylesheet">
+    &lt;/head>
+    &lt;body>
+        
+        &lt;!-- Required JS Files -->
+        &lt;script src="//cdn.jsdelivr.net/jquery/3.1.1/jquery.min.js">&lt;/script>
+        &lt;script src="css-js/tornado.js">&lt;/script>
+    &lt;/body>
+&lt;/html>
+
+</code></pre>
+</div>
+<!-- // Code Hightlight -->
+            
+            <h4 class="titx">Changing Colors and Font : </h4>
+            
+            <!-- Code Highlight -->
+<div class="code-highlight">
+<button class="copy">copy</button>
+<pre><code class="css" id="code1">/*======== Fonts ========*/
+
+body {
+    background: #fafafa;
+    color: rgba(0, 0, 0, 0.80);
+    font-family: 'Noto Sans', 'Noto Kufi Arabic', 'Helvetica Neue', Arial, Helvetica, sans-serif;
+}
+
+form * {
+    font-family: 'Noto Sans', 'Noto Kufi Arabic';
+}
+
+h1,
+.h1,
+h2,
+.h2,
+h3,
+.h3,
+h4,
+.h4,
+h5,
+.h5,
+h6,
+.h6,
+dl.ui-tornado dt,
+.form-ui label,
+.modal-box.tornado-ui .modal-content .modal-head {
+    font-weight: 700;
+}
+
+
+/*======== Primary Color ========*/
+
+.primary-bg,
+.primary-bg-hoverable,
+.quote-th3,
+.btn.primary,
+.theme-tornado .back-bar .selected-bar,
+.theme-tornado .back-bar .pointer,
+.form-ui label.checkbox input:checked + span:before,
+.form-ui label.checkbox-switch input:checked + .switch,
+.form-ui label.radio-button input:checked + span:before,
+.pagination .active {
+    background: #3498db;
+    color: #FFF;
+}
+
+.primary-text,
+.primary-text-hoverable,
+.btn.primary.outline,
+a:not(.btn) {
+    color: #3498db;
+}
+
+.btn.primary.outline {
+    border-color: #3498db
+}
+
+
+/*=== Primary Color Hover ===*/
+
+.primary-bg-hoverable:hover,
+.btn.primary:hover,
+.btn.primary.outline:hover,
+.btn.primary.active,
+.form-ui label.checkbox-switch input:checked + .switch:before {
+    background: #2980b9;
+    color: #FFF;
+}
+
+.primary-text-hoverable:hover {
+    color: #2980b9;
+}
+
+.btn.primary.outline:hover {
+    border-color: #2980b9;
+}
+
+
+/*======== Secondary Color ========*/
+
+.secondary-bg,
+.secondary-bg-hoverable,
+.btn.secondary {
+    background: #546e7a;
+    color: #FFF;
+}
+
+.secondart-text,
+.secondart-text-hoverable,
+.btn.secondary.outline {
+    color: #546e7a;
+}
+
+.btn.secondary.outline {
+    border-color: #546e7a;
+}
+
+
+/*=== Secondary Color Hover ===*/
+
+.secondary-bg-hoverable:hover,
+.btn.secondary:hover,
+.btn.secondary.outline:hover,
+.btn.secondary.active {
+    background: #2c3e50;
+    color: #FFF;
+}
+
+.secondart-text-hoverable:hover {
+    color: #2c3e50;
+}
+
+.btn.secondary.outline:hover {
+    border-color: #2c3e50;
+}
+
+
+/*=== Menu Theme ===*/
+
+.navigation-menu .menu-button {
+    border: 0;
+    background: transparent;
+    font-size: 30px;
+    cursor: pointer;
+    color: rgba(0, 0, 0, .60);
+}
+
+.navigation-menu > ul:not(.mobile-menu) > li {
+    line-height: 2.4;
+    padding: 0 15px;
+}
+
+.navigation-menu > ul:not(.mobile-menu) > li > a {
+    color: #8f8f8f;
+    font-size: 16px;
+    display: block;
+}
+
+.navigation-menu > ul:not(.mobile-menu) > li:hover > a,
+.navigation-menu > ul:not(.mobile-menu) > li.active > a {
+    color: #2b2b2b;
+}
+
+
+/**** Submenu ****/
+
+.navigation-menu > ul:not(.mobile-menu) > li > ul li {
+    padding: 0 15px;
+    line-height: 45px;
+    font-size: 15px;
+    border-bottom: 1px solid rgba(0, 0, 0, .10);
+    background: #f3f3f3;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+.navigation-menu > ul:not(.mobile-menu) > li > ul li a {
+    color: #aeaeae;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+    display: block;
+}
+
+.navigation-menu > ul:not(.mobile-menu) > li > ul li:hover > a {
+    color: #2b2b2b;
+}
+
+</code></pre>
+</div>
+<!-- // Code Hightlight -->
+            
+            <h4 class="titx">Support : </h4>
+            <p>
+                if you have an issue using tornado or have a new idea to make it beeter submit a new request from here <a href="https://github.com/EngCode/Tornado/issues" target="_blank">githup issues</a> 
+            </p>
         </div>
         <!-- // Page Content -->
-        
-        <br><br><br><br><br><br><br><br><br>
-        <br><br><br><br><br><br><br><br><br>
         
         <!-- Required JS Files -->
         <script src="../dist/css-js/jquery.min.js"></script>

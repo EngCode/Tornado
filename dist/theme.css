@@ -1,53 +1,167 @@
-/*======== Page ========*/
-body{background:#fafafa;color:rgba(0, 0, 0, 0.80);font-family:'Noto Sans','Noto Kufi Arabic','Helvetica Neue', Arial, Helvetica, sans-serif;}
-form *{font-family:'Noto Sans','Noto Kufi Arabic';}
-h1,.h1,h2,.h2,h3,.h3,h4,.h4,h5,.h5,h6,.h6{font-weight:700;margin:0;padding:0;}
-h1,.h1 {font-size:2rem;}
-h2,.h2 {font-size:1.75rem;}
-h3,.h3 {font-size:1.563rem;}
-h4,.h4 {font-size:1.375rem;}
-h5,.h5 {font-size:1.235rem;}
-h6,.h6 {font-size:1.180rem;}
+/*======== Fonts ========*/
+
+body {
+    background: #fafafa;
+    color: rgba(0, 0, 0, 0.80);
+    font-family: 'Noto Sans', 'Noto Kufi Arabic', 'Helvetica Neue', Arial, Helvetica, sans-serif;
+}
+
+form * {
+    font-family: 'Noto Sans', 'Noto Kufi Arabic';
+}
+
+h1,
+.h1,
+h2,
+.h2,
+h3,
+.h3,
+h4,
+.h4,
+h5,
+.h5,
+h6,
+.h6,
+dl.ui-tornado dt,
+.form-ui label,
+.modal-box.tornado-ui .modal-content .modal-head {
+    font-weight: 700;
+}
+
 
 /*======== Primary Color ========*/
-.primary-bg,.primary-bg-hoverable,.quote-th3,.btn.primary,.theme-tornado .back-bar .selected-bar,.theme-tornado .back-bar .pointer,
-.form-ui label.checkbox input:checked + span:before,.form-ui label.checkbox-switch input:checked + .switch,
-.form-ui label.radio-button input:checked + span:before,.pagination .active{background:#3498db;color:#FFF;}
-.primary-text,.primary-text-hoverable,.btn.primary.outline,a:not(.btn){color:#3498db;}
-.btn.primary.outline{border-color:#3498db}
+
+.primary-bg,
+.primary-bg-hoverable,
+.quote-th3,
+.btn.primary,
+.theme-tornado .back-bar .selected-bar,
+.theme-tornado .back-bar .pointer,
+.form-ui label.checkbox input:checked + span:before,
+.form-ui label.checkbox-switch input:checked + .switch,
+.form-ui label.radio-button input:checked + span:before,
+.pagination .active {
+    background: #3498db;
+    color: #FFF;
+}
+
+.primary-text,
+.primary-text-hoverable,
+.btn.primary.outline,
+a:not(.btn) {
+    color: #3498db;
+}
+
+.btn.primary.outline {
+    border-color: #3498db
+}
+
+
 /*=== Primary Color Hover ===*/
-.primary-bg-hoverable:hover,.btn.primary:hover,.btn.primary.outline:hover,.btn.primary.active,
-.form-ui label.checkbox-switch input:checked + .switch:before{background:#2980b9;color:#FFF;}
-.primary-text-hoverable:hover{color:#2980b9;}
-.btn.primary.outline:hover{border-color:#2980b9;}
+
+.primary-bg-hoverable:hover,
+.btn.primary:hover,
+.btn.primary.outline:hover,
+.btn.primary.active,
+.form-ui label.checkbox-switch input:checked + .switch:before {
+    background: #2980b9;
+    color: #FFF;
+}
+
+.primary-text-hoverable:hover {
+    color: #2980b9;
+}
+
+.btn.primary.outline:hover {
+    border-color: #2980b9;
+}
+
+
 /*======== Secondary Color ========*/
-.secondary-bg,.secondary-bg-hoverable,.btn.secondary{background:#546e7a;color:#FFF;}
-.secondart-text,.secondart-text-hoverable,.btn.secondary.outline{color:#546e7a;}
-.btn.secondary.outline{border-color:#546e7a;}
+
+.secondary-bg,
+.secondary-bg-hoverable,
+.btn.secondary {
+    background: #546e7a;
+    color: #FFF;
+}
+
+.secondart-text,
+.secondart-text-hoverable,
+.btn.secondary.outline {
+    color: #546e7a;
+}
+
+.btn.secondary.outline {
+    border-color: #546e7a;
+}
+
+
 /*=== Secondary Color Hover ===*/
-.secondary-bg-hoverable:hover,.btn.secondary:hover,.btn.secondary.outline:hover,.btn.secondary.active{background:#2c3e50;color:#FFF;}
-.secondart-text-hoverable:hover{color:#2c3e50;}
-.btn.secondary.outline:hover{border-color:#2c3e50;}
+
+.secondary-bg-hoverable:hover,
+.btn.secondary:hover,
+.btn.secondary.outline:hover,
+.btn.secondary.active {
+    background: #2c3e50;
+    color: #FFF;
+}
+
+.secondart-text-hoverable:hover {
+    color: #2c3e50;
+}
+
+.btn.secondary.outline:hover {
+    border-color: #2c3e50;
+}
+
 
 /*=== Menu Theme ===*/
-.navigation-menu .menu-button{border:0;background:transparent;font-size:30px;cursor:pointer;color:rgba(0,0,0,.60);}
-.navigation-menu > ul:not(.mobile-menu) > li{line-height:2.4;padding:0 15px;}
-.navigation-menu > ul:not(.mobile-menu) > li > a{color:#8f8f8f;font-size:16px;display:block;}
-.navigation-menu > ul:not(.mobile-menu) > li:hover > a,.navigation-menu > ul:not(.mobile-menu) > li.active > a{color:#2b2b2b;}
+
+.navigation-menu .menu-button {
+    border: 0;
+    background: transparent;
+    font-size: 30px;
+    cursor: pointer;
+    color: rgba(0, 0, 0, .60);
+}
+
+.navigation-menu > ul:not(.mobile-menu) > li {
+    line-height: 2.4;
+    padding: 0 15px;
+}
+
+.navigation-menu > ul:not(.mobile-menu) > li > a {
+    color: #8f8f8f;
+    font-size: 16px;
+    display: block;
+}
+
+.navigation-menu > ul:not(.mobile-menu) > li:hover > a,
+.navigation-menu > ul:not(.mobile-menu) > li.active > a {
+    color: #2b2b2b;
+}
+
+
 /**** Submenu ****/
-.navigation-menu > ul:not(.mobile-menu) > li > ul li{padding:0 15px;line-height:45px;font-size:15px;border-bottom:1px solid rgba(0,0,0,.10);background:#f3f3f3;-webkit-transition: all 0.3s;transition:all 0.3s;}
-.navigation-menu > ul:not(.mobile-menu) > li > ul li a{color:#aeaeae;-webkit-transition: all 0.3s;transition:all 0.3s;display:block;}
-.navigation-menu > ul:not(.mobile-menu) > li > ul li:hover > a{color:#2b2b2b;}
 
+.navigation-menu > ul:not(.mobile-menu) > li > ul li {
+    padding: 0 15px;
+    line-height: 45px;
+    font-size: 15px;
+    border-bottom: 1px solid rgba(0, 0, 0, .10);
+    background: #f3f3f3;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+}
 
+.navigation-menu > ul:not(.mobile-menu) > li > ul li a {
+    color: #aeaeae;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+    display: block;
+}
 
-
-
-
-
-
-
-
-
-
-
+.navigation-menu > ul:not(.mobile-menu) > li > ul li:hover > a {
+    color: #2b2b2b;
+}
