@@ -741,6 +741,7 @@ nav {
 .transition-demo {
     margin-top: 30px;
     margin-bottom: 30px;
+    background:#000;
 }
 
 .transition-demo .slide {

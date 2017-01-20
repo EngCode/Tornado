@@ -956,6 +956,10 @@ $(".news-titles").slick({
                         <option value="fadeOverDown">Fade Over Down</option>
                         <option value="fadeOverRight">Fade Over Right</option>
                         <option value="fadeOverLeft">Fade Over Left</option>
+                        <option value="fadePushLeft">Fade Push Left</option>
+                        <option value="fadePushRight">Fade Push Right</option>
+                        <option value="fadePushUp">Fade Push Up</option>
+                        <option value="fadePushDown">Fade Push Down</option>
                     </select>
                     <h5>data-transition="<span>default</span>"</h5>
                 </div>
@@ -1085,7 +1089,7 @@ $(".news-titles").slick({
                 });
                 
                 $(".transition-demo").slick({
-                    autoplay:true, // Enables Autoplay
+                    autoplay:false, // Enables Autoplay
                     autoplaySpeed:5000, // Autoplay Speed in milliseconds
                     speed:500, // Transition Speed In Milliseconds
                     dots:true, // Enable Bullets

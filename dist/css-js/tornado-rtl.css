@@ -2947,16 +2947,61 @@ ul.ui-tornado[data-type="checked"] li ul li:before{
     -webkit-animation: slideOverRight 1s both,fadeInSlick 1s both;
     animation: slideOverRight 1s both,fadeInSlick 1s both;
 }
-/* Fade Over Left  */
-.slick-slider[data-transition="true"] .slick-slide[data-transition="fadeOverLeft"]{
-    -webkit-animation:fadeOutSlick 1s both 1s;
-    animation:fadeOutSlick 1s both 1s;
+
+/* Fade Push Left */
+.slick-slider[data-transition="true"] .slick-slide[data-transition="fadePushLeft"]{
+    -webkit-animation: PushOverLeft 1s both,fadeOutSlick 2s both;
+    animation: PushOverLeft 1s both,fadeOutSlick 2s both;
 }
 
-.slick-slider[data-transition="true"] .slick-active[data-transition="fadeOverLeft"]{
+.slick-slider[data-transition="true"] .slick-active[data-transition="fadePushLeft"]{
     -webkit-animation: slideOverLeft 1s both,fadeInSlick 1s both;
     animation: slideOverLeft 1s both,fadeInSlick 1s both;
 }
+
+/* Fade Push Right */
+.slick-slider[data-transition="true"] .slick-slide[data-transition="fadePushRight"]{
+    -webkit-animation: PushOverRight 1s both,fadeOutSlick 2s both;
+    animation: PushOverRight 1s both,fadeOutSlick 2s both;
+}
+
+.slick-slider[data-transition="true"] .slick-active[data-transition="fadePushRight"]{
+    -webkit-animation: slideOverRight 1s both,fadeInSlick 1s both;
+    animation: slideOverRight 1s both,fadeInSlick 1s both;
+}
+
+/* Fade Push Up */
+.slick-slider[data-transition="true"] .slick-slide[data-transition="fadePushUp"]{
+    -webkit-animation: PushOverUp 1s both,fadeOutSlick 2s both;
+    animation: PushOverUp 1s both,fadeOutSlick 2s both;
+}
+
+.slick-slider[data-transition="true"] .slick-active[data-transition="fadePushUp"]{
+    -webkit-animation: slideOverUp 1s both,fadeInSlick 1s both;
+    animation: slideOverUp 1s both,fadeInSlick 1s both;
+}
+
+/* Fade Push Down */
+.slick-slider[data-transition="true"] .slick-slide[data-transition="fadePushDown"]{
+    -webkit-animation: PushOverDown 1s both,fadeOutSlick 2s both;
+    animation: PushOverDown 1s both,fadeOutSlick 2s both;
+}
+
+.slick-slider[data-transition="true"] .slick-active[data-transition="fadePushDown"]{
+    -webkit-animation: slideOverDown 1s both,fadeInSlick 1s both;
+    animation: slideOverDown 1s both,fadeInSlick 1s both;
+}
+
+@-webkit-keyframes PushOverLeft{0%{-webkit-transform:translateX(0);transform:translateX(0);}100%{-webkit-transform:translateX(-100%);transform:translateX(-100%);}}
+@keyframes PushOverLeft{0%{-webkit-transform:translateX(0);transform:translateX(0);}100%{-webkit-transform:translateX(-100%);transform:translateX(-100%);}}
+@-webkit-keyframes PushOverRight{0%{-webkit-transform:translateX(0);transform:translateX(0);}100%{-webkit-transform:translateX(-100%);transform:translateX(100%);}}
+@keyframes PushOverRight{0%{-webkit-transform:translateX(0);transform:translateX(0);}100%{-webkit-transform:translateX(-100%);transform:translateX(100%);}}
+@-webkit-keyframes PushOverUp{0%{-webkit-transform:translateY(0);transform:translateY(0);}100%{-webkit-transform:translateY(-100%);transform:translateY(-100%);}}
+@keyframes PushOverUp{0%{-webkit-transform:translateY(0);transform:translateY(0);}100%{-webkit-transform:translateY(-100%);transform:translateY(-100%);}}
+@-webkit-keyframes PushOverDown{0%{-webkit-transform:translateY(0);transform:translateY(0);}100%{-webkit-transform:translateY(-100%);transform:translateY(100%);}}
+@keyframes PushOverDown{0%{-webkit-transform:translateY(0);transform:translateY(0);}100%{-webkit-transform:translateY(-100%);transform:translateY(100%);}}
+
+
 
 /**===== General Helpers =====**/
 [data-src]{
