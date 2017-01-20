@@ -317,13 +317,13 @@ a,a:active,a:hover{outline:0;text-decoration:none}
 
 .no-margin,
 .no-gutter {
-    margin: 0!important;
+    margin: 0;
 }
 
 .no-padding,
 .no-gutter > *[class*="col-"],
 .no-gutter > *[class*="box-"] {
-    padding: 0!important;
+    padding: 0;
 }
 
 /*======= Tornado Columns & Boxs =======*/
@@ -2730,13 +2730,13 @@ ul.ui-tornado[data-type="checked"] li ul li:before{
     transform:translateY(-50%);
     width:50px;
     height:50px;
-    background:rgba(255,255,255,.15);
+    background:rgba(0,0,0,.75);
     -webkit-box-shadow:0 0 2px 1px rgba(0,0,0,.10);
     box-shadow:0 0 2px 1px rgba(0,0,0,.10);
     text-align:center;
     border:0 none;
     cursor:pointer;
-    color:#2b2b2b;
+    color:#FFF;
     z-index:99;
     font-size:22px;
 }
@@ -2788,8 +2788,175 @@ ul.ui-tornado[data-type="checked"] li ul li:before{
 }
 
 .slick-slider.row .slick-slide{
-    padding:0 15px;
+    padding-right:15px;
+    padding-left:15px;
 }
+
+.slick-slider.row.cols-gutter-10{
+    display:block;
+    margin-right:-5px;
+    margin-left:-5px;
+}
+
+.slick-slider.row.cols-gutter-10 .slick-slide{
+    padding-right:5px;
+    padding-left:5px;
+}
+
+.slick-slider.row.cols-gutter-20{
+    display:block;
+    margin-right:-10px;
+    margin-left:-10px;
+}
+
+.slick-slider.row.cols-gutter-20 .slick-slide{
+    padding-right:10px;
+    padding-left:10px;
+}
+
+.slick-slider.row.cols-gutter-40{
+    display:block;
+    margin-right:-20px;
+    margin-left:-20px;
+}
+
+.slick-slider.row.cols-gutter-40 .slick-slide{
+    padding-right:20px;
+    padding-left:20px;
+}
+
+.slick-slider.row.cols-gutter-50{
+    display:block;
+    margin-right:-25px;
+    margin-left:-25px;
+}
+
+.slick-slider.row.cols-gutter-50 .slick-slide{
+    padding-right:25px;
+    padding-left:25px;
+}
+
+/*==== Slick Slider Transitions ===*/
+.slick-slider[data-transition="true"]{
+    -webkit-animation:fadeInSlick 1s both;
+    animation:fadeInSlick 1s both;
+}
+
+/* Default */
+.slick-slider[data-transition="true"] .slick-slide{
+    -webkit-animation:fadeOutSlick 1s both;
+    animation:fadeOutSlick 1s both;
+}
+
+.slick-slider[data-transition="true"] .slick-slide.slick-active{
+    -webkit-animation:fadeInSlick 1s both;
+    animation:fadeInSlick 1s both;
+}
+
+@-webkit-keyframes fadeInSlick{0%{opacity:0;}100%{opacity:1;}}
+@keyframes fadeInSlick{0%{opacity:0;}100%{opacity:1;}} 
+@-webkit-keyframes fadeOutSlick{0%{opacity:1;}100%{opacity:0;}} 
+@keyframes fadeOutSlick{0%{opacity:1;}100%{opacity:0;}} 
+
+/* Slide Over Up */
+.slick-slider[data-transition="true"] .slick-slide[data-transition="slideOverUp"]{
+    -webkit-animation:fadeOutSlick 1s both 1s;
+    animation:fadeOutSlick 1s both 1s;
+}
+
+.slick-slider[data-transition="true"] .slick-active[data-transition="slideOverUp"]{
+    -webkit-animation: slideOverUp 1s both;
+    animation: slideOverUp 1s both;
+}
+
+@-webkit-keyframes slideOverUp{0%{-webkit-transform:translateY(100%);transform:translateY(100%);}100%{-webkit-transform:translateY(0);transform:translateY(0);}}
+@keyframes slideOverUp{0%{-webkit-transform:translateY(100%);transform:translateY(100%);}100%{-webkit-transform:translateY(0);transform:translateY(0);}}
+
+/* Slide Over Down  */
+.slick-slider[data-transition="true"] .slick-slide[data-transition="slideOverDown"]{
+    -webkit-animation:fadeOutSlick 1s both 1s;
+    animation:fadeOutSlick 1s both 1s;
+}
+
+.slick-slider[data-transition="true"] .slick-active[data-transition="slideOverDown"]{
+    -webkit-animation: slideOverDown 1s both;
+    animation: slideOverDown 1s both;
+}
+
+@-webkit-keyframes slideOverDown{0%{-webkit-transform:translateY(-100%);transform:translateY(-100%);}100%{-webkit-transform:translateY(0);transform:translateY(0);}}
+@keyframes slideOverDown{0%{-webkit-transform:translateY(-100%);transform:translateY(-100%);}100%{-webkit-transform:translateY(0);transform:translateY(0);}}
+
+/* Slide Over Right  */
+.slick-slider[data-transition="true"] .slick-slide[data-transition="slideOverRight"]{
+    -webkit-animation:fadeOutSlick 1s both 1s;
+    animation:fadeOutSlick 1s both 1s;
+}
+
+.slick-slider[data-transition="true"] .slick-active[data-transition="slideOverRight"]{
+    -webkit-animation: slideOverRight 1s both;
+    animation: slideOverRight 1s both;
+}
+
+@-webkit-keyframes slideOverRight{0%{-webkit-transform:translateX(-100%);transform:translateX(-100%);}100%{-webkit-transform:translateX(0);transform:translateX(0);}}
+@keyframes slideOverRight{0%{-webkit-transform:translateX(-100%);transform:translateX(-100%);}100%{-webkit-transform:translateX(0);transform:translateX(0);}}
+
+/* Slide Over Left  */
+.slick-slider[data-transition="true"] .slick-slide[data-transition="slideOverLeft"]{
+    -webkit-animation:fadeOutSlick 1s both 1s;
+    animation:fadeOutSlick 1s both 1s;
+}
+
+.slick-slider[data-transition="true"] .slick-active[data-transition="slideOverLeft"]{
+    -webkit-animation: slideOverLeft 1s both;
+    animation: slideOverLeft 1s both;
+}
+
+@-webkit-keyframes slideOverLeft{0%{-webkit-transform:translateX(100%);transform:translateX(100%);}100%{-webkit-transform:translateX(0);transform:translateX(0);}}
+@keyframes slideOverLeft{0%{-webkit-transform:translateX(100%);transform:translateX(100%);}100%{-webkit-transform:translateX(0);transform:translateX(0);}}
+
+/* Fade Over Up */
+.slick-slider[data-transition="true"] .slick-slide[data-transition="fadeOverUp"]{
+    -webkit-animation:fadeOutSlick 1s both 1s;
+    animation:fadeOutSlick 1s both 1s;
+}
+
+.slick-slider[data-transition="true"] .slick-active[data-transition="fadeOverUp"]{
+    -webkit-animation: slideOverUp 1s both,fadeInSlick 1s both;
+    animation: slideOverUp 1s both,fadeInSlick 1s both;
+}
+
+/* Fade Over Down  */
+.slick-slider[data-transition="true"] .slick-slide[data-transition="fadeOverDown"]{
+    -webkit-animation:fadeOutSlick 1s both 1s;
+    animation:fadeOutSlick 1s both 1s;
+}
+
+.slick-slider[data-transition="true"] .slick-active[data-transition="fadeOverDown"]{
+    -webkit-animation: slideOverDown 1s both,fadeInSlick 1s both;
+    animation: slideOverDown 1s both,fadeInSlick 1s both;
+}
+/* Fade Over Right  */
+.slick-slider[data-transition="true"] .slick-slide[data-transition="fadeOverRight"]{
+    -webkit-animation:fadeOutSlick 1s both 1s;
+    animation:fadeOutSlick 1s both 1s;
+}
+
+.slick-slider[data-transition="true"] .slick-active[data-transition="fadeOverRight"]{
+    -webkit-animation: slideOverRight 1s both,fadeInSlick 1s both;
+    animation: slideOverRight 1s both,fadeInSlick 1s both;
+}
+/* Fade Over Left  */
+.slick-slider[data-transition="true"] .slick-slide[data-transition="fadeOverLeft"]{
+    -webkit-animation:fadeOutSlick 1s both 1s;
+    animation:fadeOutSlick 1s both 1s;
+}
+
+.slick-slider[data-transition="true"] .slick-active[data-transition="fadeOverLeft"]{
+    -webkit-animation: slideOverLeft 1s both,fadeInSlick 1s both;
+    animation: slideOverLeft 1s both,fadeInSlick 1s both;
+}
+
+
 
 /**===== General Helpers =====**/
 [data-src]{

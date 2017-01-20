@@ -59,6 +59,10 @@
         
         <!-- Page Content -->
         <div class="container Page-Contnet" id="Home">
+            <div class="alert info">
+                <strong>Note !</strong> This Page is Under Development there is a lot of upcoming features for slick slider.
+            </div>
+            
             <div class="single-slider tornado-ui">
                 <div class="slide bg1">
                     <h3>First Panel</h3>
@@ -122,7 +126,6 @@
     speed:500, // Transition Speed In Milliseconds
     dots:true, // Enable or Disable Bullets
     arrows:true, // Enable or Disable Arrows
-    fade:false, // Enable or Disable Fade Effect
 });
 </code></pre>
 </div>
@@ -166,7 +169,6 @@
     autoplay:true, // Enables Autoplay
     autoplaySpeed:5000, // Autoplay Speed in milliseconds
     speed:500, // Transition Speed In Milliseconds
-    fade:false, // Enable or Disable Fade Effect
     slidesToShow:4, // Number of the visible slides in desktops
     slidesToScroll:1, // Slide's Number To Scroll
     responsive:[  // Responsive Breack Points
@@ -269,7 +271,6 @@
     autoplay:true, // Enables Autoplay
     autoplaySpeed:5000, // Autoplay Speed in milliseconds
     speed:500, // Transition Speed In Milliseconds
-    fade:false, // Enable or Disable Fade Effect
     slidesToShow:3, // Number of the visible slides
     slidesToScroll:1, // Slide's Number To Scroll
     vertical:true, // Enable or Disable Vertical Sliding
@@ -356,13 +357,13 @@
             
             <h4 class="titx">Slider Syncing : </h4>
             <p>
-                Slick Slider Provide an amazing option to relate two sliders with each other you can make a several slider with this option like
+                Slick Slider Provide an amazing option to relate two sliders with each other you can make a several sliders with this option like
                 "News Slider","Gallery Slider" see the examples below.
             </p>
             
             <h5 class="titxx">Gallery Demo</h5>
             <!-- Gallery Slider -->
-            <div class="gallery-slider">
+            <div class="gallery-slider" data-transition="true">
                 <!-- Gallery Item -->
                 <div class="gallery-item">
                     <a href="#"><img src="images/img.jpg" alt=""></a>
@@ -461,10 +462,6 @@
 });
 
 $(".gallery-thumbnails").slick({
-    autoplay:true, // Enables Autoplay
-    autoplaySpeed:5000, // Autoplay Speed in milliseconds
-    speed:500, // Transition Speed In Milliseconds
-    fade:false, // Enable or Disable Fade Effect
     asNavFor:".gallery-slider", // Slider Sync.
     focusOnSelect:true, // on Click Sync.
     slidesToShow:5, // Number of the visible slides in desktops
@@ -481,7 +478,7 @@ $(".gallery-thumbnails").slick({
 <div class="code-highlight">
 <button class="copy">copy</button>
 <pre><code class="html" id="code1">&lt;!-- Gallery Slider -->
-&lt;div class="gallery-slider">
+&lt;div class="gallery-slider" data-transition="true">
     &lt;!-- Gallery Item -->
     &lt;div class="gallery-item">
         &lt;a href="#">&lt;img src="images/img.jpg" alt="">&lt;/a>
@@ -601,37 +598,382 @@ $(".gallery-thumbnails").slick({
                 </div>
             </div>
             
+            <h5 class="titxx">News Slider Demo</h5>
             
-            <h4 class="titx">Transition Effects : </h4>
-            <p>
-                the main plugin have tow deffernt transiton effect <span class="label">Fade,Slide</span> and tornado added a CSS3 transitions effects
-                you can use it by simply add A data attribute to the slide element <span class="label">data-transition</span> with a value of the transtion name.
-            </p>
-            
-            <h4 class="titx">Transition List : </h4>
-            <div class="responsive-table">
-                <table class="table">
-                    <thead>
-                        <tr>
-                            <td class="col-s-2">Transition Names</td>
-                            <td class="col-s-6">Tester</td>
-                        </tr>
-                    </thead>
-                    <tr>
-                        <td class="col-s-10"></td>
-                        <td class="col-s-2 text-align-left">Transition Examples.</td>
-                    </tr>
-                </table>
+            <div class="row news-demo no-gutter">
+                <div class="col-s-12 col-m-8 col-l-9">
+                    <!-- News Slider -->
+                    <div class="news-slider" data-transition="true">
+                        <!-- slider item -->
+                        <div class="slider-item">
+                            <a href="#"><img src="images/img.jpg" alt=""></a>
+                            <div class="info">
+                                <a href="#"><h5>Lorem Ipsum is simply dummy text of the printing</h5></a>
+                                <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum</p>
+                            </div>
+                        </div>
+                        <!-- // slider item -->
+                        
+                        <!-- slider item -->
+                        <div class="slider-item">
+                            <a href="#"><img src="images/img2.jpg" alt=""></a>
+                            <div class="info">
+                                <a href="#"><h5>Lorem Ipsum is simply dummy text of the printing</h5></a>
+                                <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum</p>
+                            </div>
+                        </div>
+                        <!-- // slider item -->
+                        
+                        <!-- slider item -->
+                        <div class="slider-item">
+                            <a href="#"><img src="images/img3.jpg" alt=""></a>
+                            <div class="info">
+                                <a href="#"><h5>Lorem Ipsum is simply dummy text of the printing</h5></a>
+                                <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum</p>
+                            </div>
+                        </div>
+                        <!-- // slider item -->
+                        
+                        <!-- slider item -->
+                        <div class="slider-item">
+                            <a href="#"><img src="images/img.jpg" alt=""></a>
+                            <div class="info">
+                                <a href="#"><h5>Lorem Ipsum is simply dummy text of the printing</h5></a>
+                                <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum</p>
+                            </div>
+                        </div>
+                        <!-- // slider item -->
+                        
+                        <!-- slider item -->
+                        <div class="slider-item">
+                            <a href="#"><img src="images/img2.jpg" alt=""></a>
+                            <div class="info">
+                                <a href="#"><h5>Lorem Ipsum is simply dummy text of the printing</h5></a>
+                                <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum</p>
+                            </div>
+                        </div>
+                        <!-- // slider item -->
+                        
+                        <!-- slider item -->
+                        <div class="slider-item">
+                            <a href="#"><img src="images/img3.jpg" alt=""></a>
+                            <div class="info">
+                                <a href="#"><h5>Lorem Ipsum is simply dummy text of the printing</h5></a>
+                                <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum</p>
+                            </div>
+                        </div>
+                        <!-- // slider item -->
+                    </div>
+                    <!-- // News Slider -->
+                </div>
+                
+                <div class="hidden-s-down col-m-4 col-l-3">
+                    <!-- News Titles -->
+                    <div class="news-titles">
+                        <!-- title item -->
+                        <div class="title-item">
+                            Lorem Ipsum is simply dummy text of the printing
+                        </div>
+                        <!-- // title item -->
+                        
+                        <!-- title item -->
+                        <div class="title-item">
+                            Lorem Ipsum is simply dummy text of the printing
+                        </div>
+                        <!-- // title item -->
+                        
+                        <!-- title item -->
+                        <div class="title-item">
+                            Lorem Ipsum is simply dummy text of the printing
+                        </div>
+                        <!-- // title item -->
+                        
+                        <!-- title item -->
+                        <div class="title-item">
+                            Lorem Ipsum is simply dummy text of the printing
+                        </div>
+                        <!-- // title item -->
+                        
+                        <!-- title item -->
+                        <div class="title-item">
+                            Lorem Ipsum is simply dummy text of the printing
+                        </div>
+                        <!-- // title item -->
+                        
+                        <!-- title item -->
+                        <div class="title-item">
+                            Lorem Ipsum is simply dummy text of the printing
+                        </div>
+                        <!-- // title item -->
+                    </div>
+                    <!-- // News Titles -->
+                </div>
             </div>
             
-            <!-- Code Highlight -->
+            <div class="tabs tornado-ui">
+                <ul class="tabs-menu">
+                    <li data-tab="news-js" class="active">JS Options</li>
+                    <li data-tab="news-html">HTML</li>
+                    <li data-tab="news-css">CSS</li>
+                </ul>
+                
+                <div class="tab-content active" id="news-js">
+                    <!-- Code Highlight -->
 <div class="code-highlight">
 <button class="copy">copy</button>
-<pre><code class="html" id="code1">
+<pre><code class="javascript" id="code1">$(".news-slider").slick({
+    autoplay:true, // Enables Autoplay
+    autoplaySpeed:5000, // Autoplay Speed in milliseconds
+    speed:500, // Transition Speed In Milliseconds
+    asNavFor:".news-titles", // Slider Sync.
+});
+
+$(".news-titles").slick({
+    asNavFor:".news-slider", // Slider Sync.
+    focusOnSelect:true, // on Click Sync.
+    vertical:true, // Enable or Disable Vertical Sliding
+    slidesToShow:5, // Number of the visible slides in desktops
+    slidesToScroll:1, // Slide's Number To Scroll
+});
 
 </code></pre>
 </div>
 <!-- // Code Hightlight -->
+                </div>
+                
+                <div class="tab-content" id="news-html">
+                    <!-- Code Highlight -->
+<div class="code-highlight">
+<button class="copy">copy</button>
+<pre><code class="html" id="code1">&lt;div class="row no-gutter">
+    &lt;div class="col-s-12 col-m-8 col-l-9">
+        &lt;!-- News Slider -->
+        &lt;div class="news-slider" data-transition="true">
+            &lt;!-- slider item -->
+            &lt;div class="slider-item">
+                &lt;a href="#">&lt;img src="images/img.jpg" alt="">&lt;/a>
+                &lt;div class="info">
+                    &lt;a href="#">&lt;h5>Lorem Ipsum is simply dummy text of the printing&lt;/h5>&lt;/a>
+                    &lt;p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum&lt;/p>
+                &lt;/div>
+            &lt;/div>
+            &lt;!-- // slider item -->
+
+            &lt;!-- slider item -->
+            &lt;div class="slider-item">
+                &lt;a href="#">&lt;img src="images/img2.jpg" alt="">&lt;/a>
+                &lt;div class="info">
+                    &lt;a href="#">&lt;h5>Lorem Ipsum is simply dummy text of the printing&lt;/h5>&lt;/a>
+                    &lt;p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum&lt;/p>
+                &lt;/div>
+            &lt;/div>
+            &lt;!-- // slider item -->
+
+            &lt;!-- slider item -->
+            &lt;div class="slider-item">
+                &lt;a href="#">&lt;img src="images/img3.jpg" alt="">&lt;/a>
+                &lt;div class="info">
+                    &lt;a href="#">&lt;h5>Lorem Ipsum is simply dummy text of the printing&lt;/h5>&lt;/a>
+                    &lt;p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum&lt;/p>
+                &lt;/div>
+            &lt;/div>
+            &lt;!-- // slider item -->
+
+            &lt;!-- slider item -->
+            &lt;div class="slider-item">
+                &lt;a href="#">&lt;img src="images/img.jpg" alt="">&lt;/a>
+                &lt;div class="info">
+                    &lt;a href="#">&lt;h5>Lorem Ipsum is simply dummy text of the printing&lt;/h5>&lt;/a>
+                    &lt;p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum&lt;/p>
+                &lt;/div>
+            &lt;/div>
+            &lt;!-- // slider item -->
+
+            &lt;!-- slider item -->
+            &lt;div class="slider-item">
+                &lt;a href="#">&lt;img src="images/img2.jpg" alt="">&lt;/a>
+                &lt;div class="info">
+                    &lt;a href="#">&lt;h5>Lorem Ipsum is simply dummy text of the printing&lt;/h5>&lt;/a>
+                    &lt;p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum&lt;/p>
+                &lt;/div>
+            &lt;/div>
+            &lt;!-- // slider item -->
+
+            &lt;!-- slider item -->
+            &lt;div class="slider-item">
+                &lt;a href="#">&lt;img src="images/img3.jpg" alt="">&lt;/a>
+                &lt;div class="info">
+                    &lt;a href="#">&lt;h5>Lorem Ipsum is simply dummy text of the printing&lt;/h5>&lt;/a>
+                    &lt;p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum&lt;/p>
+                &lt;/div>
+            &lt;/div>
+            &lt;!-- // slider item -->
+        &lt;/div>
+        &lt;!-- // News Slider -->
+    &lt;/div>
+
+    &lt;div class="hidden-s-down col-m-4 col-l-3">
+        &lt;!-- News Titles -->
+        &lt;div class="news-titles">
+            &lt;!-- title item -->
+            &lt;div class="title-item">
+                Lorem Ipsum is simply dummy text of the printing
+            &lt;/div>
+            &lt;!-- // title item -->
+
+            &lt;!-- title item -->
+            &lt;div class="title-item">
+                Lorem Ipsum is simply dummy text of the printing
+            &lt;/div>
+            &lt;!-- // title item -->
+
+            &lt;!-- title item -->
+            &lt;div class="title-item">
+                Lorem Ipsum is simply dummy text of the printing
+            &lt;/div>
+            &lt;!-- // title item -->
+
+            &lt;!-- title item -->
+            &lt;div class="title-item">
+                Lorem Ipsum is simply dummy text of the printing
+            &lt;/div>
+            &lt;!-- // title item -->
+
+            &lt;!-- title item -->
+            &lt;div class="title-item">
+                Lorem Ipsum is simply dummy text of the printing
+            &lt;/div>
+            &lt;!-- // title item -->
+
+            &lt;!-- title item -->
+            &lt;div class="title-item">
+                Lorem Ipsum is simply dummy text of the printing
+            &lt;/div>
+            &lt;!-- // title item -->
+        &lt;/div>
+        &lt;!-- // News Titles -->
+    &lt;/div>
+&lt;/div>
+
+</code></pre>
+</div>
+<!-- // Code Hightlight -->
+                </div>
+                
+                <div class="tab-content" id="news-css">
+                    <!-- Code Highlight -->
+<div class="code-highlight">
+<button class="copy">copy</button>
+<pre><code class="css" id="code1">/* news slider */
+.news-slider .slider-item{
+    height:500px;
+    overflow:hidden;
+    position:relative;
+}
+
+.news-slider .slider-item img{
+    width:100%;
+    min-height:100%;
+}
+
+.news-slider .slider-item .info{
+    position:absolute;
+    left:30px;
+    bottom:30px;
+    max-width:700px;
+    padding:30px;
+    background:rgba(0,0,0,.75);
+    color:#FFF;
+}
+
+.news-slider .slider-item .info h5{
+    font-size:18px;
+    color:#FFF;
+}
+
+.news-slider .slider-item .info p{
+    margin:0;
+    margin-top:15px;
+    color:#FFF;
+}
+
+/* news titles */
+.news-titles .title-item{
+    background:#FFF;
+    border-bottom:1px solid rgba(0,0,0,.10);
+    cursor:pointer;
+    padding:20px;
+    height:100px;
+}
+
+.news-titles .title-item.slick-current{
+    background:#3498db;
+    color:#FFF;
+}
+
+</code></pre>
+</div>
+<!-- // Code Hightlight -->
+                </div>
+            </div>
+            
+            
+            <h4 class="titx">Transition Effects : </h4>
+            <p>
+                the main plugin have tow deffernt transiton effect <span class="label">Fade,Slide</span> and tornado added a CSS3 transitions effects to turn the 
+                transitions on add attribute <span class="label">data-transition="true"</span> to the slider wrap element.
+                and to apply the transition effect simply add A data attribute to the slide item element <span class="label">data-transition</span> with a value of the transtion name.<br>
+                <br><b>!important Note : </b> the fade effect not working by js initialize to apply the fade effect set the transtion effect attribute "ON".
+            </p>
+            
+            <div class="tornado-ui transition-demo" data-transition="true">
+                <div class="slide" data-src="images/bg.jpg">
+                    <h3>First Panel</h3>
+                </div>
+                
+                <div class="slide bg2">
+                    <h3>Second Panel</h3>
+                </div>
+                
+                <div class="slide" data-src="images/img2.jpg">
+                    <h3>Third Panel</h3>
+                </div>
+                
+                <div class="slide bg4">
+                    <h3>Fourth Panel</h3>
+                </div>
+            </div>
+            
+            <div class="row form-ui">
+                <div class="col-s-6 col-m-4 transiton-name">
+                    <select class="select-transiton">
+                        <option selected value="default">fade</option>
+                        <option value="slideOverUp">slide Over Up</option>
+                        <option value="slideOverDown">slide Over Down</option>
+                        <option value="slideOverRight">slide Over Right</option>
+                        <option value="slideOverLeft">slide Over Left</option>
+                        <option value="fadeOverUp">Fade Over Up</option>
+                        <option value="fadeOverDown">Fade Over Down</option>
+                        <option value="fadeOverRight">Fade Over Right</option>
+                        <option value="fadeOverLeft">Fade Over Left</option>
+                    </select>
+                    <h5>data-transition="<span>default</span>"</h5>
+                </div>
+                <div class="col-s-6 col-m-8">
+                    <!-- Code Highlight -->
+<div class="code-highlight msx">
+<button class="copy">copy</button>
+<pre><code class="html" id="code1">&lt;div class="tornado-ui transition-demo" data-transition="true">
+    &lt;div class="slide" data-src="images/bg.jpg" data-transition="name">
+        &lt;h3>First Panel&lt;/h3>
+    &lt;/div>
+&lt;/div>
+</code></pre>
+</div>
+<!-- // Code Hightlight -->
+                </div>
+                
+            </div>
             
             <div class="text-box">
                 <h3>3rd Party Plugins</h3>
@@ -685,14 +1027,12 @@ $(".gallery-thumbnails").slick({
                     speed:500, // Transition Speed In Milliseconds
                     dots:true, // Enable Bullets
                     arrows:true, // Enable or Disable Arrows
-                    fade:false, // Enable or Disable Fade Effect
                 })
                 
                 $(".carousel-slider").slick({
                     autoplay:true, // Enables Autoplay
                     autoplaySpeed:5000, // Autoplay Speed in milliseconds
                     speed:500, // Transition Speed In Milliseconds
-                    fade:false, // Enable or Disable Fade Effect
                     slidesToShow:4, // Number of the visible slides in desktops
                     slidesToScroll:1, // Slide's Number To Scroll
                     responsive:[  // Responsive Breack Points
@@ -710,7 +1050,6 @@ $(".gallery-thumbnails").slick({
                     autoplay:true, // Enables Autoplay
                     autoplaySpeed:5000, // Autoplay Speed in milliseconds
                     speed:500, // Transition Speed In Milliseconds
-                    fade:false, // Enable or Disable Fade Effect
                     slidesToShow:3, // Number of the visible slides in desktops
                     slidesToScroll:1, // Slide's Number To Scroll
                     vertical:true, // Enable or Disable Vertical Sliding
@@ -724,17 +1063,46 @@ $(".gallery-thumbnails").slick({
                 });
                 
                 $(".gallery-thumbnails").slick({
-                    autoplay:true, // Enables Autoplay
-                    autoplaySpeed:5000, // Autoplay Speed in milliseconds
-                    speed:500, // Transition Speed In Milliseconds
-                    fade:false, // Enable or Disable Fade Effect
                     asNavFor:".gallery-slider", // Slider Sync.
                     focusOnSelect:true,
                     slidesToShow:5, // Number of the visible slides in desktops
                     slidesToScroll:1, // Slide's Number To Scroll
                 });
                 
+                $(".news-slider").slick({
+                    autoplay:true, // Enables Autoplay
+                    autoplaySpeed:5000, // Autoplay Speed in milliseconds
+                    speed:500, // Transition Speed In Milliseconds
+                    asNavFor:".news-titles", // Slider Sync.
+                });
                 
+                $(".news-titles").slick({
+                    asNavFor:".news-slider", // Slider Sync.
+                    focusOnSelect:true, // on Click Sync.
+                    vertical:true, // Enable or Disable Vertical Sliding
+                    slidesToShow:5, // Number of the visible slides in desktops
+                    slidesToScroll:1, // Slide's Number To Scroll
+                });
+                
+                $(".transition-demo").slick({
+                    autoplay:true, // Enables Autoplay
+                    autoplaySpeed:5000, // Autoplay Speed in milliseconds
+                    speed:500, // Transition Speed In Milliseconds
+                    dots:true, // Enable Bullets
+                    arrows:true, // Enable or Disable Arrows
+                });
+                
+                $(".select-transiton").each(function(){
+                    var transtionName = $(this).val();
+                    $(".transition-demo").find(".slide").attr("data-transition",transtionName);
+                    $(this).siblings("h5").find("span").text(transtionName)
+                })
+                
+                $(".select-transiton").on("change",function(){
+                    var transtionName = $(this).val();
+                    $(".transition-demo").find(".slide").attr("data-transition",transtionName);
+                    $(this).siblings("h5").find("span").text(transtionName)
+                })
             })
             hljs.initHighlightingOnLoad();
         </script>
