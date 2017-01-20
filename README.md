@@ -11,7 +11,7 @@ upcoming updates :
    2. adding slider animations and transtions
    3. Ready to Use Startup Templates 
 
-Project On Get hub : https://github.com/EngCode/Tornado <br>
+
 Documntation : https://engcode.github.io/Tornado/docs/ <br>
 Website : https://eng-code.info/Tornado/docs/ <br>
 
