@@ -3009,6 +3009,51 @@ ul.ui-tornado[data-type="checked"] li ul li:before{
 @-webkit-keyframes PushOverDown{0%{-webkit-transform:translateY(0);transform:translateY(0);}100%{-webkit-transform:translateY(-100%);transform:translateY(100%);}}
 @keyframes PushOverDown{0%{-webkit-transform:translateY(0);transform:translateY(0);}100%{-webkit-transform:translateY(-100%);transform:translateY(100%);}}
 
+/* Switch Up */
+.slick-slider[data-transition="true"] .slick-slide[data-transition="switchUp"]{
+    -webkit-animation: PushOverUp .5s both;
+    animation: PushOverUp .5s both;
+}
+
+.slick-slider[data-transition="true"] .slick-active[data-transition="switchUp"]{
+    -webkit-animation: slideOverDown .5s both,fadeInSlick 1s both;
+    animation: slideOverDown .5s both,fadeInSlick 1s both;
+}
+
+/* Switch Down */
+.slick-slider[data-transition="true"] .slick-slide[data-transition="switchDown"]{
+    -webkit-animation: PushOverDown .5s both;
+    animation: PushOverDown .5s both;
+}
+
+.slick-slider[data-transition="true"] .slick-active[data-transition="switchDown"]{
+    -webkit-animation: slideOverUp .5s both,fadeInSlick 1s both;
+    animation: slideOverUp .5s both,fadeInSlick 1s both;
+}
+
+/* Switch Right */
+.slick-slider[data-transition="true"] .slick-slide[data-transition="switchRight"]{
+    -webkit-animation: PushOverRight .5s both;
+    animation: PushOverRight .5s both;
+}
+
+.slick-slider[data-transition="true"] .slick-active[data-transition="switchRight"]{
+    -webkit-animation: slideOverLeft .5s both,fadeInSlick 1s both;
+    animation: slideOverLeft .5s both,fadeInSlick 1s both;
+}
+
+/* Switch Left */
+.slick-slider[data-transition="true"] .slick-slide[data-transition="switchLeft"]{
+    -webkit-animation: PushOverLeft .5s both;
+    animation: PushOverLeft .5s both;
+}
+
+.slick-slider[data-transition="true"] .slick-active[data-transition="switchLeft"]{
+    -webkit-animation: slideOverRight .5s both,fadeInSlick 1s both;
+    animation: slideOverRight .5s both,fadeInSlick 1s both;
+}
+
+
 
 /**===== General Helpers =====**/
 [data-src]{
