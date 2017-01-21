@@ -3056,6 +3056,17 @@ ul.ui-tornado[data-type="checked"] li ul li:before{
 
 
 /**===== General Helpers =====**/
+.tornado-loader{
+    width:100%;
+    height:100vh;
+    overflow:hidden;
+    position:fixed;
+    z-index:9999;
+    top:0;
+    left:0;
+    direction:ltr!important;
+}
+
 [data-src]{
     background-size:cover;
 }

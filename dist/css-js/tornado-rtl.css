@@ -51,14 +51,14 @@
 
 @font-face {
     font-family: "Ionicons";
-    src: url("fonts/ionicons.woff?v=2.0.0") format("woff");
+    src: url("fonts/ionicons.woff") format("woff");
     font-weight: normal;
     font-style: normal;
 }
 
 /*!===== normalize.css v5.0.0 | MIT License | github.com/necolas/normalize.css =====*/
 html{font-size:14px;font-family:sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}
-body{margin:0;padding:0;overflow-x:hidden;overflow-y:visible;direction:ltr;height:100%;background:#fafafa;color:rgba(0,0,0,0.80);position:relative;line-height:1.8;font-family:'Noto Sans','Helvetica Neue',Arial,Helvetica,sans-serif}
+body{margin:0;padding:0;overflow-x:hidden;overflow-y:visible;direction:rtl;height:100%;background:#fafafa;color:rgba(0,0,0,0.80);position:relative;line-height:1.8;font-family:'Noto Sans','Helvetica Neue',Arial,Helvetica,sans-serif}
 ul,ol{line-height:1.5}
 article,aside,footer,header,nav,section,figcaption,figure,main{display:block}
 figure{margin:1em 40px}
@@ -3056,6 +3056,17 @@ ul.ui-tornado[data-type="checked"] li ul li:before{
 }
 
 /**===== General Helpers =====**/
+.tornado-loader{
+    width:100%;
+    height:100vh;
+    overflow:hidden;
+    position:fixed;
+    z-index:9999;
+    top:0;
+    left:0;
+    direction:ltr!important;
+}
+
 [data-src]{
     background-size:cover;
 }
