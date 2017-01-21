@@ -302,12 +302,16 @@ $(document).ready(function () {
     });
     
     /*/ ===== Slick Slider ===== /*/
+    $("[data-transition='true'] > *").each(function(){
+        var transName = $(this).attr("data-transition");
+        $(this).prev().attr("data-tsout",transName + "Out");
+    })
+    
     $(document).ready(function(){
         $('[data-rtl]').slick("slickSetOption","rtl",true,true);
         $('.slick-vertical').slick("slickSetOption","verticalSwiping",true,true);
         $('.slick-slider[data-transition="true"]').slick("slickSetOption","fade",true,false);
     });
-    
     
     
     /*/ ==== Marquee ==== /*/

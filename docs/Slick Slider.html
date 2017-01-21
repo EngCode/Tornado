@@ -935,7 +935,7 @@ $(".news-titles").slick({
                     <h3>Second Panel</h3>
                 </div>
                 
-                <div class="slide" data-src="images/img2.jpg">
+                <div class="slide" data-src="images/img2.jpg" data-transition="slideOverUp">
                     <h3>Third Panel</h3>
                 </div>
                 
@@ -1093,7 +1093,7 @@ $(".news-titles").slick({
                 });
                 
                 $(".transition-demo").slick({
-                    autoplay:true, // Enables Autoplay
+                    autoplay:false, // Enables Autoplay
                     autoplaySpeed:5000, // Autoplay Speed in milliseconds
                     speed:500, // Transition Speed In Milliseconds
                     dots:true, // Enable Bullets
@@ -1108,7 +1108,7 @@ $(".news-titles").slick({
                 
                 $(".select-transiton").on("change",function(){
                     var transtionName = $(this).val();
-                    $(".transition-demo").find(".slide").attr("data-transition",transtionName);
+                    $(".transition-demo").find(".slide").attr("data-transition",transtionName).prev(".slick-slide").attr("data-tsout",transtionName + "Out");;
                     $(this).siblings("h5").find("span").text(transtionName)
                 })
             })
