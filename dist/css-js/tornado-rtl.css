@@ -1296,7 +1296,7 @@ ul.ui-tornado[data-type="checked"] li ul li:before{
     color:#8f8f8f;
     border:1px solid rgba(0,0,0,.10);
     text-align:center;
-    margin-right:10px;
+    margin-left:10px;
     cursor:pointer;
     -webkit-transition: all 0.3s;
     transition:all 0.3s;
