@@ -3083,7 +3083,49 @@ ul.ui-tornado[data-type="checked"] li ul li:before{
 }
 
 
+/* Parallax Left */
+.slick-slider[data-transition="true"] .slick-slide[data-tsout="ParallaxLeftOut"]{
+    -webkit-animation: PushOverLeft 3s both;
+    animation: PushOverLeft 3s both;
+}
 
+.slick-slider[data-transition="true"] .slick-active[data-transition="ParallaxLeft"]{
+    -webkit-animation: slideOverLeft 1.5s both;
+    animation: slideOverLeft 1.5s both;
+}
+
+/* Parallax Right */
+.slick-slider[data-transition="true"] .slick-slide[data-tsout="ParallaxRightOut"]{
+    -webkit-animation: PushOverRight 3s both;
+    animation: PushOverRight 3s both;
+}
+
+.slick-slider[data-transition="true"] .slick-active[data-transition="ParallaxRight"]{
+    -webkit-animation: slideOverRight 1.5s both;
+    animation: slideOverRight 1.5s both;
+}
+
+/* Parallax Up */
+.slick-slider[data-transition="true"] .slick-slide[data-tsout="ParallaxUpOut"]{
+    -webkit-animation: PushOverUp 3s both;
+    animation: PushOverUp 3s both;
+}
+
+.slick-slider[data-transition="true"] .slick-active[data-transition="ParallaxUp"]{
+    -webkit-animation: slideOverUp 1.5s both;
+    animation: slideOverUp 1.5s both;
+}
+
+/* Parallax Down */
+.slick-slider[data-transition="true"] .slick-slide[data-tsout="ParallaxDownOut"]{
+    -webkit-animation: PushOverDown 3s both;
+    animation: PushOverDown 3s both;
+}
+
+.slick-slider[data-transition="true"] .slick-active[data-transition="ParallaxDown"]{
+    -webkit-animation: slideOverDown 1.5s both;
+    animation: slideOverDown 1.5s both;
+}
 /**===== General Helpers =====**/
 .tornado-loader{
     width:100%;
