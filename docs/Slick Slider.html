@@ -927,8 +927,8 @@ $(".news-titles").slick({
             </p>
             
             <div class="tornado-ui transition-demo" data-transition="true">
-                <div class="slide" data-src="images/bg.jpg" >
-                    <h3 data-animate-layer="fadeInDown" data-animate-layer="" data-delay="500">First Panel</h3>
+                <div class="slide" data-src="images/bg.jpg">
+                    <h3 data-animate-layer="fadeInDown" data-delay="500">First Panel</h3>
                 </div>
                 
                 <div class="slide bg2">
@@ -1108,7 +1108,7 @@ $(".news-titles").slick({
                 
                 $(".select-transiton").on("change",function(){
                     var transtionName = $(this).val();
-                    $(".transition-demo").find(".slide").attr("data-transition",transtionName).prev(".slick-slide").attr("data-tsout",transtionName + "Out");;
+                    $(".transition-demo").find(".slide").attr("data-transition",transtionName).prev(".slick-slide").attr("data-tsout",transtionName + "Out");
                     $(this).siblings("h5").find("span").text(transtionName)
                 })
             })

@@ -1315,12 +1315,11 @@ ul.ui-tornado[data-type="checked"] li ul li:before{
 .btn.icon:before{
     margin-left:8px;
 	position:relative;
-	top:3px;
+	top:-1px;
 }
 
 .btn[class*="ti-"]:before{
 	position:relative;
-	top:2px;
 }
 
 .btn.labeled,.btn.small.labeled,.btn.large.labeled{
@@ -1900,6 +1899,36 @@ ul.ui-tornado[data-type="checked"] li ul li:before{
 .form-ui .icon-field.round-corner:before{
 	-webkit-border-radius: 0 5px 5px 0;
 	border-radius: 0 5px 5px 0;
+}
+
+/*==== Form Clone =====*/
+.form-clone:after{
+    content:'';
+    display:block;
+    clear:both;
+}
+
+.form-clone .clone{
+    float:left;
+    width:87%;
+}
+
+.form-clone .clone-btn,.form-clone .remove-clone{
+    max-width:20%;
+    font-size:15px;
+    float:right;
+    -webkit-border-radius:10px;
+    border-radius:10px;
+    margin-right:0;
+    margin-top:7px;
+}
+
+.form-clone .clone-btn:before{
+    top:-3px;
+}
+
+.form-clone .remove-clone:before{
+    top:0;
 }
 
 /* Form Vaildat */

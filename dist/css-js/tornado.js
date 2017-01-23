@@ -194,6 +194,18 @@ $(document).ready(function () {
         $(this).parent(".alert").fadeOut(500);
     });
 	
+    $(".clone-btn").click(function(e){
+        e.preventDefault();
+        var conewrap = $(this).parent().clone();
+        $(this).parent().after(conewrap).next(".form-clone").children(".clone-btn").addClass("remove-clone ti-minus-io").removeClass("ti-plus-io clone-btn");
+    });
+    
+    $("body").on("click",".remove-clone", function(e){
+        e.preventDefault();
+        $(this).parent().remove();
+    });
+    
+    
 	/*=== Tooltip ===*/
 	$(".tooltip").each(function (){
 		var tooltipTitle = $(this).attr("title");
@@ -308,13 +320,13 @@ $(document).ready(function () {
     });
     
     /*/ ===== Slick Slider ===== /*/
-    $("[data-transition='true'] > *").each(function(){
+    $("[data-transition='true'] [data-transition]").each(function(){
         var transName = $(this).attr("data-transition");
         $(this).prev().attr("data-tsout",transName + "Out");
-    })
+    });
     
     $(document).ready(function(){
-        $('[data-rtl]').slick("slickSetOption","rtl",true,true);
+        $('.slick-slider[data-rtl]').slick("slickSetOption","rtl",true,true);
         $('.slick-vertical').slick("slickSetOption","verticalSwiping",true,true);
         $('.slick-slider[data-transition="true"]').slick("slickSetOption","fade",true,false);
     });
