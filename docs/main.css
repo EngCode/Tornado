@@ -581,6 +581,11 @@ nav {
     box-shadow: 0 0 0 5px rgba(0, 0, 0, .10);
 }
 
+.ViewPort-Tester .info{
+    position:relative;
+    z-index:100;
+}
+
 .ViewPort-Tester h3:after {
     content: '';
     display: block;

@@ -3082,50 +3082,170 @@ ul.ui-tornado[data-type="checked"] li ul li:before{
     animation: slideOverRight .5s both,fadeInSlick 1s both;
 }
 
-
 /* Parallax Left */
-.slick-slider[data-transition="true"] .slick-slide[data-tsout="ParallaxLeftOut"]{
+.slick-slider[data-transition="true"] .slick-slide[data-tsout="parallaxLeftOut"]{
     -webkit-animation: PushOverLeft 3s both;
     animation: PushOverLeft 3s both;
 }
 
-.slick-slider[data-transition="true"] .slick-active[data-transition="ParallaxLeft"]{
+.slick-slider[data-transition="true"] .slick-active[data-transition="parallaxLeft"]{
     -webkit-animation: slideOverLeft 1.5s both;
     animation: slideOverLeft 1.5s both;
 }
 
 /* Parallax Right */
-.slick-slider[data-transition="true"] .slick-slide[data-tsout="ParallaxRightOut"]{
+.slick-slider[data-transition="true"] .slick-slide[data-tsout="parallaxRightOut"]{
     -webkit-animation: PushOverRight 3s both;
     animation: PushOverRight 3s both;
 }
 
-.slick-slider[data-transition="true"] .slick-active[data-transition="ParallaxRight"]{
+.slick-slider[data-transition="true"] .slick-active[data-transition="parallaxRight"]{
     -webkit-animation: slideOverRight 1.5s both;
     animation: slideOverRight 1.5s both;
 }
 
 /* Parallax Up */
-.slick-slider[data-transition="true"] .slick-slide[data-tsout="ParallaxUpOut"]{
+.slick-slider[data-transition="true"] .slick-slide[data-tsout="parallaxUpOut"]{
     -webkit-animation: PushOverUp 3s both;
     animation: PushOverUp 3s both;
 }
 
-.slick-slider[data-transition="true"] .slick-active[data-transition="ParallaxUp"]{
+.slick-slider[data-transition="true"] .slick-active[data-transition="parallaxUp"]{
     -webkit-animation: slideOverUp 1.5s both;
     animation: slideOverUp 1.5s both;
 }
 
 /* Parallax Down */
-.slick-slider[data-transition="true"] .slick-slide[data-tsout="ParallaxDownOut"]{
+.slick-slider[data-transition="true"] .slick-slide[data-tsout="parallaxDownOut"]{
     -webkit-animation: PushOverDown 3s both;
     animation: PushOverDown 3s both;
 }
 
-.slick-slider[data-transition="true"] .slick-active[data-transition="ParallaxDown"]{
+.slick-slider[data-transition="true"] .slick-active[data-transition="parallaxDown"]{
     -webkit-animation: slideOverDown 1.5s both;
     animation: slideOverDown 1.5s both;
 }
+
+/* collapseX */
+.slick-slider[data-transition="true"] .slick-slide[data-tsout="collapseXOut"]{
+    -webkit-animation: collapseX .2s both;
+    animation: collapseX .2s both;
+}
+
+.slick-slider[data-transition="true"] .slick-active[data-transition="collapseX"]{
+    -webkit-animation:fadeInSlick 1s both;
+    animation:fadeInSlick 1s both;
+}
+
+/* collapseY */
+.slick-slider[data-transition="true"] .slick-slide[data-tsout="collapseYOut"]{
+    -webkit-animation: collapseY .2s both;
+    animation: collapseY .2s both;
+}
+
+.slick-slider[data-transition="true"] .slick-active[data-transition="collapseY"]{
+    -webkit-animation:fadeInSlick 1s both;
+    animation:fadeInSlick 1s both;
+}
+
+/* zoomInFadeRight */
+.slick-slider[data-transition="true"] .slick-slide[data-tsout="zoomInFadeRightOut"]{
+    -webkit-animation:PushOverRight .7s both, fadeOutSlick 2s both;
+    animation:PushOverRight .7s both, fadeOutSlick 2s both;
+}
+
+.slick-slider[data-transition="true"] .slick-active[data-transition="zoomInFadeRight"]{
+    -webkit-animation:ZoomInSlick 1s both,fadeInSlick 1s both;
+    animation:ZoomInSlick 1s both,fadeInSlick 1s both;
+}
+
+/* zoomInFadeLeft */
+.slick-slider[data-transition="true"] .slick-slide[data-tsout="zoomInFadeLeftOut"]{
+    -webkit-animation:PushOverLeft .7s both, fadeOutSlick 2s both;
+    animation:PushOverLeft .7s both, fadeOutSlick 2s both;
+}
+
+.slick-slider[data-transition="true"] .slick-active[data-transition="zoomInFadeLeft"]{
+    -webkit-animation:ZoomInSlick 1s both,fadeInSlick 1s both;
+    animation:ZoomInSlick 1s both,fadeInSlick 1s both;
+}
+
+/* zoomInFadeUp */
+.slick-slider[data-transition="true"] .slick-slide[data-tsout="zoomInFadeUpOut"]{
+    -webkit-animation:PushOverUp .7s both, fadeOutSlick 2s both;
+    animation:PushOverUp .7s both, fadeOutSlick 2s both;
+}
+
+.slick-slider[data-transition="true"] .slick-active[data-transition="zoomInFadeUp"]{
+    -webkit-animation:ZoomInSlick 1s both,fadeInSlick 1s both;
+    animation:ZoomInSlick 1s both,fadeInSlick 1s both;
+}
+
+/* zoomInFadeDown */
+.slick-slider[data-transition="true"] .slick-slide[data-tsout="zoomInFadeDownOut"]{
+    -webkit-animation:PushOverDown .7s both, fadeOutSlick 2s both;
+    animation:PushOverDown .7s both, fadeOutSlick 2s both;
+}
+
+.slick-slider[data-transition="true"] .slick-active[data-transition="zoomInFadeDown"]{
+    -webkit-animation:ZoomInSlick 1s both,fadeInSlick 1s both;
+    animation:ZoomInSlick 1s both,fadeInSlick 1s both;
+}
+
+/* zoomOutFadeRight */
+.slick-slider[data-transition="true"] .slick-slide[data-tsout="zoomOutFadeRightOut"]{
+    -webkit-animation:ZoomOutSlick 1s both, fadeOutSlick 1s both;
+    animation:ZoomOutSlick 1s both, fadeOutSlick 1s both;
+}
+
+.slick-slider[data-transition="true"] .slick-active[data-transition="zoomOutFadeRight"]{
+    -webkit-animation:slideOverRight 1s both,fadeInSlick 1s both;
+    animation:slideOverRight 1s both,fadeInSlick 1s both;
+}
+
+/* zoomOutFadeLeft */
+.slick-slider[data-transition="true"] .slick-slide[data-tsout="zoomOutFadeLeftOut"]{
+    -webkit-animation:ZoomOutSlick 1s both, fadeOutSlick 1s both;
+    animation:ZoomOutSlick 1s both, fadeOutSlick 1s both;
+}
+
+.slick-slider[data-transition="true"] .slick-active[data-transition="zoomOutFadeLeft"]{
+    -webkit-animation:slideOverLeft 1s both,fadeInSlick 1s both;
+    animation:slideOverLeft 1s both,fadeInSlick 1s both;
+}
+
+/* zoomOutFadeUp */
+.slick-slider[data-transition="true"] .slick-slide[data-tsout="zoomOutFadeUpOut"]{
+    -webkit-animation:ZoomOutSlick 1s both, fadeOutSlick 1s both;
+    animation:ZoomOutSlick 1s both, fadeOutSlick 1s both;
+}
+
+.slick-slider[data-transition="true"] .slick-active[data-transition="zoomOutFadeUp"]{
+    -webkit-animation:slideOverUp 1s both,fadeInSlick 1s both;
+    animation:slideOverUp 1s both,fadeInSlick 1s both;
+}
+
+/* zoomOutFadeDown */
+.slick-slider[data-transition="true"] .slick-slide[data-tsout="zoomOutFadeDownOut"]{
+    -webkit-animation:ZoomOutSlick 1s both, fadeOutSlick 1s both;
+    animation:ZoomOutSlick 1s both, fadeOutSlick 1s both;
+}
+
+.slick-slider[data-transition="true"] .slick-active[data-transition="zoomOutFadeDown"]{
+    -webkit-animation:slideOverDown 1s both,fadeInSlick 1s both;
+    animation:slideOverDown 1s both,fadeInSlick 1s both;
+}
+
+@-webkit-keyframes collapseX{0%{-webkit-transform:scaleX(1);transform:scaleX(1);}100%{-webkit-transform:scaleX(0);transform:scaleX(0);}}
+@keyframes collapseX{0%{-webkit-transform:scaleX(1);transform:scaleX(1);}100%{-webkit-transform:scaleX(0);transform:scaleX(0);}}
+@-webkit-keyframes collapseY{0%{-webkit-transform:scaleY(1);transform:scaleY(1);}100%{-webkit-transform:scaleY(0);transform:scaleY(0);}}
+@keyframes collapseY{0%{-webkit-transform:scaleY(1);transform:scaleY(1);}100%{-webkit-transform:scaleY(0);transform:scaleY(0);}}
+@-webkit-keyframes ZoomInSlick{0%{-webkit-transform:scale(.5);transform:scale(.5);}100%{-webkit-transform:scale(1);transform:scale(1);}}
+@keyframes ZoomInSlick{0%{-webkit-transform:scale(.5);transform:scale(.5);}100%{-webkit-transform:scale(1);transform:scale(1);}}
+@-webkit-keyframes ZoomOutSlick{0%{-webkit-transform:scale(1);transform:scale(1);}100%{-webkit-transform:scale(.8);transform:scale(.8);}}
+@keyframes ZoomOutSlick{0%{-webkit-transform:scale(1);transform:scale(1);}100%{-webkit-transform:scale(.8);transform:scale(.8);}}
+
+
 /**===== General Helpers =====**/
 .tornado-loader{
     width:100%;
@@ -3387,6 +3507,5 @@ body.lb-disable-scrolling{overflow:hidden;}
 .slick-slide{display:none;float:left;height:100%;min-height:1px;}
 [data-rtl]{direction:rtl;}
 [dir='rtl'] .slick-slide,[data-rtl] .slick-slide{float: right;}
-.marquee{width:100%;overflow:hidden;direction:ltr;}
 .slick-vertical .slick-slide{display:block;height: auto;border: 1px solid transparent;float:none;}
-
+.marquee{width:100%;overflow:hidden;direction:ltr;}
