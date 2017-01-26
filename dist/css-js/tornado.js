@@ -161,7 +161,7 @@ $(document).ready(function () {
         zIndex:99,
     });
     
-    $(".file-input input[type='file']").on("change", function (){
+    $("body").on("change",".file-input input[type='file']", function (){
         var filePath = [];
         for (var i = 0; i < $(this).get(0).files.length; ++i) {
             filePath.push($(this).get(0).files[i].name);
