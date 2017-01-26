@@ -9,7 +9,9 @@ Note : This is a Prerelease Verstion the framework is under developement.
 Beta v1.05 Release Note :
    1. added cdn links.
    2. fixing slick rtl dirction.
-   3. added more slick transitions.
+   3. added 30 slick transitions.
+   4. added form clone.
+   5. icons line-height fix.
 
 Beta v1.1 Upcoming updates : 
    1. adding arabic documntation
