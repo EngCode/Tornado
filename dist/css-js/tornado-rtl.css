@@ -1153,6 +1153,7 @@ ul.ui-tornado[data-type="checked"] li ul li:before{
     margin-top:-2px;
 	position:relative;
 	top:3px;
+    line-height:inherit;
 }
 
 .navbar .navigation-menu > ul:not(.mobile-menu) > li,.navbar .logo,.navbar .navigation-menu .menu-button{

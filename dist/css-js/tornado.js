@@ -322,7 +322,9 @@ $(document).ready(function () {
     /*/ ===== Slick Slider ===== /*/
     $("[data-transition='true'] [data-transition]").each(function(){
         var transName = $(this).attr("data-transition");
+        var transNameLast = $(this).first().attr("data-transition");
         $(this).prev().attr("data-tsout",transName + "Out");
+        $(this).last().attr("data-tsout",transNameLast + "Out");
     });
     
     $(document).ready(function(){
