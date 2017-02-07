@@ -62,7 +62,7 @@
         <div class="container Page-Contnet" id="Home">
             <h4 class="titx">Usage : </h4>
             <p>
-                to apply viewport animation simply add attribute <span class="label">data-vp</span> then add the viewport class animation
+                to apply viewport animation simply add Class <span class="label">wow</span> then add the animation class/name
                 scroll down to see the effects in action.<br>
                 <b>Tip : </b> to applay animation after another use a data attribute delay <span class="label">data-delay</span> with a value of 
                 seconds or millisecondes number for example <span class="label">data-delay="1s"</span>.
@@ -74,17 +74,17 @@
 <pre><code class="html" id="code1">&lt;div class="section">
     &lt;div class="row">
         &lt;div class="col-s-12 col-m-6 col-l-3">
-            &lt;img src="images/image.jpg" alt="" class="fluid VPA-fadeInLeft" data-vp>
+            &lt;img src="images/image.jpg" alt="" class="fluid wow fadeInLeft">
         &lt;/div>
         &lt;div class="col-s-12 col-m-6 col-l-3">
-            &lt;img src="images/image-2.jpg" alt="" class="fluid VPA-fadeInRight" data-vp data-delay="0.5s">
+            &lt;img src="images/image-2.jpg" alt="" class="fluid wow fadeInRight" data-delay="0.5s">
         &lt;/div>
         
         &lt;div class="col-s-12 col-m-6 col-l-3">
-            &lt;img src="images/image-3.jpg" alt="" class="fluid VPA-vanishIn" data-vp data-vp data-delay="1s">
+            &lt;img src="images/image-3.jpg" alt="" class="fluid wow vanishIn" data-delay="1s">
         &lt;/div>
         &lt;div class="col-s-12 col-m-6 col-l-3">
-            &lt;img src="images/image.jpg" alt="" class="fluid VPA-holeIn" data-vp data-vp data-delay="1.5s">
+            &lt;img src="images/image.jpg" alt="" class="fluid wow holeIn" data-delay="1.5s">
         &lt;/div>
     &lt;/div>
 &lt;/div>
@@ -97,25 +97,33 @@
                 <b>Note : </b> the animatons have A seperated file you will find it in the dist folder or you can use the CDN call back from Getting Start Page.
             </p>
             
-            
             <div class="text-box">
-                <h3>3rd Party Plugins</h3>
-				<p>Note : all 3rd party plugins ar already included with the lateast version and customized to work perfectly with tornado.<br>You can see the original documentation in order to use them in particular way.</p>
+                <h3>Helpers</h3>
             </div>
             
             <div class="responsive-table">
                 <table class="table">
                     <thead>
                         <tr>
-                            <td class="col-s-2">Plugin Name</td>
+                            <td class="col-s-4">Helper</td>
                             <td class="col-s-6">Definition</td>
-                            <td class="col-s-4">Orignal Documentation</td>
                         </tr>
                     </thead>
                     <tr>
-                        <td class="col-s-2">Viewport Checker</td>
-                        <td class="col-s-6 text-align-left">to check if the element in the viewport or not.</td>
-                        <td class="col-s-4 text-align-left"><a href="https://github.com/dirkgroenen/jQuery-viewport-checker" target="_blank">Documentation</a></td>
+                        <td class="col-s-4">data-delay / data-wow-delay</td>
+                        <td class="col-s-6 text-align-left">for delaying animation.</td>
+                    </tr>
+                    <tr>
+                        <td class="col-s-4">data-wow-duration</td>
+                        <td class="col-s-6 text-align-left">animation duration</td>
+                    </tr>
+                    <tr>
+                        <td class="col-s-4">data-wow-offset</td>
+                        <td class="col-s-6 text-align-left">element offest</td>
+                    </tr>
+                    <tr>
+                        <td class="col-s-4">data-wow-iteration</td>
+                        <td class="col-s-6 text-align-left">animation iteration number</td>
                     </tr>
                 </table>
             </div>
@@ -123,17 +131,17 @@
             <div class="section">
                 <div class="row">
                     <div class="col-s-12 col-m-6 col-l-3">
-                        <img src="images/image.jpg" alt="" class="fluid VPA-fadeInLeft" data-vp>
+                        <img src="images/image.jpg" alt="" class="fluid fadeInLeft">
                     </div>
                     <div class="col-s-12 col-m-6 col-l-3">
-                        <img src="images/image-2.jpg" alt="" class="fluid VPA-fadeInRight" data-vp data-delay="0.5s">
+                        <img src="images/image-2.jpg" alt="" class="fluid fadeInRight" data-delay="0.5s">
                     </div>
                     
                     <div class="col-s-12 col-m-6 col-l-3">
-                        <img src="images/image-3.jpg" alt="" class="fluid VPA-vanishIn" data-vp data-delay="1s">
+                        <img src="images/image-3.jpg" alt="" class="fluid vanishIn" data-delay="1s">
                     </div>
                     <div class="col-s-12 col-m-6 col-l-3">
-                        <img src="images/image.jpg" alt="" class="fluid VPA-holeIn" data-vp data-delay="1.5s">
+                        <img src="images/image.jpg" alt="" class="fluid holeIn" data-delay="1.5s">
                     </div>
                 </div>
             </div>
@@ -257,10 +265,30 @@
                             <option value="shakeItChunk">shakeItChunk</option>
                         </optgroup>
                     </select>
-                    <h3 class="VPA2-Class"><i>Viewport Class</i> :&nbsp;&nbsp; <span></span></h3>
-                    <h3 class="VPA-Class"><i>Normal Class</i>    :&nbsp;&nbsp;    <span></span></h3>
-                    <h3 class="VPA-Name"><i>Animation Name</i>   :&nbsp;&nbsp;   <span></span></h3>
+                    <h3 class="Name"><i>Animation Class/Name</i>   :&nbsp;&nbsp;   <span></span></h3>
                 </div>
+            </div>
+            
+            <div class="text-box">
+                <h3>3rd Party Plugins</h3>
+				<p>Note : all 3rd party plugins ar already included with the lateast version and customized to work perfectly with tornado.<br>You can see the original documentation in order to use them in particular way.</p>
+            </div>
+            
+            <div class="responsive-table">
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <td class="col-s-2">Plugin Name</td>
+                            <td class="col-s-7">Definition</td>
+                            <td class="col-s-3">Orignal Documentation</td>
+                        </tr>
+                    </thead>
+                    <tr>
+                        <td class="col-s-2">Wow.js</td>
+                        <td class="col-s-7 text-align-left">Reveal CSS animation as you scroll down. [for Commercial use visit <a href="https://site.uplabs.com/posts/wow-js-commercial">wow commercial</a>]</td>
+                        <td class="col-s-3 text-align-left"><a href="http://mynameismatthieu.com/WOW/docs.html" target="_blank">Documentation</a></td>
+                    </tr>
+                </table>
             </div>
         </div>
         <!-- // Page Content -->
@@ -301,9 +329,9 @@
                     AnimationName += $(this).text() + ""; 
                 });
                     $(".ViewPort-Tester #TesterElem img").removeClass().addClass(AnimationClass);
-                    $(".ViewPort-Tester .VPA-Class").children("span").text(AnimationClass);
-                    $(".ViewPort-Tester .VPA2-Class").children("span").text("VPA-" + AnimationClass);
-                    $(".ViewPort-Tester .VPA-Name").children("span").text(AnimationName); 
+                    $(".ViewPort-Tester .Class").children("span").text(AnimationClass);
+                    $(".ViewPort-Tester .VPA2-Class").children("span").text("" + AnimationClass);
+                    $(".ViewPort-Tester .Name").children("span").text(AnimationName); 
                 }).trigger("change");
             /* End Functions */})
         </script>

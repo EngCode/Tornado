@@ -3275,6 +3275,10 @@ ul.ui-tornado[data-type="checked"] li ul li:before{
 
 
 /**===== General Helpers =====**/
+.wow{
+    visibility:hidden;
+}
+
 .tornado-loader{
     width:100%;
     height:100vh;
