@@ -301,13 +301,32 @@ $(document).ready(function () {
         });
     });
     
-    new WOW().init();
-    
     $("[class*='flipInX'],[class*='flipInY']").each(function (){
         $(this).parent().css({
             "-webkit-perspective": "1300px",
             "perspective": "1300px",
         });
+    });
+    
+    /*=== wow.js ===*/
+    function afterReveal(el){ 
+        el.addEventListener('animationend', function(event){
+            $(this).addClass("viewActive") 
+        });
+    } 
+    
+    new WOW({ callback: afterReveal }).init()
+    
+    /*=== Parallax Mouse ===*/
+    $('.parallax-mbg').on("mousemove",function(e){
+        var x = -(e.pageX + this.offsetLeft) / 20;
+        var y = -(e.pageY + this.offsetTop) / 20;
+        $(this).css('background-position', x + 'px ' + y + 'px');
+    }); 
+    
+    $('.parallax-layers').on("mousemove",function (e) {
+        parallax(e, this, 1);
+        parallax(e, this.getElementsByClassName('layer'), 2);
     });
     
     /*/ ===== Slick Slider ===== /*/

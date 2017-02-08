@@ -3288,6 +3288,14 @@ ul.ui-tornado[data-type="checked"] li ul li:before{
 
 
 /**===== General Helpers =====**/
+.parallax-mbg{
+    background-size:cover;
+}
+
+.layer,.parallax-layers{
+    position:relative;
+}
+
 .wow{
     visibility:hidden;
 }
