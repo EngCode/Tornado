@@ -3107,8 +3107,12 @@ input[type="submit"],input[type="button"],input[type="reset"]{
 
 /**===== General Helpers =====**/
 .parallax-mbg{
+<<<<<<< HEAD:dist/css/tornado-rtl.css
     -webkit-background-size:cover;
             background-size:cover;
+=======
+    background-size:cover;
+>>>>>>> origin/master:dist/css-js/tornado-rtl.css
 }
 
 .layer,.parallax-layers{
