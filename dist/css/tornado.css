@@ -1,6 +1,6 @@
 /*=========================================
 •                                         •
-•   # Tornado UI - Beta v1.0              •
+•   # Tornado UI - Final v1.0             •
 •   https://github.com/EngCode/Tornado    •
 •                                         •
 •   Copyright 2016 Eng Code               •
@@ -3095,12 +3095,9 @@ input[type="submit"],input[type="button"],input[type="reset"]{
 
 /**===== General Helpers =====**/
 .parallax-mbg{
-<<<<<<< HEAD:dist/css/tornado.css
     -webkit-background-size:cover;
             background-size:cover;
-=======
     background-size:cover;
->>>>>>> origin/master:dist/css-js/tornado.css
 }
 
 .layer,.parallax-layers{
@@ -3143,10 +3140,6 @@ input[type="submit"],input[type="button"],input[type="reset"]{
 
 .dark-theme{
 	color:#FFF;
-}
-
-form *{
-    font-family:'Raleway','Roboto';
 }
 
 .left{
