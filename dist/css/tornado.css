@@ -1,6 +1,6 @@
 /*=========================================
 •                                         •
-•   # Tornado UI - Final v1.0             •
+•   # Tornado UI - Final v1.1             •
 •   https://github.com/EngCode/Tornado    •
 •                                         •
 •   Copyright 2016 Eng Code               •

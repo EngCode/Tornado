@@ -1,6 +1,6 @@
 /*=========================================
 •                                         •
-•   # Tornado UI - Final v1.0             •
+•   # Tornado UI - Final v1.1             •
 •   https://github.com/EngCode/Tornado    •
 •                                         •
 •   Copyright 2016 Eng Code               •
@@ -30,6 +30,7 @@
 /*!===== normalize.css v5.0.0 | MIT License | github.com/necolas/normalize.css =====*/
 html{font-size:14px;font-family:sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}
 body{font-family:'Noto Sans','Helvetica Neue',Arial,Helvetica,sans-serif;margin:0;padding:0;direction:rtl;height:100%;background:#fafafa;color:rgba(0,0,0,0.80);position:relative;line-height:1.48;}
+h1,h2,h3,h4,h5,h6,.h1,.h2,.h3,.h4,.h5,.h6{font-family:'Noto Sans','Helvetica Neue',Arial,Helvetica,sans-serif;}
 article,aside,footer,header,nav,section{display:block;}
 h1{font-size:2em;margin:.67em 0;}
 figcaption,figure,main{display:block;}
