@@ -5,7 +5,7 @@ Tornado UI is Front End Framework to make Web Designing
 A lot Simpler and faster.
 
 Final v1.1 URelease Note : 
-    1. Changing Fonts and Improve UI.
+   1. Changing Fonts and Improve UI.
     2. Improve Responsive Typographiy Sizes with [Rem].
     3. Improve Tabs and Accourdion Dynamic Active.
     4. Restyle Forms and buttons for easy customize.
