@@ -65,20 +65,26 @@
 			<div class="row boxmar">
 				<div class="col-s-12">
 					<div class="accordion tornado-ui">
-						<div class="accordion-title ti-chevron-down active">Accordion Title #1</div>
-						<div class="accordion-content active">
-							<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley</p>
-						</div>
-						
-						<div class="accordion-title ti-chevron-down">Accordion Title #2</div>
-						<div class="accordion-content">
-							<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley</p>
-						</div>
-						
-						<div class="accordion-title ti-chevron-down">Accordion Title #3</div>
-						<div class="accordion-content">
-							<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley</p>
-						</div>
+                        <div class="accordion-item">
+                            <div class="accordion-title ti-chevron-down">Accordion Title #1</div>
+                            <div class="accordion-content">
+                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley</p>
+                            </div>
+                        </div>
+                        
+                        <div class="accordion-item">
+                            <div class="accordion-title ti-chevron-down">Accordion Title #2</div>
+                            <div class="accordion-content">
+                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley</p>
+                            </div>
+                        </div>
+                        
+                        <div class="accordion-item">
+                            <div class="accordion-title ti-chevron-down">Accordion Title #3</div>
+                            <div class="accordion-content">
+                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley</p>
+                            </div>
+                        </div>
 					</div>
 					
 <!-- Code Highlight -->
@@ -87,23 +93,29 @@
 <pre><code class="html" id="code1">&lt;!-- Accordion Wraper -->
 &lt;div class="accordion tornado-ui">
     &lt;!-- Accordion item -->
-    &lt;div class="accordion-title ti-chevron-down active">Accordion Title #1&lt;/div>
-    &lt;div class="accordion-content active">
-        &lt;p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley&lt;/p>
+    &lt;div class="accordion-item">
+        &lt;div class="accordion-title ti-chevron-down">Accordion Title #1&lt;/div>
+        &lt;div class="accordion-content">
+            &lt;p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley&lt;/p>
+        &lt;/div>
     &lt;/div>
     &lt;!-- // Accordion item -->
 
     &lt;!-- Accordion item -->
-    &lt;div class="accordion-title ti-chevron-down">Accordion Title #2&lt;/div>
-    &lt;div class="accordion-content">
-        &lt;p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley&lt;/p>
+    &lt;div class="accordion-item">
+        &lt;div class="accordion-title ti-chevron-down">Accordion Title #2&lt;/div>
+        &lt;div class="accordion-content">
+            &lt;p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley&lt;/p>
+        &lt;/div>
     &lt;/div>
     &lt;!-- // Accordion item -->
 
     &lt;!-- Accordion item -->
-    &lt;div class="accordion-title ti-chevron-down">Accordion Title #3&lt;/div>
-    &lt;div class="accordion-content">
-        &lt;p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley&lt;/p>
+    &lt;div class="accordion-item">
+        &lt;div class="accordion-title ti-chevron-down">Accordion Title #3&lt;/div>
+        &lt;div class="accordion-content">
+            &lt;p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley&lt;/p>
+        &lt;/div>
     &lt;/div>
     &lt;!-- // Accordion item -->
 &lt;/div>
@@ -121,10 +133,38 @@
 <button class="copy">copy</button>
 <pre><code class="html" id="code1">&lt;!-- Accordion Wraper -->
 &lt;div class="accordion">
-    &lt;!-- Collapsed Accordion -->
+    &lt;!-- Accordion -->
+    &lt;div class="accordion-item">
+        &lt;div class="accordion-title"> Accordion Title &lt;/div>
+        &lt;div class="accordion-content"> Accordion Content &lt;/div>
+    &lt;/div>
+    &lt;!-- // Accordion -->
+
+    &lt;!-- Accordion -->
+    &lt;div class="accordion-item">
+        &lt;div class="accordion-title"> Accordion Title &lt;/div>
+        &lt;div class="accordion-content"> Accordion Content &lt;/div>
+    &lt;/div>
+    &lt;!-- // Accordion -->
+&lt;/div>
+&lt;!-- // End Accordion Wraper -->
+
+</code></pre>
+</div>
+<!-- // Code Hightlight -->
+				</div>
+				
+				<div class="col-s-12 boxmar">
+					<h4 class="titx">Collapsed Accordion</h4>
+					<!-- Code Highlight -->
+<div class="code-highlight">
+<button class="copy">copy</button>
+<pre><code class="html" id="code1">&lt;!-- Accordion Wraper -->
+&lt;div class="accordion collapsed">
+    &lt;!-- Accordion -->
     &lt;div class="accordion-title"> Accordion Title &lt;/div>
     &lt;div class="accordion-content"> Accordion Content &lt;/div>
-    &lt;!-- // Collapsed Accordion -->
+    &lt;!-- // Accordion -->
 
     &lt;!-- Active Accordion -->
     &lt;div class="accordion-title active"> Accordion Title &lt;/div>
@@ -149,7 +189,7 @@
 &lt;div class="tabs">
     &lt;!-- Tabs Menu -->
     &lt;ul class="tabs-menu">
-        &lt;li class="active" data-tab="tab1">Tab #1&lt;/li> &lt;!-- activated tab -->
+        &lt;li data-tab="tab1">Tab #1&lt;/li> &lt;!-- activated tab -->
         &lt;li data-tab="tab2">Tab #2&lt;/li>
         &lt;li data-tab="tab3">Tab #3&lt;/li>
         &lt;li data-tab="tab4">Tab #4&lt;/li>
@@ -157,7 +197,7 @@
     &lt;!-- // Tabs Menu -->
 	
     &lt;!-- activated Tab Content -->
-    &lt;div class="tab-content active" id="tab1"> Yor Content &lt;/div>
+    &lt;div class="tab-content" id="tab1"> Yor Content &lt;/div>
 
     &lt;!-- Hidden Tab Content -->
     &lt;div class="tab-content" id="tab2"> Yor Content &lt;/div>
@@ -181,7 +221,7 @@
 			<div class="tabs tornado-ui">
 				<!-- Tabs Menu -->
 				<ul class="tabs-menu">
-					<li class="active" data-tab="tab1">Tab #1</li>
+					<li data-tab="tab1">Tab #1</li>
 					<li data-tab="tab2">Tab #2</li>
 					<li data-tab="tab3">Tab #3</li>
 					<li data-tab="tab4">Tab #4</li>
@@ -189,7 +229,7 @@
 				<!-- // Tabs Menu -->
 				
 				<!-- Tab Content #1 -->
-				<div class="tab-content active" id="tab1">
+				<div class="tab-content" id="tab1">
 					<h5>This Tab Content #1</h5>
 					<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
 				</div>
@@ -221,7 +261,7 @@
 &lt;div class="tabs tornado-ui">
     &lt;!-- Tabs Menu -->
     &lt;ul class="tabs-menu">
-        &lt;li class="active" data-tab="tab1">Tab #1&lt;/li>
+        &lt;li data-tab="tab1">Tab #1&lt;/li>
         &lt;li data-tab="tab2">Tab #2&lt;/li>
         &lt;li data-tab="tab3">Tab #3&lt;/li>
         &lt;li data-tab="tab4">Tab #4&lt;/li>
@@ -229,7 +269,7 @@
     &lt;!-- // Tabs Menu -->
 
     &lt;!-- Tab Content -->
-    &lt;div class="tab-content active" id="tab1"> This Tab Content #1 &lt;/div>
+    &lt;div class="tab-content" id="tab1"> This Tab Content #1 &lt;/div>
 
     &lt;!-- Tab Content -->
     &lt;div class="tab-content" id="tab2"> This Tab Content #2 &lt;/div>
@@ -254,7 +294,7 @@
 			<div class="tabs tornado-ui row">
 				<!-- Tabs Menu -->
 				<ul class="tabs-menu vertical col-s-2">
-					<li class="active" data-tab="v-tab1">Tab #1</li>
+					<li data-tab="v-tab1">Tab #1</li>
 					<li data-tab="v-tab2">Tab #2</li>
 					<li data-tab="v-tab3">Tab #3</li>
 					<li data-tab="v-tab4">Tab #4</li>
@@ -262,7 +302,7 @@
 				<!-- // Tabs Menu -->
 				
 				<!-- Tab Content #1 -->
-				<div class="tab-content active col-s-10" id="v-tab1">
+				<div class="tab-content col-s-10" id="v-tab1">
 					<h5>This Tab Content #1</h5>
 					<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
 				</div>

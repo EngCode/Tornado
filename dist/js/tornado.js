@@ -235,16 +235,19 @@ jQuery(document).ready(function( $ ) {
 	});
 	
 	/*=== accordion ===*/
+    $(".accordion:not(.collapsed) .accordion-item:first-of-type .accordion-title").addClass("active").next(".accordion-content").addClass("active");
 	$(".accordion-title").on("click", function(){
-		$(this).toggleClass("active").siblings(".accordion-title").removeClass("active");
-		$(this).next(".accordion-content").slideToggle(350).toggleClass("active").siblings(".accordion-content").slideUp(350).removeClass("active");
+		$(this).toggleClass("active").parent(".accordion-item").siblings().children(".accordion-title").removeClass("active");
+		$(this).next(".accordion-content").slideToggle(350).toggleClass("active").parent(".accordion-item").siblings().children(".accordion-content").slideUp(350).removeClass("active");
 	});
 	
 	/*=== Tabs System ===*/
+	$(".tabs .tabs-menu li:first-child").addClass("active");
+    $(".tabs .tab-content:first-of-type").addClass("active");
 	$(".tabs-menu li").on("click", function (){
 		var tabID = $(this).attr("data-tab");
 		$(this).addClass("active").siblings().removeClass("active");
-		$("#" + tabID).fadeIn(500).addClass("active").siblings(".tab-content").fadeOut(0).removeClass("active");
+		$("#" + tabID).fadeIn(0).addClass("active").siblings(".tab-content").hide().removeClass("active");
 	});
 	
 	/*=== Modals ===*/

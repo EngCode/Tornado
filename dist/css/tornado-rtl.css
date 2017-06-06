@@ -74,54 +74,6 @@ template{display:none;}
 [hidden]{display:none;}
 a,a:active,a:hover,a:focus{outline:0;text-decoration:none;}
 @-ms-viewport {width:device-width;}
-
-/*======= Colors =======*/
-.primary-bg,.primary-bg-hoverable,.quote-th3{
-    background:#3498db;
-	-webkit-transition: all 0.3s;
-	-o-transition:all 0.3s;
-	transition:all 0.3s;
-	color:#FFF;
-}
-
-.primary-bg-hoverable:hover{
-    background:#2980b9;
-}
-
-.primary-text,.primary-text-hoverable,a{
-    color:#3498db;
-	-webkit-transition: all 0.3s;
-	-o-transition:all 0.3s;
-	transition:all 0.3s;
-}
-
-.primary-text-hoverable:hover{
-    color:#2980b9;
-}
-
-.secondary-bg,.secondary-bg-hoverable{
-    background:#34495e;
-	-webkit-transition: all 0.3s;
-	-o-transition:all 0.3s;
-	transition:all 0.3s;
-	color:#FFF;
-}
-
-.secondary-bg-hoverable:hover{
-    background:#2c3e50;
-}
-
-.secondart-text,.secondart-text-hoverable{
-    color:#34495e;
-	-webkit-transition: all 0.3s;
-	-o-transition:all 0.3s;
-	transition:all 0.3s;
-}
-
-.secondart-text-hoverable:hover{
-    color:#2c3e50;
-}
-
 /*======= Tornado Grid System =======*/
 *,
 *:before,
@@ -1491,9 +1443,9 @@ input[type="submit"],input[type="button"],input[type="reset"]{
 }
 
 .btn.labeled:before{
-    padding:11px 12px;
-    margin-top:-15px;
-    margin-bottom:-10px;
+    padding:15px 15px;
+    margin-top:-12px;
+    margin-bottom:-12px;
     top:0;
     vertical-align:middle;
     background:rgba(0,0,0,.08);
@@ -1799,6 +1751,7 @@ input[type="submit"],input[type="button"],input[type="reset"]{
     font-size: 16px;
     margin-top: 30px;
     border-collapse: collapse;
+    background: #FFF;
 }
 
 .table thead {
@@ -1807,7 +1760,6 @@ input[type="submit"],input[type="button"],input[type="reset"]{
 
 .table tr td {
     padding:15px 20px;
-    background: #FFF;
 	border-top: 1px solid rgba(0, 0, 0, .10);
 }
 
@@ -3228,6 +3180,52 @@ input[type="submit"],input[type="button"],input[type="reset"]{
     }
 }
 
+/*======= Colors =======*/
+.primary-bg,.primary-bg-hoverable,.quote-th3{
+    background:#3498db;
+	-webkit-transition: all 0.3s;
+	-o-transition:all 0.3s;
+	transition:all 0.3s;
+	color:#FFF;
+}
+
+.primary-bg-hoverable:hover{
+    background:#2980b9;
+}
+
+.primary-text,.primary-text-hoverable,a{
+    color:#3498db;
+	-webkit-transition: all 0.3s;
+	-o-transition:all 0.3s;
+	transition:all 0.3s;
+}
+
+.primary-text-hoverable:hover{
+    color:#2980b9;
+}
+
+.secondary-bg,.secondary-bg-hoverable{
+    background:#34495e;
+	-webkit-transition: all 0.3s;
+	-o-transition:all 0.3s;
+	transition:all 0.3s;
+	color:#FFF;
+}
+
+.secondary-bg-hoverable:hover{
+    background:#2c3e50;
+}
+
+.secondart-text,.secondart-text-hoverable{
+    color:#34495e;
+	-webkit-transition: all 0.3s;
+	-o-transition:all 0.3s;
+	transition:all 0.3s;
+}
+
+.secondart-text-hoverable:hover{
+    color:#2c3e50;
+}
 /*======= icons =======*/
 [class*="ti-"]:before{font-family:'Material Icons';font-weight:400;vertical-align:middle;line-height:normal;font-style:normal;display:inline-block;text-transform:none;letter-spacing:normal;word-wrap:normal;white-space:nowrap;-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility;-moz-osx-font-smoothing:grayscale;-webkit-font-feature-settings:liga;font-feature-settings:liga;}
 .ti-quote:before,.quote-th1:before,.quote-th2:before,.quote-th3:before{content:'format_quote';font-family:'Material Icons';font-weight:400;font-style:normal;display:inline-block;text-transform:none;letter-spacing:normal;word-wrap:normal;white-space:nowrap;-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility;-moz-osx-font-smoothing:grayscale;-webkit-font-feature-settings:liga;font-feature-settings:liga}
