@@ -2424,8 +2424,7 @@ input[type="submit"],input[type="button"],input[type="reset"]{
 }
 
 .card.horizontal .image img{
-    width:auto;
-    min-height:100%;
+    width:100%;
 }
 
 .card.horizontal .card-content{
@@ -2438,6 +2437,12 @@ input[type="submit"],input[type="button"],input[type="reset"]{
 
 .card.horizontal .card-footer{
     background:transparent;
+}
+
+@media only screen and (max-width:520px) {
+    .card.horizontal{
+        display:block;
+    }
 }
 
 .card .user-nav{
